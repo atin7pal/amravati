@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
+import logo from '../../assets/logoheader.svg'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,13 +14,13 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-md w-full fixed top-0 left-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          
+    <nav className="accentbg w-full fixed top-0 left-0 z-50">
+      <div className="w-full mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="flex items-center justify-between h-18">
           {/* Logo */}
           <div className="flex-shrink-0 text-2xl font-bold text-gray-800">
-            <Link to="/">MyBrand</Link>
+            <Link to="/">
+            <img className="h-[200px] w-[200px] object-contain" src={logo} alt="" /></Link>
           </div>
 
           {/* Center Links (Desktop) */}
@@ -39,7 +40,7 @@ const Navbar = () => {
           <div className="hidden md:flex">
             <Link
               to="/contact"
-              className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition"
+              className="btn"
             >
               Contact Us
             </Link>
@@ -47,7 +48,10 @@ const Navbar = () => {
 
           {/* Hamburger (Mobile) */}
           <div className="md:hidden">
-            <button onClick={() => setMenuOpen(!menuOpen)} className="text-2xl text-gray-800">
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="text-2xl text-gray-800"
+            >
               {menuOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
@@ -70,7 +74,7 @@ const Navbar = () => {
           <Link
             to="/contact"
             onClick={() => setMenuOpen(false)}
-            className="block mt-2 bg-blue-600 text-white text-center px-4 py-2 rounded-md hover:bg-blue-700"
+            className="btn"
           >
             Contact Us
           </Link>

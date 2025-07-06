@@ -1,1 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "tailwindcss";
+
+* {
+    font-family: "Cinzel", serif;
+}
+
+.accentfont {
+     font-family: "Poppins", sans-serif !important;
+}
+
+.themebg {
+    background-color: #4B352A;
+    color: #F8F3D9;
+}
+
+.themecolorfont {
+  color: #F8F3D9;
+}
+
+.bgcolorfont {
+    color: #4B352A;
+}
+
+.accentbg {
+    background-color: #F8F3D9;
+    color: #4B352A;
+}
+
+.section {
+    @apply flex  items-center flex-col
+}
+
+.btn {
+    @apply bg-[#4B352A] flex justify-center items-center gap-2 px-5 py-2 text-white
+}
+
+.row {
+    @apply flex justify-center items-center max-sm:flex-col w-full h-full p-20 max-sm:p-3 gap-4
+}
