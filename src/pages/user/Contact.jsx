@@ -17,7 +17,7 @@ export function Contact(props) {
   return (
     <>
       <Navbar />
-      <section className="section themebg">
+      <section className="section themebg h-[80vh]">
         <div className="row">
           <div className="w-full text-md h-full flex justify-around items-start flex-col gap-4">
             <h2 className="text-4xl mb-2">Contact Us</h2>
@@ -59,27 +59,34 @@ export function Contact(props) {
       <section className="section">
         <div className="row">
           <div className="w-full">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.7922325037102!2d76.9072783750383!3d30.752337084685884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f9223bfffffff%3A0x10e24c8c02899a72!2sAmravati%20Vidyalaya!5e0!3m2!1sen!2sin!4v1752346418292!5m2!1sen!2sin" width="100%" height="400px" loading="lazy" ></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.7922325037102!2d76.9072783750383!3d30.752337084685884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f9223bfffffff%3A0x10e24c8c02899a72!2sAmravati%20Vidyalaya!5e0!3m2!1sen!2sin!4v1752346418292!5m2!1sen!2sin"
+              width="100%"
+              height="400px"
+              loading="lazy"
+            ></iframe>
           </div>
           <div className="w-full h-[450px] flex flex-col justify-center items-start gap-4 px-4">
             <h2 className="text-lg accentfont">Our Location</h2>
-             <h2 className="text-4xl">Connecting Near And Far</h2>
+            <h2 className="text-4xl">Connecting Near And Far</h2>
             <span className="text-xl accentfont"> Headquartered at </span>
-             <p className="accentfont">
+            <p className="accentfont">
               Amaravati complex <br />
               Sector 2 <br />
               Panchkula <br />
               Haryana <br />
-             </p>
+            </p>
 
-             <button className="btn">About Us</button>
+            <button className="btn">About Us</button>
           </div>
         </div>
       </section>
       <section className="section themebg">
-        <h2 className="text-4xl p-20 pb-0 max-sm:p-4 max-sm:py-10 max-sm:text-3xl max-sm:text-center ">Frequently Asked Questions</h2>
+        <h2 className="text-4xl p-20 pb-0 max-sm:p-4 max-sm:py-10 max-sm:text-3xl max-sm:text-center ">
+          Frequently Asked Questions
+        </h2>
         <div className="row">
-          <FAQSection/>
+          <FAQSection />
         </div>
       </section>
       <Footer />

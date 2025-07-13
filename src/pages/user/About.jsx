@@ -20,7 +20,7 @@ export function About(props) {
   return (
     <>
       <Navbar />
-      <section className="section h-screen themebg">
+      <section className="section h-[80vh] themebg">
         <div className="row h-full">
           <div className="w-full flex flex-col justify-center items-start max-sm:items-center max-sm:text-center gap-4">
             <h2 className="text-xl bg-[#4B352A] text-[#F8F3D9] px-2 py-1">About Us</h2>
