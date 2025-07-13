@@ -1,17 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import "tailwindcss";
+
 
 * {
     font-family: "Cinzel", serif;
+    transition: all ease 0.3s;
+}
+
+@font-face {
+    font-family: starfont;
+    src: url(./assets/font/lousiefont.ttf);
+}
+
+.starfont {
+    font-family: starfont;
+    letter-spacing: 2px;
+    font-weight: 300;
 }
 
 .accentfont {
-     font-family: "Poppins", sans-serif !important;
+     font-family: "Outfit", sans-serif !important;
+     font-weight: 300;
 }
 
 .themebg {
-    background-color: #4B352A;
-    color: #F8F3D9;
+    background-color: #F8F3D9;
+    color: #4B352A;
 }
 
 .themecolorfont {
@@ -31,10 +46,25 @@
     @apply flex  items-center flex-col
 }
 
+.perfectbg {
+    @apply bg-contain bg-no-repeat bg-center
+}
+
 .btn {
-    @apply bg-[#4B352A] flex justify-center items-center gap-2 px-5 py-2 text-white
+    @apply bg-[#4B352A] shadow-[#F8F3D9] shadow-lg flex justify-center items-center gap-2 px-5 py-3 text-white
 }
 
 .row {
-    @apply flex justify-center items-center max-sm:flex-col w-full h-full p-20 max-sm:p-3 gap-4
+    @apply flex justify-center items-center max-sm:flex-col w-full h-full p-20 max-sm:p-3 max-sm:py-10 gap-4
+}
+
+
+
+.rowPadding {
+    @apply flex justify-center items-center max-sm:flex-col w-full h-full p-20 pt-0 max-sm:p-3 gap-4
+}
+
+.dotted-map {
+  max-width: 100%;
+  overflow: hidden;
 }

@@ -80,21 +80,21 @@ const TestimonialCarousel = () => {
   };
 
   return (
-    <div className="w-full mx-auto p-20 pb-0 pt-0">
-      <div className="mb-20 flex justify-center items-start gap-4">
+    <div className="w-full mx-auto p-20 pb-0 pt-0 max-sm:p-4">
+      <div className="mb-20 flex justify-center items-start gap-4 max-sm:flex-col">
         <div className="flex flex-col gap-4 justify-center items-start">
-        <h2 className="text-4xl text-start">What Our Clients Say</h2>
+        <h2 className="text-4xl text-start max-sm:text-3xl">What Our Clients Say</h2>
         <p className="w-[100%] accentfont">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
           atque placeat possimus commodi cumque incidunt asperiores ducimus
           officiis nam accusamus.
         </p>
 </div>
-        <div className="flex justify-end items-center gap-4 w-full">
-        <button onClick={prevSlide} className="px-4 py-2 accentbg transition">
+        <div className="flex justify-end items-center gap-4 w-full max-sm:justify-start">
+        <button onClick={prevSlide} className="px-4 py-2 bg-[#4B352A] text-[#F8F3D9] transition">
           &#10094; Prev
         </button>
-        <button onClick={nextSlide} className="px-4 py-2 accentbg transition">
+        <button onClick={nextSlide} className="px-4 py-2 transition bg-[#4B352A] text-[#F8F3D9]">
           Next &#10095;
         </button>
       </div>
@@ -110,17 +110,17 @@ const TestimonialCarousel = () => {
           {testimonials.map((t) => (
             <div
               key={t.id}
-              className="w-full px-4 flex-shrink-0"
+              className="w-full px-2 flex-shrink-0"
               style={{ width: `${100 / testimonials.length}%` }}
             >
-              <div className="p-6 accentbg h-full flex flex-col items-start">
+              <div className="p-6 bg-white h-full flex flex-col items-start">
                 <img
                   src={t.image}
                   alt={t.name}
                   className="w-20 h-20 rounded-full object-cover border-4 mb-4"
                 />
                 <p className="mb-3 accentfont w-full">“{t.quote}”</p>
-                <h4 className="text-lg w-full">{t.name}</h4>
+                <h4 className="text-xl w-full starfont mb-1">{t.name}</h4>
                 <p className="text-sm accentfont w-full">{t.role}</p>
               </div>
             </div>

@@ -1,24 +1,30 @@
 import React, { useState } from "react";
-import home from '../../assets/home1.jpg';
+import home from "../../assets/project1/livingdining2.jpg";
+import home1 from '../../assets/project1/jacuzzi.jpg';
+import home2 from '../../assets/project1/outdoorseating.jpg'
+import brochure from "../../assets/brochure.pdf"; // Make sure this path is correct
 
 const slides = [
   {
     id: 1,
     image: home,
     title: "Modern Villa",
-    description: "Experience luxury living with scenic views.",
+    description:
+      "Immerse yourself in the elegance of modern architecture surrounded by nature. This villa offers spacious interiors, panoramic views, and the finest amenities for luxurious living.",
   },
   {
     id: 2,
-    image: home,
-    title: "City Apartment",
-    description: "Stay in the heart of the city with easy access to everything.",
+    image: home1,
+    title: "Serene Views",
+    description:
+      "Located in the bustling heart of the city, this apartment blends convenience with comfort. With nearby transit, shopping, and dining, experience vibrant urban life with ease.",
   },
   {
     id: 3,
-    image: home,
-    title: "Commercial Space",
-    description: "Perfect for your business expansion.",
+    image: home2,
+    title: "More Views",
+    description:
+      "Designed for growth, this commercial property offers high visibility, foot traffic, and customizable layouts. Ideal for offices, retail, or startups looking to scale efficiently.",
   },
 ];
 
@@ -51,30 +57,39 @@ const Carousel = () => {
       </div>
 
       {/* Content & Controls */}
-      <div className="w-full p-6 px-10 flex flex-col justify-between gap-4">
-        <div>
-          <h2 className="text-2xl md:text-4xl">
-            {slides[current].title}
-          </h2>
-          <p className="mt-2 accentfont text-gray-600 text-sm md:text-base">
+      <div className="w-full p-6 px-10 flex flex-col justify-between gap-4 max-sm:px-4">
+        <div className="flex flex-col justify-center items-start gap-4">
+          <h2 className="text-2xl md:text-3xl starfont">{slides[current].title}</h2>
+          <p className="mt-0 accentfont text-sm md:text-base">
             {slides[current].description}
           </p>
+
         </div>
 
         {/* Navigation Buttons */}
-        <div className="flex items-center justify-start gap-6 mt-4">
+        <div className="flex items-start flex-col justify-center gap-4 mt-4">
+
+            <a
+            href={brochure}
+            download="Project-Brochure.pdf"
+            className="btn"
+          >
+            Download Brochure
+          </a>
+          <div className="flex gap-10">
           <button
             onClick={prevSlide}
-            className="px-4 py-2 themebg accentfont text-sm"
+            className="btn"
           >
             &#10094; Prev
           </button>
           <button
             onClick={nextSlide}
-            className="px-4 py-2 themebg accentfont text-sm"
+            className="btn"
           >
             Next &#10095;
           </button>
+          </div>
         </div>
 
         {/* Slide Indicators */}
