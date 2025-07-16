@@ -11,6 +11,7 @@ import {
 } from "react-icons/bi";
 import ContactForm from "../../components/user/ContactForm";
 import FAQSection from "../../components/user/FAQSection";
+import { Helmet } from "react-helmet-async";
 
 export function Contact(props) {
   const fadeInProps = {
@@ -22,6 +23,14 @@ export function Contact(props) {
 
   return (
     <>
+    <Helmet>
+        <title>Contact Us | Amaravati Group</title>
+      </Helmet>
+
+    <Helmet>
+        <title>Home | Amaravati Group</title>
+      </Helmet>
+
       <Navbar />
       <section className="section themebg h-[80vh]">
         <div className="row">
@@ -43,8 +52,7 @@ export function Contact(props) {
               </div>
 
               <div className="flex justify-center items-center gap-2">
-                <BiBuilding />{" "}
-                <p className="accentfont">Sector 2 Panchkula</p>
+                <BiBuilding /> <p className="accentfont">Sector 2 Panchkula</p>
               </div>
             </div>
             <div className="text-sm flex flex-col justify-center items-center gap-4 w-full mt-2">

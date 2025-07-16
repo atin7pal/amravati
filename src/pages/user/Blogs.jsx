@@ -5,10 +5,20 @@ import Navbar from "../../components/user/Navbar";
 import { Footer } from "../../components/user/Footer";
 import { MdArrowRight } from "react-icons/md";
 import floral from '../../assets/floral.jpg'
+import { Helmet } from "react-helmet-async";
 
 const BlogPage = () => {
   return (
     <>
+    <Helmet>
+        <title>Explore Our Blogs | Amaravati Group</title>
+        <meta
+          name="description"
+          content="Discover luxurious living and smart investments with Amaravati Group. Your future, built today."
+        />
+       
+      </Helmet>
+
     <Navbar/>
     <section className="section bg-center bg-no-repeat bg-cover" style={{backgroundImage: `linear-gradient(#F8F3D9, #ffffffde, #F8F3D9),url(${floral})`}}>
         <div className="row min-h-[80vh]">

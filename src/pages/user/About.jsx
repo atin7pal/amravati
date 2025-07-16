@@ -13,6 +13,7 @@ import FAQSection from "../../components/user/FAQSection";
 import { SendQuery } from "../../components/user/SendQuery";
 import video2 from "../../assets/video2.mp4";
 import BentoImageGrid from "../../components/user/BentoGrid";
+import { Helmet } from "react-helmet-async";
 
 export function About(props) {
   const fadeInProps = {
@@ -24,6 +25,27 @@ export function About(props) {
 
   return (
     <>
+    <Helmet>
+        <title>About Us | Amaravati Group</title>
+        <meta
+          name="description"
+          content="Discover luxurious living and smart investments with Amaravati Group. Your future, built today."
+        />
+        <link rel="canonical" href="https://www.amaravatigroup.com/" />
+        {/* Open Graph tags for social media */}
+        <meta property="og:title" content="Amaravati Group" />
+        <meta
+          property="og:description"
+          content="Discover luxurious living and smart investments."
+        />
+        <meta
+          property="og:image"
+          content="https://www.amaravatigroup.com/og-image.jpg"
+        />
+        <meta property="og:url" content="https://www.amaravatigroup.com/" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
       <Navbar />
       <section className="section h-[80vh] themebg max-sm:min-h-[100vh]">
         <div className="row h-full">

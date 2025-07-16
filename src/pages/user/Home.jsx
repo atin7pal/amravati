@@ -22,7 +22,7 @@ import FeatureSection from "../../components/user/FeatureSection.jsx";
 import BlogSection from "../../components/user/BlogSection.jsx";
 import { SendQuery } from "../../components/user/SendQuery.jsx";
 import Loader from "../../components/Loader.jsx";
-
+import { Helmet } from "react-helmet-async";
 
 export function Home() {
   const fadeInProps = {
@@ -32,7 +32,7 @@ export function Home() {
     transition: { duration: 0.8, ease: "easeInOut" },
   };
 
-   const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -69,10 +69,14 @@ export function Home() {
     },
   ];
 
-  if(loading) return <Loader/>
+  if (loading) return <Loader />;
 
   return (
     <>
+      <Helmet>
+        <title>Home | Amaravati Group</title>
+      </Helmet>
+
       <Navbar />
       <section className="section relative bg-gradient-to-b from-[#F8F3D9] via-[#F8F3D9]/90 h-[80vh] justify-center">
         <video
