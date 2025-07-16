@@ -24,13 +24,8 @@ export function Contact(props) {
   return (
     <>
     <Helmet>
-        <title>Contact Us | Amaravati Group</title>
+        <title>Get In Touch | Amaravati Group</title>
       </Helmet>
-
-    <Helmet>
-        <title>Home | Amaravati Group</title>
-      </Helmet>
-
       <Navbar />
       <section className="section themebg h-[80vh]">
         <div className="row">
