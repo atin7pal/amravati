@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBuilding, FaVideo, FaDraftingCompass, FaBalanceScale } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const features = [
   {
@@ -37,9 +38,11 @@ const FeatureSection = () => {
           <p className="mb-6 bgcolorfont accentfont">
             From buying your first home to managing commercial properties, we support every step.
           </p>
-          <button className="themebg text-white px-6 py-3 w-fit hover:bg-gray-800 transition">
+          <Link to="/contact">
+          <button className="btnlight w-fit">
             Contact us
           </button>
+          </Link>
         </div>
 
         {/* Right Column - Feature Grid */}

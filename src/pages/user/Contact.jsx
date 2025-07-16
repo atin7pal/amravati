@@ -12,6 +12,7 @@ import {
 import ContactForm from "../../components/user/ContactForm";
 import FAQSection from "../../components/user/FAQSection";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 export function Contact(props) {
   const fadeInProps = {
@@ -95,7 +96,9 @@ export function Contact(props) {
               Panchkula <br />
               Haryana <br />
             </p>
+            <Link to="/about">
             <button className="btn">About Us</button>
+            </Link>
           </motion.div>
         </div>
       </section>

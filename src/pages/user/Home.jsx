@@ -78,7 +78,7 @@ export function Home() {
       </Helmet>
 
       <Navbar />
-      <section className="section relative bg-gradient-to-b from-[#F8F3D9] via-[#F8F3D9]/90 h-[80vh] justify-center">
+      <section className="section relative bg-gradient-to-b from-[#E9DAC1] via-[#E9DAC1]/90 h-[80vh] justify-center">
         <video
           src={homevideo}
           loop
@@ -128,7 +128,7 @@ export function Home() {
 
           <motion.div
             {...fadeInProps}
-            className="w-full flex justify-center items-start flex-col gap-4"
+            className="w-full flex justify-center items-start max-sm:items-center max-sm:text-center flex-col gap-4"
           >
             <h2 className="text-4xl">Welcome</h2>
             <p className="w-[80%] accentfont">
@@ -150,7 +150,7 @@ export function Home() {
 
       <section
         style={{
-          backgroundImage: `linear-gradient(#f8f3d9e5, #F8F3D9, #f8f3d9e5),url(${floral})`,
+          backgroundImage: `linear-gradient(#e9dac1ef, #E9DAC1, #e9dac1ef),url(${floral})`,
         }}
         className="section min-h-screen bg-gradient-to-b py-20 max-sm:p-10 max-sm:px-0 pb-10 bg-center bg-no-repeat bg-cover"
       >
@@ -183,7 +183,7 @@ export function Home() {
       <section className="section accentbg">
         <motion.h2
           {...fadeInProps}
-          className="text-5xl p-20 pt-0 max-sm:p-4 max-sm:text-3xl"
+          className="text-5xl p-20 pt-0 max-sm:p-4 max-sm:text-3xl max-sm:text-center"
         >
           A Glimpse Of Our Projects
         </motion.h2>
@@ -215,7 +215,7 @@ export function Home() {
               } w-full p-10 gap-4 group`}
             >
               <div className="relative group">
-                <div className="w-full h-full absolute flex justify-center items-center bg-[#F8F3D9]/80 group-hover:bg-transparent transition-all">
+                <div className="w-full h-full absolute flex justify-center items-center bg-[#E9DAC1]/80 group-hover:bg-transparent transition-all">
                   <img
                     src={logobuilding}
                     className="h-[200px] group-hover:hidden"

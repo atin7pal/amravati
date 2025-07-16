@@ -25,12 +25,12 @@
 }
 
 .themebg {
-    background-color: #F8F3D9;
+    background-color: #E9DAC1;
     color: #4B352A;
 }
 
 .themecolorfont {
-  color: #F8F3D9;
+  color: #E9DAC1;
 }
 
 .bgcolorfont {
@@ -38,7 +38,7 @@
 }
 
 .accentbg {
-    background-color: #F8F3D9;
+    background-color: #E9DAC1;
     color: #4B352A;
 }
 
@@ -51,7 +51,11 @@
 }
 
 .btn {
-    @apply bg-[#4B352A] border border-[#4B352A] hover:bg-transparent hover:text-[#4B352A] shadow-[#F8F3D9] shadow-lg flex justify-center items-center gap-2 px-5 py-3 text-white
+    @apply bg-[#4B352A] border border-[#4B352A] hover:bg-transparent hover:text-[#4B352A] shadow-[#E9DAC1] shadow-lg flex justify-center items-center gap-2 px-5 py-3 text-[#E9DAC1]
+}
+
+.btnlight {
+    @apply bg-[#E9DAC1] border border-[#E9DAC1] hover:bg-transparent hover:border-[#4B352A] hover:text-[#4B352A] flex justify-center items-center gap-2 px-5 py-3 text-[#4B352A]
 }
 
 .row {

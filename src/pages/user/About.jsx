@@ -27,23 +27,7 @@ export function About(props) {
     <>
     <Helmet>
         <title>About Us | Amaravati Group</title>
-        <meta
-          name="description"
-          content="Discover luxurious living and smart investments with Amaravati Group. Your future, built today."
-        />
-        <link rel="canonical" href="https://www.amaravatigroup.com/" />
-        {/* Open Graph tags for social media */}
-        <meta property="og:title" content="Amaravati Group" />
-        <meta
-          property="og:description"
-          content="Discover luxurious living and smart investments."
-        />
-        <meta
-          property="og:image"
-          content="https://www.amaravatigroup.com/og-image.jpg"
-        />
-        <meta property="og:url" content="https://www.amaravatigroup.com/" />
-        <meta property="og:type" content="website" />
+      
       </Helmet>
 
       <Navbar />
@@ -53,7 +37,7 @@ export function About(props) {
             className="w-full flex flex-col justify-center items-start max-sm:items-center max-sm:text-center gap-4"
             {...fadeInProps}
           >
-            <h2 className="text-xl bg-[#4B352A] text-[#F8F3D9] px-2 py-1">
+            <h2 className="text-xl bg-[#4B352A] text-[#E9DAC1] px-2 py-1">
               About Us
             </h2>
             <h2 className="text-5xl">Amaravati Group</h2>
@@ -126,7 +110,7 @@ export function About(props) {
       <section
         className="section bg-center bg-no-repeat bg-cover"
         style={{
-          backgroundImage: `linear-gradient(#fff,#ffffffe0, #f8f3d9),url(${floral})`,
+          backgroundImage: `linear-gradient(#fff,#ffffffe0, #E9DAC1),url(${floral})`,
         }}
       >
         <div className="flex p-20 pt-10 max-sm:flex-col max-sm:p-4">
@@ -143,7 +127,7 @@ export function About(props) {
             </p>
           </motion.div>
           <motion.div
-            className="w-full h-full flex flex-col text-center gap-4 justify-center items-center bg-white p-20 shadow-lg shadow-[#f8f3d9] max-sm:p-4"
+            className="w-full h-full flex flex-col text-center gap-4 justify-center items-center bg-white p-20 shadow-lg shadow-[#E9DAC1] max-sm:p-4"
             {...fadeInProps}
           >
             <h2 className="text-4xl">Our Motive</h2>

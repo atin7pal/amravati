@@ -20,7 +20,7 @@ const BlogPage = () => {
       </Helmet>
 
     <Navbar/>
-    <section className="section bg-center bg-no-repeat bg-cover" style={{backgroundImage: `linear-gradient(#F8F3D9, #ffffffde, #F8F3D9),url(${floral})`}}>
+    <section className="section bg-center bg-no-repeat bg-cover" style={{backgroundImage: `linear-gradient(#E9DAC1, #ffffffde, #E9DAC1),url(${floral})`}}>
         <div className="row min-h-[80vh]">
             <div className="p-10 border flex gap-4 justify-center items-center flex-col max-sm:p-4">
       <h1 className="text-4xl max-sm:text-3xl text-center">
