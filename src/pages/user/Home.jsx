@@ -92,8 +92,8 @@ export function Home() {
             animate={{ opacity: 1 }}
             className="w-full flex justify-center items-center h-full flex-col gap-4"
           >
-            <h2 className="text-6xl max-sm:text-3xl">Experience The</h2>
-            <h2 className="text-6xl max-sm:text-3xl">Amravati group</h2>
+            <h2 className="text-6xl max-sm:text-3xl">Experience Amravati</h2>
+            
             <div className="h-[1px] w-[30%] bg-[#4B352A] max-sm:w-[60%]"></div>
             <div className="flex justify-start font-light items-center gap-4 text-3xl max-sm:text-xl">
               <p className="accentfont">Quality</p>
@@ -111,7 +111,7 @@ export function Home() {
           {...fadeInProps}
           className="text-5xl p-20 text-start max-sm:text-3xl max-sm:p-10 max-sm:pb-0"
         >
-          A unity of peace and luxury
+          A Unity Of Peace And Luxury
         </motion.h2>
         <div className="row">
           <motion.div
@@ -130,7 +130,7 @@ export function Home() {
             {...fadeInProps}
             className="w-full flex justify-center items-start max-sm:items-center max-sm:text-center flex-col gap-4"
           >
-            <h2 className="text-4xl">Welcome</h2>
+            <h2 className="text-5xl">Welcome</h2>
             <p className="w-[80%] accentfont">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
               architecto tenetur ab rerum, illum esse amet atque aspernatur sunt
@@ -170,7 +170,7 @@ export function Home() {
                     {...fadeInProps}
                     className="p-8 border gap-4 flex justify-center items-start flex-col"
                   >
-                    <h2 className="text-3xl starfont">{element.heading}</h2>
+                    <h2 className="text-3xl">{element.heading}</h2>
                     <p className="accentfont text-sm">{element.description}</p>
                   </motion.div>
                 ))}
@@ -228,7 +228,7 @@ export function Home() {
                   className="h-[60vh] w-full object-cover pb-10"
                 />
               </div>
-              <h2 className="text-3xl starfont">Lorem ipsum dolor sit amet</h2>
+              <h2 className="text-3xl">Lorem ipsum dolor sit amet</h2>
               <div
                 className={`w-[50%] h-1 ${
                   idx % 2 === 0 ? "accentbg" : "themebg"

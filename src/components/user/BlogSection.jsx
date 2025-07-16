@@ -8,7 +8,7 @@ const BlogSection = () => {
   return (
     <section className="">
       <div className="text-center mb-12 max-sm:mt-12">
-        <h2 className="text-4xl mb-3 max-sm:text-3xl">Our Latest Blogs</h2>
+        <h2 className="text-5xl mb-3 max-sm:text-3xl">Our Latest Blogs</h2>
         <p className="text-lg">
           Get insights, news, and tips on real estate, investing, and more.
         </p>

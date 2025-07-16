@@ -28,13 +28,13 @@ export function Contact(props) {
         <title>Get In Touch | Amaravati Group</title>
       </Helmet>
       <Navbar />
-      <section className="section themebg h-[80vh]">
+      <section className="section themebg h-[80vh] max-sm:h-full">
         <div className="row">
           <motion.div
             className="w-full text-md h-full flex justify-around items-start flex-col gap-4"
             {...fadeInProps}
           >
-            <h2 className="text-4xl mb-2">Contact Us</h2>
+            <h2 className="text-5xl mb-2">Contact Us</h2>
             <div className="text-sm py-2 w-[90%]">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
               eveniet nemo inventore?
@@ -105,7 +105,7 @@ export function Contact(props) {
 
       <section className="section themebg">
         <motion.h2
-          className="text-4xl p-20 pb-0 max-sm:p-4 max-sm:py-10 max-sm:text-3xl max-sm:text-center"
+          className="text-5xl p-20 pb-0 max-sm:p-4 max-sm:py-10 max-sm:text-3xl max-sm:text-center"
           {...fadeInProps}
         >
           Frequently Asked Questions

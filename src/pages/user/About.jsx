@@ -85,7 +85,7 @@ export function About(props) {
             className="w-full h-[50vh] max-sm:h-[100%] px-5 flex gap-4 flex-col"
             {...fadeInProps}
           >
-            <h2 className="text-4xl max-sm:p-4 max-sm:pt-10 max-sm:text-3xl max-sm:text-center">
+            <h2 className="text-5xl max-sm:p-4 max-sm:pt-10 max-sm:text-3xl max-sm:text-center">
               Welcome
             </h2>
             <p className="accentfont">
@@ -118,7 +118,7 @@ export function About(props) {
             className="w-full h-full flex flex-col text-center gap-4 justify-center items-center p-20 max-sm:p-4"
             {...fadeInProps}
           >
-            <h2 className="text-4xl">Our Vision</h2>
+            <h2 className="text-5xl">Our Vision</h2>
             <p className="accentfont">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
               suscipit maiores itaque laborum, eum quasi, cumque optio expedita,
@@ -130,7 +130,7 @@ export function About(props) {
             className="w-full h-full flex flex-col text-center gap-4 justify-center items-center bg-white p-20 shadow-lg shadow-[#E9DAC1] max-sm:p-4"
             {...fadeInProps}
           >
-            <h2 className="text-4xl">Our Motive</h2>
+            <h2 className="text-5xl">Our Motive</h2>
             <p className="accentfont">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum,
               nobis illo rerum facere id magnam cumque tenetur ullam animi nemo
@@ -143,7 +143,7 @@ export function About(props) {
 
       <section className="section">
         <motion.h2
-          className="text-4xl p-20 pb-0 max-sm:p-4 max-sm:pt-10 max-sm:text-3xl max-sm:text-center"
+          className="text-5xl p-20 pb-0 max-sm:p-4 max-sm:pt-10 max-sm:text-3xl max-sm:text-center"
           {...fadeInProps}
         >
           A Glimpse Of Our Gallery
@@ -157,7 +157,7 @@ export function About(props) {
 
       <section className="section themebg">
         <motion.h2
-          className="text-4xl pt-10 max-sm:p-4 max-sm:text-3xl max-sm:text-center"
+          className="text-5xl pt-10 max-sm:p-4 max-sm:text-3xl max-sm:text-center"
           {...fadeInProps}
         >
           A Message From The Director
@@ -197,7 +197,7 @@ export function About(props) {
         className="section bg-no-repeat bg-center bg-cover"
       >
         <motion.h2
-          className="text-4xl p-20 pb-0 max-sm:p-4 max-sm:text-3xl max-sm:text-center"
+          className="text-5xl p-20 pb-0 max-sm:p-4 max-sm:text-3xl max-sm:text-center"
           {...fadeInProps}
         >
           Meet The People
@@ -211,7 +211,7 @@ export function About(props) {
 
       <section className="section themebg w-full">
         <motion.h2
-          className="text-4xl p-20 pb-0 max-sm:p-4 max-sm:pt-10 max-sm:text-3xl max-sm:text-center"
+          className="text-5xl p-20 pb-0 max-sm:p-4 max-sm:pt-10 max-sm:text-3xl max-sm:text-center"
           {...fadeInProps}
         >
           Frequently Asked Questions

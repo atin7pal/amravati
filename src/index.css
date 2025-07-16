@@ -4,7 +4,7 @@
 
 
 * {
-    font-family: "Cinzel", serif;
+    font-family: "mainfont", serif;
     transition: all ease 0.3s;
 }
 
@@ -12,6 +12,12 @@
     font-family: starfont;
     src: url(./assets/font/lousiefont.ttf);
 }
+
+@font-face {
+    font-family: mainfont;
+    src: url(./assets/font/abcfont.ttf);
+}
+
 
 .starfont {
     font-family: starfont;

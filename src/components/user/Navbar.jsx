@@ -34,11 +34,11 @@ const Navbar = () => {
       {/* Topbar */}
       <div className="w-full bg-[#4B352A] text-[#F8F3D9] px-5 py-1 flex justify-center items-center  top-0 z-50">
         <div className="w-full flex gap-3 text-xs">
-          <p className="flex gap-2 text-xs accentfont items-center">
+          <p className="flex gap-2 text-xs accentfont items-center max-sm:hidden">
             <FaPhoneAlt /> +91 75268 57303
           </p>
-          <p className="flex gap-2 text-xs accentfont items-center">
-            <MdEmail /> +91 75268 57303
+          <p className="flex gap-2 text-xs accentfont items-center max-sm:hidden">
+            <MdEmail /> info@amravati.com
           </p>
         </div>
         <div className="flex justify-end items-center gap-1 accentfont w-full">

@@ -59,7 +59,7 @@ const Carousel = () => {
       {/* Content & Controls */}
       <div className="w-full p-6 px-10 flex flex-col justify-between gap-4 max-sm:px-4">
         <div className="flex flex-col justify-center items-start gap-4">
-          <h2 className="text-2xl md:text-3xl starfont">{slides[current].title}</h2>
+          <h2 className="text-3xl md:text-4xl ">{slides[current].title}</h2>
           <p className="mt-0 accentfont text-sm md:text-base">
             {slides[current].description}
           </p>

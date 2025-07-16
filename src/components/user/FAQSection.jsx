@@ -41,7 +41,7 @@ export default function FAQSection() {
     <section className="w-full">
       <div className="w-full mx-auto space-y-4">
         {faqs.map((faq, index) => (
-          <div key={index} className="shadow-sm shadow-[#F8F3D9] border w-full">
+          <div key={index} className="shadow-sm border w-full">
             <button
               onClick={() => toggle(index)}
               className="w-full min-w-full flex justify-between items-center px-4 py-3 text-left font-medium hover:accentbg"

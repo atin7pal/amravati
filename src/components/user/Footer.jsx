@@ -85,7 +85,7 @@ const Footer = () => {
         <p className="accentfont">© {new Date().getFullYear()} Amravati Group. All rights reserved.</p>
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="mt-4 md:mt-0 fixed bottom-4 cursor-pointer right-4 flex shadow-md justify-center items-center bg-white p-2 pl-1 starfont gap-1"
+          className="mt-4 md:mt-0 fixed bottom-4 cursor-pointer right-4 flex shadow-md justify-center items-center bg-white p-2 pl-1  gap-1"
         >
           <IoMdArrowDropup className="text-xl"/> Back to Top
         </button>

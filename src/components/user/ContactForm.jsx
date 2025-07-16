@@ -21,15 +21,14 @@ export default function ContactForm() {
         onSubmit={handleSubmit(onSubmit)}
         className="gap-4"
       >
-        <div className="flex gap-4 mt-2">
+        <div className="flex gap-4 mt-2 w-full">
         {/* Name */}
 
-        <div>
+        <div className="w-full">
           <label className="text-xs accentfont">Name</label>
           <input
             {...register("name", { required: "Name is required" })}
             className="w-full border px-3 py-2  mt-1"
-            placeholder="Enter your name"
           />
           {errors.name && (
             <p className="text-red-500 text-xs accentfont">{errors.name.message}</p>
@@ -37,7 +36,7 @@ export default function ContactForm() {
         </div>
 
         {/* Email */}
-        <div>
+        <div className="w-full">
           <label className="text-xs accentfont">Email</label>
           <input
             {...register("email", {
