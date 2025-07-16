@@ -91,10 +91,10 @@ const TestimonialCarousel = () => {
         </p>
 </div>
         <div className="flex justify-end items-center gap-4 w-full max-sm:justify-start">
-        <button onClick={prevSlide} className="px-4 py-2 bg-[#4B352A] text-[#F8F3D9] transition">
+        <button onClick={prevSlide} className="px-4 py-2 bg-[#4B352A] text-[#F8F3D9] transition btn">
           &#10094; Prev
         </button>
-        <button onClick={nextSlide} className="px-4 py-2 transition bg-[#4B352A] text-[#F8F3D9]">
+        <button onClick={nextSlide} className="px-4 py-2 transition bg-[#4B352A] text-[#F8F3D9] btn">
           Next &#10095;
         </button>
       </div>

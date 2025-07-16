@@ -20,19 +20,19 @@ const BlogPage = () => {
       </div>
       </div>
       </section>
-      <section className="section p-20  themebg max-sm:p-4">
+      <section className="section p-20  bg-white max-sm:p-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {bloglist.map((blog) => (
           <div
             key={blog.id}
-            className="bg-white overflow-hidden hover:shadow-xl border transition-shadow duration-300 flex flex-col"
+            className="themebg overflow-hidden hover:shadow-xl border transition-shadow duration-300 flex flex-col p-6"
           >
             <img
               src={blog.image}
               alt={blog.title}
               className="w-full h-50 object-cover"
             />
-            <div className="p-4 flex flex-col justify-between flex-grow">
+            <div className="flex mt-4 flex-col justify-between flex-grow">
               <div>
                 <div className="border-b mb-2">
                 <h2 className="text-lg mb-1">
