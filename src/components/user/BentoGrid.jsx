@@ -80,7 +80,7 @@ export default function BentoImageGrid() {
           className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
           onClick={() => setSelectedImg(null)}
         >
-          <div className="max-w-4xl max-h-[90vh] overflow-hidden rounded-lg shadow-lg">
+          <div className="max-w-4xl max-h-[90vh] overflow-hidden shadow-lg">
             <img src={selectedImg.src} alt={selectedImg.alt} className="object-contain w-full h-full" />
           </div>
         </div>

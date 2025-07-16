@@ -25,7 +25,7 @@ export function About(props) {
   return (
     <>
       <Navbar />
-      <section className="section h-[80vh] themebg">
+      <section className="section h-[80vh] themebg max-sm:min-h-[100vh]">
         <div className="row h-full">
           <motion.div
             className="w-full flex flex-col justify-center items-start max-sm:items-center max-sm:text-center gap-4"
