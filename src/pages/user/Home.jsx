@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Navbar from "../../components/user/Navbar.jsx";
 import { Footer } from "../../components/user/Footer.jsx";
@@ -21,6 +21,8 @@ import TestimonialCarousel from "../../components/user/TestimonialCarousel.jsx";
 import FeatureSection from "../../components/user/FeatureSection.jsx";
 import BlogSection from "../../components/user/BlogSection.jsx";
 import { SendQuery } from "../../components/user/SendQuery.jsx";
+import Loader from "../../components/Loader.jsx";
+
 
 export function Home() {
   const fadeInProps = {
@@ -29,6 +31,16 @@ export function Home() {
     viewport: { once: true, amount: 0.2 },
     transition: { duration: 0.8, ease: "easeInOut" },
   };
+
+   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 3000); // 3 seconds
+
+    return () => clearTimeout(timeout); // Cleanup
+  }, []);
 
   const uniquePoints = [
     {
@@ -57,6 +69,8 @@ export function Home() {
     },
   ];
 
+  if(loading) return <Loader/>
+
   return (
     <>
       <Navbar />
@@ -70,7 +84,8 @@ export function Home() {
         ></video>
         <div className="row absolute top-0 left-0 h-full">
           <motion.div
-            {...fadeInProps}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             className="w-full flex justify-center items-center h-full flex-col gap-4"
           >
             <h2 className="text-6xl max-sm:text-3xl">Experience The</h2>
@@ -78,7 +93,9 @@ export function Home() {
             <div className="h-[1px] w-[30%] bg-[#4B352A] max-sm:w-[60%]"></div>
             <div className="flex justify-start font-light items-center gap-4 text-3xl max-sm:text-xl">
               <p className="accentfont">Quality</p>
-              <p className="border-r-1 border-l-1 px-3 accentfont border-[#4B352A]">Luxury</p>
+              <p className="border-r-1 border-l-1 px-3 accentfont border-[#4B352A]">
+                Luxury
+              </p>
               <p className="accentfont">Peace</p>
             </div>
           </motion.div>
@@ -86,7 +103,10 @@ export function Home() {
       </section>
 
       <div className="section min-h-screen themebg bg-center bg-no-repeat bg-contain">
-        <motion.h2 {...fadeInProps} className="text-5xl p-20 text-start max-sm:text-3xl max-sm:p-10 max-sm:pb-0">
+        <motion.h2
+          {...fadeInProps}
+          className="text-5xl p-20 text-start max-sm:text-3xl max-sm:p-10 max-sm:pb-0"
+        >
           A unity of peace and luxury
         </motion.h2>
         <div className="row">
@@ -95,30 +115,57 @@ export function Home() {
             className="w-full flex justify-center items-center h-[60vh] bg-contain bg-no-repeat bg-center relative"
             style={{ backgroundImage: `url(${map})` }}
           >
-            <img src={home5} alt="" className="absolute -bottom-5 right-10 h-[500px] w-[450px] object-cover max-sm:h-[300px] max-sm:w-[300px] max-sm:bottom-5" />
+            <img
+              src={home5}
+              alt=""
+              className="absolute -bottom-5 right-10 h-[500px] w-[450px] object-cover max-sm:h-[300px] max-sm:w-[300px] max-sm:bottom-5"
+            />
           </motion.div>
 
-          <motion.div {...fadeInProps} className="w-full flex justify-center items-start flex-col gap-4">
+          <motion.div
+            {...fadeInProps}
+            className="w-full flex justify-center items-start flex-col gap-4"
+          >
             <h2 className="text-4xl">Welcome</h2>
             <p className="w-[80%] accentfont">
-             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde architecto tenetur ab rerum, illum esse amet atque aspernatur sunt eum tempore deleniti sed quod. Ad facere sit facilis ea esse vel? Hic eaque provident voluptatem vero est ea maiores officia iste voluptates excepturi incidunt, quos quae consequuntur, aliquam facilis quasi.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              architecto tenetur ab rerum, illum esse amet atque aspernatur sunt
+              eum tempore deleniti sed quod. Ad facere sit facilis ea esse vel?
+              Hic eaque provident voluptatem vero est ea maiores officia iste
+              voluptates excepturi incidunt, quos quae consequuntur, aliquam
+              facilis quasi.
             </p>
             <br />
-            <p className="w-[80%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, explicabo.</p>
+            <p className="w-[80%]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              explicabo.
+            </p>
           </motion.div>
         </div>
       </div>
 
-      <section style={{ backgroundImage: `linear-gradient(#f8f3d9e5, #F8F3D9, #f8f3d9e5),url(${floral})` }} className="section min-h-screen bg-gradient-to-b py-20 max-sm:p-10 max-sm:px-0 pb-10 bg-center bg-no-repeat bg-cover">
+      <section
+        style={{
+          backgroundImage: `linear-gradient(#f8f3d9e5, #F8F3D9, #f8f3d9e5),url(${floral})`,
+        }}
+        className="section min-h-screen bg-gradient-to-b py-20 max-sm:p-10 max-sm:px-0 pb-10 bg-center bg-no-repeat bg-cover"
+      >
         <div className="p-10 pt-5 pb-0 max-sm:p-0">
-          <motion.h2 {...fadeInProps} className="text-5xl text-center max-sm:text-3xl max-sm:mb-10">
+          <motion.h2
+            {...fadeInProps}
+            className="text-5xl text-center max-sm:text-3xl max-sm:mb-10"
+          >
             How We Work
           </motion.h2>
           <div className="row">
             <div className="w-full flex justify-center items-center">
               <div className="w-full grid grid-cols-2 gap-4 max-sm:grid-cols-1">
                 {uniquePoints.map((element, i) => (
-                  <motion.div key={i} {...fadeInProps} className="p-8 border gap-4 flex justify-center items-start flex-col">
+                  <motion.div
+                    key={i}
+                    {...fadeInProps}
+                    className="p-8 border gap-4 flex justify-center items-start flex-col"
+                  >
                     <h2 className="text-3xl starfont">{element.heading}</h2>
                     <p className="accentfont text-sm">{element.description}</p>
                   </motion.div>
@@ -130,7 +177,10 @@ export function Home() {
       </section>
 
       <section className="section accentbg">
-        <motion.h2 {...fadeInProps} className="text-5xl p-20 pt-0 max-sm:p-4 max-sm:text-3xl">
+        <motion.h2
+          {...fadeInProps}
+          className="text-5xl p-20 pt-0 max-sm:p-4 max-sm:text-3xl"
+        >
           A Glimpse Of Our Projects
         </motion.h2>
         <div className="row">
@@ -156,7 +206,9 @@ export function Home() {
             <motion.div
               key={idx}
               {...fadeInProps}
-              className={`flex flex-col min-h-screen justify-center items-center text-center ${idx % 2 === 0 ? "themebg" : "accentbg"} w-full p-10 gap-4 group`}
+              className={`flex flex-col min-h-screen justify-center items-center text-center ${
+                idx % 2 === 0 ? "themebg" : "accentbg"
+              } w-full p-10 gap-4 group`}
             >
               <div className="relative group">
                 <div className="w-full h-full absolute flex justify-center items-center bg-[#F8F3D9]/80 group-hover:bg-transparent transition-all">
@@ -173,9 +225,14 @@ export function Home() {
                 />
               </div>
               <h2 className="text-3xl starfont">Lorem ipsum dolor sit amet</h2>
-              <div className={`w-[50%] h-1 ${idx % 2 === 0 ? "accentbg" : "themebg"}`}></div>
+              <div
+                className={`w-[50%] h-1 ${
+                  idx % 2 === 0 ? "accentbg" : "themebg"
+                }`}
+              ></div>
               <p className="accentfont">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque dicta molestias corrupti quas quo!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
+                dicta molestias corrupti quas quo!
               </p>
             </motion.div>
           ))}

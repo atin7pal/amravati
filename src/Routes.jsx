@@ -1,3 +1,4 @@
+import Loader from "./components/Loader";
 import { About } from "./pages/user/About";
 import BlogPage from "./pages/user/Blogs";
 import { Contact } from "./pages/user/Contact";
@@ -10,6 +11,7 @@ const routes = [
   { path: "/contact", element: <Contact /> },
   {path: "/blogs", element: <BlogPage/>},
   { path: "*", element: <NotFound /> },
+  { path: "/loader", element: <Loader /> },
 ];
 
 export default routes;

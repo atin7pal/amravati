@@ -51,7 +51,7 @@
 }
 
 .btn {
-    @apply bg-[#4B352A] shadow-[#F8F3D9] shadow-lg flex justify-center items-center gap-2 px-5 py-3 text-white
+    @apply bg-[#4B352A] border border-[#4B352A] hover:bg-transparent hover:text-[#4B352A] shadow-[#F8F3D9] shadow-lg flex justify-center items-center gap-2 px-5 py-3 text-white
 }
 
 .row {
