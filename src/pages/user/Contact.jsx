@@ -24,11 +24,11 @@ export function Contact(props) {
 
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>Get In Touch | Amaravati Group</title>
       </Helmet>
       <Navbar />
-      <section className="section themebg h-[80vh] max-sm:h-full">
+      <section className="section themebg max-sm:h-full">
         <div className="row">
           <motion.div
             className="w-full text-md h-full flex justify-around items-start flex-col gap-4"
@@ -36,19 +36,17 @@ export function Contact(props) {
           >
             <h2 className="text-5xl mb-2">Contact Us</h2>
             <div className="text-sm py-2 w-[90%]">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-              eveniet nemo inventore?
+              For questions about property listings, investments, or quotations,
+              please contact us. Our knowledgeable team will respond promptly to
+              assist with your real estate needs, whether for residential,
+              commercial, or project developments.
             </div>
             <div className="flex justify-center items-start flex-col gap-2">
               <div className="flex justify-center items-center gap-2">
-                <BiMailSend /> <p className="accentfont">info@amaravati.com</p>
+                <BiMailSend /> <p className="accentfont">info@amaravati.in</p>
               </div>
               <div className="flex justify-center items-center gap-2 accentfont">
-                <BiPhone /> +91 999999999
-              </div>
-
-              <div className="flex justify-center items-center gap-2">
-                <BiBuilding /> <p className="accentfont">Sector 2 Panchkula</p>
+                <BiPhone /> +91-7429299696
               </div>
             </div>
             <div className="text-sm flex flex-col justify-center items-center gap-4 w-full mt-2">
@@ -97,13 +95,13 @@ export function Contact(props) {
               Haryana <br />
             </p>
             <Link to="/about">
-            <button className="btn">About Us</button>
+              <button className="btn">About Us</button>
             </Link>
           </motion.div>
         </div>
       </section>
 
-      <section className="section themebg">
+      {/* <section className="section themebg">
         <motion.h2
           className="text-5xl p-20 pb-0 max-sm:p-4 max-sm:py-10 max-sm:text-3xl max-sm:text-center"
           {...fadeInProps}
@@ -115,7 +113,7 @@ export function Contact(props) {
             <FAQSection />
           </motion.div>
         </div>
-      </section>
+      </section> */}
       <Footer />
     </>
   );

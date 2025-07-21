@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: mainfont;
-    src: url(./assets/font/abcfont.ttf);
+    src: url(./assets/font/OPTIMA.ttf);
 }
 
 
@@ -26,30 +26,35 @@
 }
 
 .accentfont {
-     font-family: "Outfit", sans-serif !important;
-     font-weight: 300;
+    font-family: "Outfit", sans-serif !important;
+    font-weight: 300;
 }
 
 .themebg {
-    background-color: #E9DAC1;
-    color: #4B352A;
+    background-color: #ece4d9;
+    color: #574d41;
 }
 
 .themecolorfont {
-  color: #E9DAC1;
+    color: #ece4d9;
 }
 
 .bgcolorfont {
-    color: #4B352A;
+    color: #574d41;
+}
+
+.brownbg {
+    background-color: #574d41;
+    color: #ece4d9;
 }
 
 .accentbg {
-    background-color: #E9DAC1;
-    color: #4B352A;
+    background-color: #ece4d9;
+    color: #574d41;
 }
 
 .section {
-    @apply flex  items-center flex-col
+    @apply flex items-center flex-col
 }
 
 .perfectbg {
@@ -57,11 +62,11 @@
 }
 
 .btn {
-    @apply bg-[#4B352A] border border-[#4B352A] hover:bg-transparent hover:text-[#4B352A] shadow-[#E9DAC1] shadow-lg flex justify-center items-center gap-2 px-5 py-3 text-[#E9DAC1]
+    @apply bg-[#574d41] border border-[#574d41] hover:bg-transparent hover:text-[#574d41] flex justify-center items-center gap-2 px-5 py-3 text-[#ece4d9]
 }
 
 .btnlight {
-    @apply bg-[#E9DAC1] border border-[#E9DAC1] hover:bg-transparent hover:border-[#4B352A] hover:text-[#4B352A] flex justify-center items-center gap-2 px-5 py-3 text-[#4B352A]
+    @apply bg-[#ece4d9] border border-[#ece4d9] hover:bg-transparent hover:border-[#574d41] hover:text-[#574d41] flex justify-center items-center gap-2 px-5 py-3 text-[#574d41]
 }
 
 .row {
@@ -75,6 +80,6 @@
 }
 
 .dotted-map {
-  max-width: 100%;
-  overflow: hidden;
+    max-width: 100%;
+    overflow: hidden;
 }

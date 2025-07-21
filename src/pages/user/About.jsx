@@ -37,7 +37,7 @@ export function About(props) {
             className="w-full flex flex-col justify-center items-start max-sm:items-center max-sm:text-center gap-4"
             {...fadeInProps}
           >
-            <h2 className="text-xl bg-[#4B352A] text-[#E9DAC1] px-2 py-1">
+            <h2 className="text-xl brownbg px-2 py-1">
               About Us
             </h2>
             <h2 className="text-5xl">Amaravati Group</h2>
@@ -78,7 +78,7 @@ export function About(props) {
                 className="w-full h-[20vh] object-cover"
                 alt=""
               />
-              <div className="w-full h-[20vh] bg-[#4b352a]"></div>
+              <div className="w-full h-[20vh] brownbg"></div>
             </div>
           </motion.div>
           <motion.div
@@ -110,7 +110,7 @@ export function About(props) {
       <section
         className="section bg-center bg-no-repeat bg-cover"
         style={{
-          backgroundImage: `linear-gradient(#fff,#ffffffe0, #E9DAC1),url(${floral})`,
+          backgroundImage: `linear-gradient(#fff,#ffffffe0, #ece4d9),url(${floral})`,
         }}
       >
         <div className="flex p-20 pt-10 max-sm:flex-col max-sm:p-4">
@@ -127,7 +127,7 @@ export function About(props) {
             </p>
           </motion.div>
           <motion.div
-            className="w-full h-full flex flex-col text-center gap-4 justify-center items-center bg-white p-20 shadow-lg shadow-[#E9DAC1] max-sm:p-4"
+            className="w-full h-full flex flex-col text-center gap-4 justify-center items-center bg-white p-20 shadow-lg shadow-[#ece4d9] max-sm:p-4"
             {...fadeInProps}
           >
             <h2 className="text-5xl">Our Motive</h2>
@@ -141,7 +141,7 @@ export function About(props) {
         </div>
       </section>
 
-      <section className="section">
+      {/* <section className="section">
         <motion.h2
           className="text-5xl p-20 pb-0 max-sm:p-4 max-sm:pt-10 max-sm:text-3xl max-sm:text-center"
           {...fadeInProps}
@@ -153,9 +153,27 @@ export function About(props) {
             <BentoImageGrid />
           </motion.div>
         </div>
+      </section> */}
+      <section
+        style={{
+          backgroundImage: `linear-gradient(to right, #fff, #fff, #fffffff0),url(${map})`,
+        }}
+        className="section bg-no-repeat bg-center bg-cover"
+      >
+        <motion.h2
+          className="text-5xl p-20 pb-0 max-sm:p-4 max-sm:text-3xl max-sm:text-center"
+          {...fadeInProps}
+        >
+          Meet The People
+        </motion.h2>
+        <div className="row">
+          <motion.div {...fadeInProps}>
+            <TeamSection />
+          </motion.div>
+        </div>
       </section>
 
-      <section className="section themebg">
+        <section className="section themebg">
         <motion.h2
           className="text-5xl pt-10 max-sm:p-4 max-sm:text-3xl max-sm:text-center"
           {...fadeInProps}
@@ -190,26 +208,8 @@ export function About(props) {
         </div>
       </section>
 
-      <section
-        style={{
-          backgroundImage: `linear-gradient(to right, #fff, #fff, #fffffff0),url(${map})`,
-        }}
-        className="section bg-no-repeat bg-center bg-cover"
-      >
-        <motion.h2
-          className="text-5xl p-20 pb-0 max-sm:p-4 max-sm:text-3xl max-sm:text-center"
-          {...fadeInProps}
-        >
-          Meet The People
-        </motion.h2>
-        <div className="row">
-          <motion.div {...fadeInProps}>
-            <TeamSection />
-          </motion.div>
-        </div>
-      </section>
 
-      <section className="section themebg w-full">
+      {/* <section className="section themebg w-full">
         <motion.h2
           className="text-5xl p-20 pb-0 max-sm:p-4 max-sm:pt-10 max-sm:text-3xl max-sm:text-center"
           {...fadeInProps}
@@ -223,7 +223,7 @@ export function About(props) {
         </div>
       </section>
 
-      <SendQuery video={video2} />
+      <SendQuery video={video2} /> */}
       <Footer />
     </>
   );

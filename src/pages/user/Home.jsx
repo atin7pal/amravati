@@ -78,7 +78,7 @@ export function Home() {
       </Helmet>
 
       <Navbar />
-      <section className="section relative bg-gradient-to-b from-[#E9DAC1] via-[#E9DAC1]/90 h-[80vh] justify-center">
+      <section className="section relative bg-gradient-to-b from-[#ece4d9] via-[#ece4d9]/90 h-[80vh] justify-center">
         <video
           src={homevideo}
           loop
@@ -92,7 +92,7 @@ export function Home() {
             animate={{ opacity: 1 }}
             className="w-full flex justify-center items-center h-full flex-col gap-4"
           >
-            <h2 className="text-6xl max-sm:text-3xl">Experience Amravati</h2>
+            <h2 className="text-6xl max-sm:text-3xl bgcolorfont">Experience Amravati</h2>
             
             <div className="h-[1px] w-[30%] bg-[#4B352A] max-sm:w-[60%]"></div>
             <div className="flex justify-start font-light items-center gap-4 text-3xl max-sm:text-xl">
@@ -150,7 +150,7 @@ export function Home() {
 
       <section
         style={{
-          backgroundImage: `linear-gradient(#e9dac1ef, #E9DAC1, #e9dac1ef),url(${floral})`,
+          backgroundImage: `linear-gradient(#ece4d9ed, #ece4d9, #ece4d9),url(${floral})`,
         }}
         className="section min-h-screen bg-gradient-to-b py-20 max-sm:p-10 max-sm:px-0 pb-10 bg-center bg-no-repeat bg-cover"
       >
@@ -180,7 +180,7 @@ export function Home() {
         </div>
       </section>
 
-      <section className="section accentbg">
+      {/* <section className="section accentbg">
         <motion.h2
           {...fadeInProps}
           className="text-5xl p-20 pt-0 max-sm:p-4 max-sm:text-3xl max-sm:text-center"
@@ -190,67 +190,14 @@ export function Home() {
         <div className="row">
           <Carousel />
         </div>
-      </section>
+      </section> */}
 
       <section className="section accentbg">
         <div className="row">
           <FeatureSection />
         </div>
       </section>
-
-      <section className="section">
-        <motion.div {...fadeInProps} className="rowPadding accentbg">
-          <BlogSection />
-        </motion.div>
-      </section>
-
-      <section className="section">
-        <div className="row">
-          {[home3, home4].map((image, idx) => (
-            <motion.div
-              key={idx}
-              {...fadeInProps}
-              className={`flex flex-col min-h-screen justify-center items-center text-center ${
-                idx % 2 === 0 ? "themebg" : "accentbg"
-              } w-full p-10 gap-4 group`}
-            >
-              <div className="relative group">
-                <div className="w-full h-full absolute flex justify-center items-center bg-[#E9DAC1]/80 group-hover:bg-transparent transition-all">
-                  <img
-                    src={logobuilding}
-                    className="h-[200px] group-hover:hidden"
-                    alt=""
-                  />
-                </div>
-                <img
-                  src={image}
-                  alt=""
-                  className="h-[60vh] w-full object-cover pb-10"
-                />
-              </div>
-              <h2 className="text-3xl">Lorem ipsum dolor sit amet</h2>
-              <div
-                className={`w-[50%] h-1 ${
-                  idx % 2 === 0 ? "accentbg" : "themebg"
-                }`}
-              ></div>
-              <p className="accentfont">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
-                dicta molestias corrupti quas quo!
-              </p>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
-      <section className="section themebg">
-        <div className="row">
-          <TestimonialCarousel />
-        </div>
-      </section>
-
-      <SendQuery video={video2} />
-      <Footer />
+  <Footer />
     </>
   );
 }

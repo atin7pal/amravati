@@ -1,38 +1,34 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   FaBars,
   FaFacebook,
   FaInstagram,
   FaLinkedin,
-  FaPhone,
   FaPhoneAlt,
   FaTimes,
   FaYoutube,
 } from "react-icons/fa";
 import logo from "../../assets/logoheader.svg";
 import { MdEmail } from "react-icons/md";
-import logobuilding from "../../assets/logobuilding.svg";
-import { useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
   const location = useLocation();
 
   const navLinks = [
     { label: "Home", path: "/" },
     { label: "About", path: "/about" },
-    { label: "Projects", path: "/services" },
+    { label: "Projects", path: "/Projects" },
     { label: "Ventures", path: "/services" },
-    { label: "Blogs", path: "/blogs" },
+    { label: "Contact", path: "/contact" },
   ];
 
   return (
     <nav className="w-full top-0 z-20">
       {/* Topbar */}
-      <div className="w-full bg-[#4B352A] text-[#F8F3D9] px-5 py-1 flex justify-center items-center  top-0 z-50">
+      <div className="w-full bg-[#574d41] text-[#ece4d9] px-5 py-1 flex justify-center items-center top-0 z-50">
         <div className="w-full flex gap-3 text-xs">
           <p className="flex gap-2 text-xs accentfont items-center max-sm:hidden">
             <FaPhoneAlt /> +91 75268 57303
@@ -59,7 +55,7 @@ const Navbar = () => {
               <img
                 className="h-[200px] w-[200px] object-contain"
                 src={logo}
-                alt=""
+                alt="Logo"
               />
             </Link>
           </div>
@@ -67,35 +63,56 @@ const Navbar = () => {
           {/* Desktop Links */}
           <div className="hidden md:flex space-x-6 accentfont">
             {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className="relative group text-lg accentfont transition-all duration-300"
-              >
-                <span
-                  className={`${
-                    location.pathname === link.path
-                      ? "text-[#4B352A] accentfont"
-                      : "accentfont"
-                  }`}
+              <div key={link.path} className="relative group">
+                <Link
+                  to={link.path}
+                  className="text-lg accentfont transition-all duration-300"
                 >
-                  {link.label}
-                </span>
+                  <span
+                    className={`${
+                      location.pathname === link.path
+                        ? "text-[#574d41] accentfont"
+                        : "accentfont"
+                    }`}
+                  >
+                    {link.label}
+                  </span>
+                </Link>
+
+                {/* Underline */}
                 <span
-                  className={`absolute left-0 bottom-0 accentfont h-[2px] bg-[#4B352A] transition-all duration-300 origin-left scale-x-0 group-hover:scale-x-100 ${
+                  className={`absolute left-0 bottom-0 h-[2px] bg-[#574d41] transition-all duration-300 origin-left scale-x-0 group-hover:scale-x-100 ${
                     location.pathname === link.path ? "scale-x-100" : ""
                   }`}
                   style={{ width: "100%" }}
                 />
-              </Link>
-            ))}
-          </div>
 
-          {/* Contact Us Button */}
-          <div className="hidden md:flex">
-            <Link to="/contact" className="btn">
-              Contact Us
-            </Link>
+                {/* Projects Dropdown */}
+                {link.label === "Projects" && (
+                  <div className="absolute left-0 top-full mt-2 w-56 bg-white shadow-lg border border-[#574d41] opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-300 z-50">
+                    <Link
+                      to="/projects/completed"
+                      className="block px-4 py-3 text-[#574d41] text-sm  hover:bg-[#ece4d9]"
+                    >
+                      Completed Projects
+                    </Link>
+                    <Link
+                      to="/projects/new"
+                      className="block px-4 py-3 text-sm text-[#574d41] hover:bg-[#ece4d9]"
+                    >
+                      New Projects
+                    </Link>
+
+                    <Link
+                      to="/projects1"
+                      className="block px-4 py-3 text-sm text-[#574d41] hover:bg-[#ece4d9]"
+                    >
+                      Projects 1
+                    </Link>
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -121,19 +138,41 @@ const Navbar = () => {
             className="md:hidden bg-white px-4 pt-2 pb-4 space-y-2 shadow-md overflow-hidden"
           >
             {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                onClick={() => setMenuOpen(false)}
-                className={`block text-gray-700 hover:text-[#4B352A] font-medium ${
-                  location.pathname === link.path
-                    ? "text-[#4B352A] font-semibold underline underline-offset-4"
-                    : ""
-                }`}
-              >
-                {link.label}
-              </Link>
+              <React.Fragment key={link.path}>
+                <Link
+                  to={link.path}
+                  onClick={() => setMenuOpen(false)}
+                  className={`block text-gray-700 hover:text-[#574d41] font-medium ${
+                    location.pathname === link.path
+                      ? "text-[#574d41] font-semibold underline underline-offset-4"
+                      : ""
+                  }`}
+                >
+                  {link.label}
+                </Link>
+
+                {/* Mobile sub-links for Projects */}
+                {link.label === "Projects" && (
+                  <div className="ml-4 space-y-1">
+                    <Link
+                      to="/projects/completed"
+                      onClick={() => setMenuOpen(false)}
+                      className="block text-sm text-gray-600 hover:text-[#574d41]"
+                    >
+                      Completed Projects
+                    </Link>
+                    <Link
+                      to="/projects/new"
+                      onClick={() => setMenuOpen(false)}
+                      className="block text-sm text-gray-600 hover:text-[#574d41]"
+                    >
+                      New Projects
+                    </Link>
+                  </div>
+                )}
+              </React.Fragment>
             ))}
+
             <Link
               to="/contact"
               onClick={() => setMenuOpen(false)}
