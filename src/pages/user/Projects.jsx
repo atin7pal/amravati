@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../components/user/Navbar";
 import { Footer } from "../../components/user/Footer";
-import dreamscape from "../../assets/dreamscape1.jpg";
+import dreamscape from "../../assets/dreamscape2.jpg";
 import ProjectTabs from "../../components/user/ProjectTabs.jsx";
 import project1 from '../../assets/project1/livingdining.jpg';
 
@@ -11,7 +11,7 @@ const Projects = () => {
       <Navbar />
       <section
         style={{
-          backgroundImage: `linear-gradient(#ece4d998, #ece4d998),url(${dreamscape})`,
+          backgroundImage: `url(${dreamscape})`,
         }}
         className="section h-[80vh] p-20 text-center bg-cover bg-no-repeat bg-center flex justify-center items-center flex-col"
       >
