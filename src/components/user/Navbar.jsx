@@ -13,7 +13,7 @@ import logo from "../../assets/logoheader.svg";
 import { MdEmail } from "react-icons/md";
 import { motion, AnimatePresence } from "framer-motion";
 
-const Navbar = () => {
+const Navbar = ({absolute = "", background = "themebg"}) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
@@ -26,7 +26,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full top-0 z-20">
+    <nav className={`w-full top-0 z-20 ${absolute}`}>
       {/* Topbar */}
       <div className="w-full bg-[#574d41] text-[#ece4d9] px-5 py-1 flex justify-center items-center top-0 z-50">
         <div className="w-full flex gap-3 text-xs">
@@ -47,7 +47,7 @@ const Navbar = () => {
       </div>
 
       {/* Main Nav */}
-      <div className="w-full accentbg px-4 sm:px-6 lg:px-10">
+      <div className={`w-full px-4 sm:px-6 lg:px-10 ${background}`}>
         <div className="flex items-center justify-between h-22">
           {/* Logo */}
           <div className="flex-shrink-0">
