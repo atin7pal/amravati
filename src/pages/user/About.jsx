@@ -25,9 +25,8 @@ export function About(props) {
 
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>About Us | Amaravati Group</title>
-      
       </Helmet>
 
       <Navbar />
@@ -37,12 +36,13 @@ export function About(props) {
             className="w-full flex flex-col justify-center items-start max-sm:items-center max-sm:text-center gap-4"
             {...fadeInProps}
           >
-            <h2 className="text-xl brownbg px-2 py-1">
-              About Us
-            </h2>
-            <h2 className="text-5xl">Amaravati Group</h2>
+            <h2 className="text-xl brownbg px-2 py-1">ABOUT US</h2>
+            <h2 className="text-5xl">AMRAVATI GROUP</h2>
             <p className="w-[80%] accentfont max-sm:w-full">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, quidem, obcaecati optio delectus alias hic ipsum illum saepe earum expedita possimus? Deleniti, quos laboriosam. Nam provident maxime nobis perferendis rerum!
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Laboriosam, quidem, obcaecati optio delectus alias hic ipsum illum
+              saepe earum expedita possimus? Deleniti, quos laboriosam. Nam
+              provident maxime nobis perferendis rerum!
             </p>
           </motion.div>
           <motion.div
@@ -86,7 +86,7 @@ export function About(props) {
             {...fadeInProps}
           >
             <h2 className="text-5xl max-sm:p-4 max-sm:pt-10 max-sm:text-3xl max-sm:text-center">
-              Welcome
+              WELCOME
             </h2>
             <p className="accentfont">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni,
@@ -102,7 +102,7 @@ export function About(props) {
               nulla velit a aperiam? Voluptatibus amet illum reprehenderit illo
               quasi ducimus!
             </p>
-            <button className="btn w-[190px]">Contact Us Now</button>
+            <button className="btn w-[190px]">CONTACT US</button>
           </motion.div>
         </div>
       </section>
@@ -118,7 +118,7 @@ export function About(props) {
             className="w-full h-full flex flex-col text-center gap-4 justify-center items-center p-20 max-sm:p-4"
             {...fadeInProps}
           >
-            <h2 className="text-5xl">Our Vision</h2>
+            <h2 className="text-5xl">OUR VISION</h2>
             <p className="accentfont">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
               suscipit maiores itaque laborum, eum quasi, cumque optio expedita,
@@ -130,7 +130,7 @@ export function About(props) {
             className="w-full h-full flex flex-col text-center gap-4 justify-center items-center bg-white p-20 shadow-lg shadow-[#ece4d9] max-sm:p-4"
             {...fadeInProps}
           >
-            <h2 className="text-5xl">Our Motive</h2>
+            <h2 className="text-5xl">OUR MOTIVE</h2>
             <p className="accentfont">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum,
               nobis illo rerum facere id magnam cumque tenetur ullam animi nemo
@@ -164,7 +164,7 @@ export function About(props) {
           className="text-5xl p-20 pb-0 max-sm:p-4 max-sm:text-3xl max-sm:text-center"
           {...fadeInProps}
         >
-          Meet The People
+          MEET THE VISIONARIES
         </motion.h2>
         <div className="row">
           <motion.div {...fadeInProps}>
@@ -173,12 +173,12 @@ export function About(props) {
         </div>
       </section>
 
-        <section className="section themebg">
+      <section className="section themebg">
         <motion.h2
           className="text-5xl pt-10 max-sm:p-4 max-sm:text-3xl max-sm:text-center"
           {...fadeInProps}
         >
-          A Message From The Director
+          A MESSAGE FROM THE DIRECTOR
         </motion.h2>
         <div className="row">
           <motion.div
@@ -207,7 +207,6 @@ export function About(props) {
           </motion.div>
         </div>
       </section>
-
 
       {/* <section className="section themebg w-full">
         <motion.h2

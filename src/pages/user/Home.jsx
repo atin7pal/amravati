@@ -44,25 +44,25 @@ export function Home() {
 
   const uniquePoints = [
     {
-      heading: "Understanding Needs",
+      heading: "UNDERSTANDING NEEDS",
       description:
         "We start by listening. Every client’s needs are unique, so we take time to understand your goals, budget, and lifestyle.",
       icon: <FaHandshake className="text-3xl" />,
     },
     {
-      heading: "Local Area Research",
+      heading: "LOCAL AREA RESEARCH",
       description:
         "Our experts analyze the locality, growth trends, and future prospects to find the perfect match for your investment or home.",
       icon: <FaMapMarkedAlt className="text-3xl" />,
     },
     {
-      heading: "Budget Planning",
+      heading: "BUDGET & PLANNING",
       description:
         "We help you determine a realistic budget, offer financing options, and ensure cost-effective yet premium solutions.",
       icon: <FaPiggyBank className="text-3xl" />,
     },
     {
-      heading: "Closing & Beyond",
+      heading: "CLOSING & BEYOND",
       description:
         "We assist with paperwork, legalities, registration, and post-purchase services to ensure a seamless experience.",
       icon: <FaChartLine className="text-3xl" />,
@@ -78,7 +78,7 @@ export function Home() {
       </Helmet>
 
       <Navbar />
-      <section className="section relative bg-gradient-to-b from-[#ece4d9] via-[#ece4d9]/90 h-[80vh] justify-center">
+      <section className="section bg-fixed relative bg-gradient-to-b from-[#ece4d9] via-[#ece4d9]/90 h-[80vh] justify-center">
         <video
           src={homevideo}
           loop
@@ -92,15 +92,15 @@ export function Home() {
             animate={{ opacity: 1 }}
             className="w-full flex justify-center items-center h-full flex-col gap-4"
           >
-            <h2 className="text-6xl max-sm:text-3xl bgcolorfont">Experience Amravati</h2>
+            <h2 className="text-6xl max-sm:text-3xl bgcolorfont capitalize">EXPERIENCE AMRAVATI</h2>
             
             <div className="h-[1px] w-[30%] bg-[#4B352A] max-sm:w-[60%]"></div>
             <div className="flex justify-start font-light items-center gap-4 text-3xl max-sm:text-xl">
-              <p className="accentfont">Quality</p>
+              <p className="accentfont">QUALITY</p>
               <p className="border-r-1 border-l-1 px-3 accentfont border-[#4B352A]">
-                Luxury
+                LUXURY
               </p>
-              <p className="accentfont">Peace</p>
+              <p className="accentfont">PEACE</p>
             </div>
           </motion.div>
         </div>
@@ -111,7 +111,7 @@ export function Home() {
           {...fadeInProps}
           className="text-5xl p-20 text-start max-sm:text-3xl max-sm:p-10 max-sm:pb-0"
         >
-          A Unity Of Peace And Luxury
+          A UNITY OF PEACE AND LUXURY
         </motion.h2>
         <div className="row">
           <motion.div
@@ -130,7 +130,7 @@ export function Home() {
             {...fadeInProps}
             className="w-full flex justify-center items-start max-sm:items-center max-sm:text-center flex-col gap-4"
           >
-            <h2 className="text-5xl">Welcome</h2>
+            <h2 className="text-5xl">WELCOME</h2>
             <p className="w-[80%] accentfont">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
               architecto tenetur ab rerum, illum esse amet atque aspernatur sunt
@@ -159,7 +159,7 @@ export function Home() {
             {...fadeInProps}
             className="text-5xl text-center max-sm:text-3xl max-sm:mb-10"
           >
-            How We Work
+            HOW WE WORK
           </motion.h2>
           <div className="row">
             <div className="w-full flex justify-center items-center">

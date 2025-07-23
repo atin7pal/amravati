@@ -34,8 +34,8 @@ export function Contact(props) {
             className="w-full text-md h-full flex justify-around items-start flex-col gap-4"
             {...fadeInProps}
           >
-            <h2 className="text-5xl mb-2">Contact Us</h2>
-            <div className="text-sm py-2 w-[90%]">
+            <h2 className="text-5xl mb-2">CONTACT US</h2>
+            <div className="py-2 w-[90%]">
               For questions about property listings, investments, or quotations,
               please contact us. Our knowledgeable team will respond promptly to
               assist with your real estate needs, whether for residential,
@@ -52,13 +52,13 @@ export function Contact(props) {
             <div className="text-sm flex flex-col justify-center items-center gap-4 w-full mt-2">
               <div className="flex flex-col justify-center items-start w-full gap-2">
                 <BiSupport className="text-2xl" />
-                <h2 className="text-xl">Enquiry</h2>
+                <h2 className="text-xl">ENQUIRY</h2>
                 <p>Lorem ipsum dolor sit amet.</p>
               </div>
 
               <div className="flex flex-col justify-center gap-2 items-start w-full">
                 <BiMoney className="text-2xl" />
-                <h2 className="text-xl">Sales</h2>
+                <h2 className="text-xl">SALES</h2>
                 <p>Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
@@ -85,9 +85,9 @@ export function Contact(props) {
             className="w-full h-[450px] flex flex-col justify-center items-start gap-4 px-4"
             {...fadeInProps}
           >
-            <h2 className="text-lg accentfont">Our Location</h2>
-            <h2 className="text-4xl">Connecting Near And Far</h2>
-            <span className="text-xl accentfont"> Headquartered at </span>
+            <h2 className="text-lg accentfont">OUR LOCATION</h2>
+            <h2 className="text-4xl">CONNECTING NEAR AND FAR</h2>
+            <span className="text-xl accentfont">Headquartered at</span>
             <p className="accentfont">
               Amaravati complex <br />
               Sector 2 <br />

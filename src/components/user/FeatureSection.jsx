@@ -4,23 +4,23 @@ import { Link } from "react-router-dom";
 
 const features = [
   {
-    title: "Property Management",
+    title: "PROPERTY MANAGEMENT",
     description: "End-to-end property handling including tenant coordination, maintenance, and rent collection.",
     icon: <FaBuilding size={24} />,
     highlighted: true,
   },
   {
-    title: "Virtual Tours",
+    title: "VIRTUAL TOURS",
     description: "Experience properties remotely with immersive 360° virtual walkthroughs and video previews.",
     icon: <FaVideo size={24} />,
   },
   {
-    title: "Architecture & Design",
+    title: "ARCHITECTURE & INTERIORS",
     description: "We offer custom architecture and interior solutions for your dream spaces.",
     icon: <FaDraftingCompass size={24} />,
   },
   {
-    title: "Loan & Legal Help",
+    title: "LOAN AND LEGAL",
     description: "Assistance with home loans, registration, and property-related legal documentation.",
     icon: <FaBalanceScale size={24} />,
   },
@@ -32,8 +32,8 @@ const FeatureSection = () => {
       <div className="max-w-8xl mx-auto grid md:grid-cols-2 gap-10">
         {/* Left Column */}
         <div className="flex flex-col justify-center">
-          <h2 className="text-3xl md:text-4xl bgcolorfont mb-4 leading-snug">
-            We are committed <br /> to your real estate journey.
+          <h2 className="text-2xl md:text-3xl bgcolorfont mb-4 leading-snug">
+            WE ARE COMMITTED <br /> TO YOUR REAL ESTATE JOURNEY.
           </h2>
           <p className="mb-6 bgcolorfont accentfont">
             From buying your first home to managing commercial properties, we support every step.

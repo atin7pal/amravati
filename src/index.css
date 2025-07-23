@@ -39,6 +39,10 @@
     color: #ece4d9;
 }
 
+.background {
+    background-color: #00000000;
+}
+
 .bgcolorfont {
     color: #574d41 !important;
 }
@@ -62,7 +66,7 @@
 }
 
 .btn {
-    @apply bg-[#574d41] border border-[#574d41] hover:bg-transparent hover:text-[#574d41] flex justify-center items-center gap-2 px-5 py-3 text-[#ece4d9]
+    @apply bg-[#574d41] border border-[#574d41] hover:bg-transparent hover:text-[#574d41] flex justify-center items-center gap-2 px-5 py-3 text-[#ece4d9] capitalize
 }
 
 .btnlight {

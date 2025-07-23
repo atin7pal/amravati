@@ -14,15 +14,12 @@ const routes = [
   { path: "/", element: <Home /> },
   { path: "/about", element: <About /> },
   { path: "/contact", element: <Contact /> },
-  {path: "/blogs", element: <BlogPage/>},
+  { path: "/blogs", element: <BlogPage /> },
   { path: "*", element: <NotFound /> },
-  { path: "/projects", element: <Projects/> },
-  { path: "/projects1", element: <Projects2/> },
-  {path : "completed", element: <CompletedProjects/>},
-  {
-    path: "/upcoming", element: <NewProjects/>
-  }
-
+  { path: "/projects", element: <Projects2 /> },
+  { path: "/projects1", element: <Projects2 /> },
+  { path: "completed", element: <CompletedProjects /> },
+  { path: "/upcoming", element: <NewProjects /> },
 ];
 
 export default routes;

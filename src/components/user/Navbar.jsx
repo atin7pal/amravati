@@ -13,16 +13,16 @@ import logo from "../../assets/logoheader.svg";
 import { MdEmail } from "react-icons/md";
 import { motion, AnimatePresence } from "framer-motion";
 
-const Navbar = ({absolute = "", background = "themebg"}) => {
+const Navbar = ({ absolute = "", background = "themebg" }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
   const navLinks = [
-    { label: "Home", path: "/" },
-    { label: "About", path: "/about" },
-    { label: "Projects", path: "/Projects" },
-    { label: "Ventures", path: "/services" },
-    { label: "Contact", path: "/contact" },
+    { label: "HOME", path: "/" },
+    { label: "ABOUT", path: "/about" },
+    { label: "PROJECTS", path: "/Projects" },
+    { label: "VENTURES", path: "/services" },
+    { label: "CONTACT", path: "/contact" },
   ];
 
   return (
@@ -88,26 +88,19 @@ const Navbar = ({absolute = "", background = "themebg"}) => {
                 />
 
                 {/* Projects Dropdown */}
-                {link.label === "Projects" && (
+                {link.label === "PROJECTS" && (
                   <div className="absolute left-0 top-full mt-2 w-56 bg-white shadow-lg border border-[#574d41] opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-300 z-50">
                     <Link
                       to="/projects/completed"
                       className="block px-4 py-3 text-[#574d41] text-sm  hover:bg-[#ece4d9]"
                     >
-                      Completed Projects
+                      COMPLETED PROJECTS
                     </Link>
                     <Link
                       to="/projects/new"
                       className="block px-4 py-3 text-sm text-[#574d41] hover:bg-[#ece4d9]"
                     >
-                      New Projects
-                    </Link>
-
-                    <Link
-                      to="/projects1"
-                      className="block px-4 py-3 text-sm text-[#574d41] hover:bg-[#ece4d9]"
-                    >
-                      Projects 1
+                      NEW PROJECTS
                     </Link>
                   </div>
                 )}
