@@ -91,13 +91,13 @@ const Navbar = ({ absolute = "", background = "themebg" }) => {
                 {link.label === "PROJECTS" && (
                   <div className="absolute left-0 top-full mt-2 w-56 bg-white shadow-lg border border-[#574d41] opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-300 z-50">
                     <Link
-                      to="/projects/completed"
+                      to="/completed"
                       className="block px-4 py-3 text-[#574d41] text-sm  hover:bg-[#ece4d9]"
                     >
                       COMPLETED PROJECTS
                     </Link>
                     <Link
-                      to="/projects/new"
+                      to="/new"
                       className="block px-4 py-3 text-sm text-[#574d41] hover:bg-[#ece4d9]"
                     >
                       NEW PROJECTS
@@ -148,14 +148,14 @@ const Navbar = ({ absolute = "", background = "themebg" }) => {
                 {link.label === "Projects" && (
                   <div className="ml-4 space-y-1">
                     <Link
-                      to="/projects/completed"
+                      to="/completed"
                       onClick={() => setMenuOpen(false)}
                       className="block text-sm text-gray-600 hover:text-[#574d41]"
                     >
                       Completed Projects
                     </Link>
                     <Link
-                      to="/projects/new"
+                      to="/new"
                       onClick={() => setMenuOpen(false)}
                       className="block text-sm text-gray-600 hover:text-[#574d41]"
                     >
