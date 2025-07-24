@@ -34,7 +34,7 @@ export function Contact(props) {
             className="w-full text-md h-full flex justify-around items-start flex-col gap-4"
             {...fadeInProps}
           >
-            <h2 className="text-5xl mb-2">CONTACT US</h2>
+            <h2 className="text-5xl mb-2 max-sm:text-4xl max-sm:mb-1">CONTACT US</h2>
             <div className="py-2 w-[90%]">
               For questions about property listings, investments, or quotations,
               please contact us. Our knowledgeable team will respond promptly to

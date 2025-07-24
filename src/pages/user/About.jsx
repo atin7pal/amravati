@@ -30,14 +30,14 @@ export function About(props) {
       </Helmet>
 
       <Navbar />
-      <section className="section h-[80vh] themebg max-sm:min-h-[100vh]">
+      <section className="section h-[80vh] themebg max-sm:h-full">
         <div className="row h-full">
           <motion.div
             className="w-full flex flex-col justify-center items-start max-sm:items-center max-sm:text-center gap-4"
             {...fadeInProps}
           >
-            <h2 className="text-xl brownbg px-2 py-1">ABOUT US</h2>
-            <h2 className="text-5xl">AMRAVATI GROUP</h2>
+            <h2 className="text-xl brownbg px-2 py-1 max-sm:text-sm">ABOUT US</h2>
+            <h2 className="text-5xl max-sm:text-4xl">AMRAVATI GROUP</h2>
             <p className="w-[80%] accentfont max-sm:w-full">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Laboriosam, quidem, obcaecati optio delectus alias hic ipsum illum
@@ -82,10 +82,10 @@ export function About(props) {
             </div>
           </motion.div>
           <motion.div
-            className="w-full h-[50vh] max-sm:h-[100%] px-5 flex gap-4 flex-col"
+            className="w-full h-[50vh] max-sm:h-[100%] px-5 flex gap-4 flex-col max-sm:text-center"
             {...fadeInProps}
           >
-            <h2 className="text-5xl max-sm:p-4 max-sm:pt-10 max-sm:text-3xl max-sm:text-center">
+            <h2 className="text-5xl max-sm:p-4 max-sm:pt-10 max-sm:text-4xl max-sm:text-center">
               WELCOME
             </h2>
             <p className="accentfont">
@@ -102,7 +102,7 @@ export function About(props) {
               nulla velit a aperiam? Voluptatibus amet illum reprehenderit illo
               quasi ducimus!
             </p>
-            <button className="btn w-[190px]">CONTACT US</button>
+            <button className="btn w-fit max-sm:mx-auto mt-4">CONTACT US</button>
           </motion.div>
         </div>
       </section>
@@ -118,7 +118,7 @@ export function About(props) {
             className="w-full h-full flex flex-col text-center gap-4 justify-center items-center p-20 max-sm:p-4"
             {...fadeInProps}
           >
-            <h2 className="text-5xl">OUR VISION</h2>
+            <h2 className="text-5xl max-sm:text-4xl">OUR VISION</h2>
             <p className="accentfont">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
               suscipit maiores itaque laborum, eum quasi, cumque optio expedita,
@@ -130,7 +130,7 @@ export function About(props) {
             className="w-full h-full flex flex-col text-center gap-4 justify-center items-center bg-white p-20 shadow-lg shadow-[#ece4d9] max-sm:p-4"
             {...fadeInProps}
           >
-            <h2 className="text-5xl">OUR MOTIVE</h2>
+            <h2 className="text-5xl max-sm:text-4xl">OUR MOTIVE</h2>
             <p className="accentfont">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum,
               nobis illo rerum facere id magnam cumque tenetur ullam animi nemo
@@ -161,7 +161,7 @@ export function About(props) {
         className="section bg-no-repeat bg-center bg-cover"
       >
         <motion.h2
-          className="text-5xl p-20 pb-0 max-sm:p-4 max-sm:text-3xl max-sm:text-center"
+          className="text-5xl p-20 max-sm:p-4 max-sm:mt-10 max-sm:text-4xl max-sm:text-center"
           {...fadeInProps}
         >
           MEET THE VISIONARIES
@@ -175,7 +175,7 @@ export function About(props) {
 
       <section className="section themebg">
         <motion.h2
-          className="text-5xl pt-10 max-sm:p-4 max-sm:text-3xl max-sm:text-center"
+          className="text-5xl pt-10 max-sm:p-4 max-sm:text-4xl max-sm:mt-10 max-sm:text-center"
           {...fadeInProps}
         >
           A MESSAGE FROM THE DIRECTOR
@@ -190,7 +190,7 @@ export function About(props) {
               className="w-[100px] rounded-full h-[100px] object-cover"
               alt=""
             />
-            <p className="w-[90%] accentfont relative">
+            <p className="w-[90%] accentfont relative max-sm:w-full">
               <BiSolidQuoteLeft />
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ut
               maxime omnis, laborum suscipit consectetur voluptates eligendi

@@ -9,6 +9,7 @@ import Projects from "./pages/user/Projects";
 import Projects2 from "./pages/user/Projects2";
 import CompletedProjects from "./pages/user/CompletedProjects";
 import NewProjects from "./pages/user/NewProjects";
+import Ventures from "./pages/user/Ventures";
 
 const routes = [
   { path: "/", element: <Home /> },
@@ -20,6 +21,7 @@ const routes = [
   { path: "/projects1", element: <Projects2 /> },
   { path: "completed", element: <CompletedProjects /> },
   { path: "/upcoming", element: <NewProjects /> },
+  { path: "/ventures", element: <Ventures /> },
 ];
 
 export default routes;

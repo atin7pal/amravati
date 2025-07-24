@@ -8,7 +8,7 @@ const CompletedProjects = () => {
 
 const projects = [
   {
-    name: "Amravati Hills",
+    name: "AMRAVATI HILLS",
     location: "Solan, Himachal Pradesh",
     tagline: "Luxury Hilltop Living at 5,000 ft",
     coverImage: "amravati_cover.jpg",
@@ -52,10 +52,10 @@ const projects = [
   return (
     <>
       <Navbar />
-      <section className="section h-[80vh] themebg">
+      <section className="section h-[80vh] themebg max-sm:h-full">
         <div className="row">
-          <div className="w-full flex flex-col justify-center items-start gap-4">
-            <h2 className="text-5xl">Completed Projects</h2>
+          <div className="w-full flex flex-col justify-center items-start gap-4 max-sm:items-center max-sm:text-center">
+            <h2 className="text-5xl max-sm:text-4xl">COMPLETED PROJECTS</h2>
             <p className="accentfont text-lg w-[90%]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Dignissimos et nobis eos eaque, labore eligendi fuga sapiente
@@ -64,7 +64,7 @@ const projects = [
             </p>
           </div>
           <div className="w-full flex justify-center items-center">
-            <img src={completed} className="h-[400px]" alt="" />
+            <img src={completed} className="h-[450px]" alt="" />
           </div>
         </div>
       </section>

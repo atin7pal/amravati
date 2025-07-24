@@ -1,20 +1,23 @@
 import React, { useState } from "react";
-import { MdOutlineKeyboardArrowDown, MdOutlineKeyboardArrowUp } from "react-icons/md";
+import {
+  MdOutlineKeyboardArrowDown,
+  MdOutlineKeyboardArrowUp,
+} from "react-icons/md";
 import { motion, AnimatePresence } from "framer-motion";
-import hillcover from '../../assets/project1/hills/image8.jpg';
-import image1 from '../../assets/project1/hills/image1.jpg'
-import image2 from '../../assets/project1/hills/image2.jpg'
-import image3 from '../../assets/project1/hills/image3.jpg'
-import image4 from '../../assets/project1/hills/image4.jpg'
-import image5 from '../../assets/project1/hills/image5.jpg'
-import image6 from '../../assets/project1/hills/image6.jpg'
-import image7 from '../../assets/project1/hills/image7.jpg'
-import image8 from '../../assets/project1/hills/image8.jpg'
+import hillcover from "../../assets/project1/hills/image8.webp";
+import image1 from "../../assets/project1/hills/image1.webp";
+import image2 from "../../assets/project1/hills/image2.webp";
+import image3 from "../../assets/project1/hills/image3.webp";
+import image4 from "../../assets/project1/hills/image4.webp";
+import image5 from "../../assets/project1/hills/image5.webp";
+import image6 from "../../assets/project1/hills/image6.webp";
+import image7 from "../../assets/project1/hills/image7.webp";
+import image8 from "../../assets/project1/hills/image8.webp";
 import BentoImageGrid from "./BentoGrid";
 
 const projects = [
   {
-    name: "Amravati Hills",
+    name: "AMRAVATI HILLS",
     location: "Solan, Himachal Pradesh",
     tagline: "Luxury Hilltop Living at 5,000 ft",
     coverImage: hillcover,
@@ -23,42 +26,41 @@ const projects = [
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio deserunt voluptatum culpa ullam dolores alias cum non, porro, saepe autem dolorem laboriosam aperiam cumque qui tempore odit reprehenderit, asperiores iusto?",
     galleryImages: [
       {
-        src : image1,
-        alt : "image 1"
+        src: image1,
+        alt: "image 1",
       },
       {
-        src : image2,
-        alt : "image 1"
+        src: image2,
+        alt: "image 1",
       },
       {
-        src : image3,
-        alt : "image 1"
+        src: image3,
+        alt: "image 1",
       },
       {
-        src : image4,
-        alt : "image 1"
+        src: image4,
+        alt: "image 1",
       },
       {
-        src : image4,
-        alt : "image 1"
+        src: image4,
+        alt: "image 1",
       },
       {
-        src : image5,
-        alt : "image 1"
+        src: image5,
+        alt: "image 1",
       },
       {
-        src : image6,
-        alt : "image 1"
+        src: image6,
+        alt: "image 1",
       },
       {
-        src : image7,
-        alt : "image 1"
+        src: image7,
+        alt: "image 1",
       },
       {
-        src : image8,
-        alt : "image 8"
-      }
-
+        src: image8,
+        alt: "image 8",
+      },
     ],
     highlights: [
       "Sprawling across 145 bighas of scenic landscape",
@@ -88,7 +90,7 @@ export default function ProjectExpandableCard() {
 
   return (
     <motion.div
-      className="w-full mx-auto p-10 bg-white rounded-lg shadow-lg transition-all"
+      className="w-full mx-auto p-10 bg-white shadow-sm transition-all max-sm:p-4"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
@@ -106,24 +108,24 @@ export default function ProjectExpandableCard() {
           <img
             src={project.coverImage}
             alt={project.name}
-            className="w-full object-cover rounded-md"
+            className="w-full object-cover"
           />
         </motion.div>
 
         <motion.div
-          className="w-full flex flex-col justify-start items-start h-[400px]"
-          initial={{ opacity: 0}}
+          className="w-full flex flex-col justify-center items-start h-[400px] max-sm:h-full"
+          initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
         >
-          <h2 className="text-3xl font-bold">{project.name}</h2>
+          <h2 className="text-3xl capitalize">{project.name}</h2>
           <p className="text-lg text-gray-500">{project.location}</p>
-          <p className="text-xl font-medium mt-2 accentfont">{project.tagline}</p>
-          <p className="mt-2 accentfont">{project.description}</p>
+          <p className="text-xl font-medium mt-2 accentfont">
+            {project.tagline}
+          </p>
+          <p className="mt-2 accentfont w-[90%]">{project.description}</p>
 
-          <motion.button
-            className="btn mt-4 flex items-center gap-1"
-          >
+          <motion.button className="btn mt-4 flex items-center gap-1">
             {expanded ? (
               <>
                 See Less <MdOutlineKeyboardArrowUp />
@@ -155,7 +157,9 @@ export default function ProjectExpandableCard() {
               <h3 className="text-2xl">Why Amravati Hills?</h3>
               <ul className="text-gray-700 mt-2">
                 {project.highlights.map((point, i) => (
-                  <li className="mb-1 w-fit px-2 py-1 accentfont" key={i}>{point}</li>
+                  <li className="mb-1 w-fit px-2 py-1 accentfont" key={i}>
+                    {point}
+                  </li>
                 ))}
               </ul>
             </motion.div>
@@ -175,7 +179,9 @@ export default function ProjectExpandableCard() {
                   </p>
                   <ul className="text-gray-700">
                     {offering.features.map((feat, idx) => (
-                      <li key={idx} className="mb-1 w-fit px-2 py-1 accentfont">{feat}</li>
+                      <li key={idx} className="mb-1 w-fit px-2 py-1 accentfont">
+                        {feat}
+                      </li>
                     ))}
                   </ul>
                 </div>
@@ -188,11 +194,9 @@ export default function ProjectExpandableCard() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
-              {
-                projects.map((element) => (
-                  <BentoImageGrid images={element.galleryImages} />
-                ))
-              }
+              {projects.map((element) => (
+                <BentoImageGrid images={element.galleryImages} />
+              ))}
             </motion.div>
 
             {/* Brochure Button */}
@@ -202,7 +206,7 @@ export default function ProjectExpandableCard() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.4 }}
             >
-                <h2 className="text-xl text-start mb-3">Want to know more?</h2>
+              <h2 className="text-xl text-start mb-3">Want to know more?</h2>
               <a
                 href={project.brochureLink}
                 download

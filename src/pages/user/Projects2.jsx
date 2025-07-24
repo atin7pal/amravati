@@ -18,11 +18,11 @@ const Projects2 = () => {
       >
         <div className="row">
           <div className="flex flex-col gap-5 justify-center items-center">
-            <h1 className="text-5xl mb-6 w-[60%] mt-[70px] text-white">
+            <h1 className="text-5xl mb-6 w-[60%] mt-[70px] max-sm:mt-[110px] max-sm:w-full text-white max-sm:text-4xl">
               {" "}
               Where Heart and Mind Converge to Create Thoughtful Real Estate.
             </h1>
-            <p className="text-xl max-w-5xl text-center accentfont p-4 text-white text-shadow-lg">
+            <p className="text-xl max-w-5xl max-sm:w-full text-center accentfont p-4 text-white text-shadow-lg">
               At Amravati Group, we believe that true craftsmanship in real
               estate begins at the intersection Of passion and purpose. Our
               commitment to thoughtful developments reflects not just a vision,

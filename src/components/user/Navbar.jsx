@@ -21,7 +21,7 @@ const Navbar = ({ absolute = "", background = "themebg" }) => {
     { label: "HOME", path: "/" },
     { label: "ABOUT", path: "/about" },
     { label: "PROJECTS", path: "/Projects" },
-    { label: "VENTURES", path: "/services" },
+    { label: "VENTURES", path: "/ventures" },
     { label: "CONTACT", path: "/contact" },
   ];
 
@@ -89,7 +89,7 @@ const Navbar = ({ absolute = "", background = "themebg" }) => {
 
                 {/* Projects Dropdown */}
                 {link.label === "PROJECTS" && (
-                  <div className="absolute left-0 top-full mt-2 w-56 bg-white shadow-lg border border-[#574d41] opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-300 z-50">
+                  <div className="absolute left-0 top-full mt-2 w-56 shadow-lg border bg-white border-[#574d41] opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-300 z-50">
                     <Link
                       to="/completed"
                       className="block px-4 py-3 text-[#574d41] text-sm  hover:bg-[#ece4d9]"
@@ -100,7 +100,7 @@ const Navbar = ({ absolute = "", background = "themebg" }) => {
                       to="/new"
                       className="block px-4 py-3 text-sm text-[#574d41] hover:bg-[#ece4d9]"
                     >
-                      NEW PROJECTS
+                      UPCOMING PROJECTS
                     </Link>
                   </div>
                 )}
@@ -128,7 +128,7 @@ const Navbar = ({ absolute = "", background = "themebg" }) => {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-white px-4 pt-2 pb-4 space-y-2 shadow-md overflow-hidden"
+            className="md:hidden themebg border-t px-4 pt-4 pb-4 space-y-3 shadow-md overflow-hidden"
           >
             {navLinks.map((link) => (
               <React.Fragment key={link.path}>

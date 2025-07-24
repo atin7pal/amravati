@@ -92,9 +92,9 @@ export function Home() {
             animate={{ opacity: 1 }}
             className="w-full flex justify-center items-center h-full flex-col gap-4"
           >
-            <h2 className="text-6xl max-sm:text-3xl bgcolorfont capitalize">EXPERIENCE AMRAVATI</h2>
+            <h2 className="text-6xl max-sm:text-4xl bgcolorfont capitalize">EXPERIENCE AMRAVATI</h2>
             
-            <div className="h-[1px] w-[30%] bg-[#4B352A] max-sm:w-[60%]"></div>
+            <div className="h-[1px] w-[30%] bg-[#4B352A] max-sm:w-[70%]"></div>
             <div className="flex justify-start font-light items-center gap-4 text-3xl max-sm:text-xl">
               <p className="accentfont">QUALITY</p>
               <p className="border-r-1 border-l-1 px-3 accentfont border-[#4B352A]">
@@ -130,8 +130,8 @@ export function Home() {
             {...fadeInProps}
             className="w-full flex justify-center items-start max-sm:items-center max-sm:text-center flex-col gap-4"
           >
-            <h2 className="text-5xl">WELCOME</h2>
-            <p className="w-[80%] accentfont">
+            <h2 className="text-5xl max-sm:text-4xl">WELCOME</h2>
+            <p className="w-[80%] accentfont max-sm:w-full">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
               architecto tenetur ab rerum, illum esse amet atque aspernatur sunt
               eum tempore deleniti sed quod. Ad facere sit facilis ea esse vel?
@@ -140,7 +140,7 @@ export function Home() {
               facilis quasi.
             </p>
             <br />
-            <p className="w-[80%]">
+            <p className="w-[80%] max-sm:w-full">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
               explicabo.
             </p>
