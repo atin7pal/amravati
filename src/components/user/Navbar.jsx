@@ -19,7 +19,7 @@ const Navbar = ({ absolute = "", background = "themebg" }) => {
 
   const navLinks = [
     { label: "HOME", path: "/" },
-    { label: "ABOUT", path: "/about" },
+    { label: "ABOUT US", path: "/about" },
     { label: "PROJECTS", path: "/Projects" },
     { label: "VENTURES", path: "/ventures" },
     { label: "CONTACT", path: "/contact" },

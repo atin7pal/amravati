@@ -3,51 +3,10 @@ import Navbar from "../../components/user/Navbar";
 import { Footer } from "../../components/user/Footer";
 import completed from "../../assets/completed.jpg";
 import ProjectExpandableCard from "../../components/user/ExpandableProject";
+import { Projects } from "../../assets/arrays/projects";
 
 const CompletedProjects = () => {
 
-const projects = [
-  {
-    name: "AMRAVATI HILLS",
-    location: "Solan, Himachal Pradesh",
-    tagline: "Luxury Hilltop Living at 5,000 ft",
-    coverImage: "amravati_cover.jpg",
-    brochureLink: "/pdfs/solan_brochure_singlepg.pdf", // Replace with actual public path or server link
-    galleryImages: [
-      "amravati_1.jpg",
-      "amravati_2.jpg",
-      "amravati_3.jpg"
-    ],
-    highlights: [
-      "Sprawling across 145 bighas of scenic landscape",
-      "Breathtaking Himalayan valley views",
-      "Located just 45 km from Chandigarh",
-      "Clubhouse with café, restaurant & wellness facilities",
-      "Villas & apartments with modern architecture and luxury interiors",
-      "Fully managed leasing with StayVista"
-    ],
-    offerings: [
-      {
-        type: "4 BHK Villas – The Den",
-        size: "4250 sq ft",
-        features: [
-          "Jacuzzi, electric fireplace, and panoramic terrace views",
-          "Fully furnished across 3 levels",
-          "Covered parking, landscaped garden & dedicated servant room"
-        ]
-      },
-      {
-        type: "2 & 3 BHK Alpine Apartments",
-        size: "1630 – 2550 sq ft",
-        features: [
-          "Stylish interiors with modular kitchen & smart tech",
-          "Ready-to-move with penthouse options",
-          "Spacious layouts designed for comfort & lifestyle"
-        ]
-      }
-    ]
-  }
-];
 
   return (
     <>
@@ -68,7 +27,11 @@ const projects = [
       </section>
       <section className="section themebg">
         <div className="row">
-            <ProjectExpandableCard/>
+          <div>
+            {Projects.map((project, index) => (
+        <ProjectExpandableCard key={index} projects={Projects} project={project} />
+      ))}
+      </div>
         </div>
       </section>
       <Footer />

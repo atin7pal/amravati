@@ -4,95 +4,16 @@ import {
   MdOutlineKeyboardArrowUp,
 } from "react-icons/md";
 import { motion, AnimatePresence } from "framer-motion";
-import hillcover from "../../assets/project1/hills/image1.webp";
-import image1 from "../../assets/project1/hills/hills1.webp";
-import image2 from "../../assets/project1/hills/hills2.webp";
-import image3 from "../../assets/project1/image6.jpg";
-import image4 from "../../assets/project1/image7.jpg";
-import image5 from "../../assets/project1/hills/hills5.webp";
-import image6 from "../../assets/project1/hills/hills6.webp";
-import image7 from "../../assets/project1/hills/hills12.webp";
-import image8 from "../../assets/project1/hills/hills8.webp";
-import image9 from "../../assets/project1/hills/hills9.webp";
+
 import BentoImageGrid from "./BentoGrid";
 import Carousel from "./Carousel";
 
-const projects = [
-  {
-    name: "AMRAVATI HILLS",
-    location: "Solan, Himachal Pradesh",
-    tagline: "Luxury Hilltop Living at 5,000 ft",
-    coverImage: hillcover,
-    brochureLink: "/pdfs/solan_brochure_singlepg.pdf",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio deserunt voluptatum culpa ullam dolores alias cum non, porro, saepe autem dolorem laboriosam aperiam cumque qui tempore odit reprehenderit, asperiores iusto?",
-    galleryImages: [
-      {
-        src: image1,
-        alt: "image 1",
-      },
-      {
-        src: image2,
-        alt: "image 1",
-      },
-      {
-        src: image3,
-        alt: "image 1",
-      },
-      {
-        src: image9,
-        alt: "image 1",
-      },
-      {
-        src: image4,
-        alt: "image 1",
-      },
-      {
-        src: image5,
-        alt: "image 1",
-      },
-      {
-        src: image6,
-        alt: "image 1",
-      },
-      {
-        src: image7,
-        alt: "image 1",
-      },
-      {
-        src: image8,
-        alt: "image 8",
-      },
-    ],
-    highlights: [
-      "Sprawling across 145 bighas of scenic landscape",
-      "Breathtaking Himalayan valley views",
-      "Located just 45 km from Chandigarh",
-      "Clubhouse with café, restaurant & wellness facilities",
-      "Villas & apartments with modern architecture and luxury interiors",
-      "Fully managed leasing with StayVista",
-    ],
-    offerings: [
-      {
-        type: "4 BHK Villas – The Den",
-        size: "4250 sq ft",
-        features: [
-          "Jacuzzi, electric fireplace, and panoramic terrace views",
-          "Fully furnished across 3 levels",
-          "Covered parking, landscaped garden & dedicated servant room",
-        ],
-      },
-    ],
-  },
-];
-
-export default function ProjectExpandableCard() {
+export default function ProjectExpandableCard({ projects, project }) {
   const [expanded, setExpanded] = useState(false);
-  const project = projects[0];
 
   return (
     <motion.div
-      className="w-full mx-auto p-10 bg-white shadow-sm transition-all max-sm:p-4"
+      className="w-full mx-auto p-10 my-6 bg-white shadow-sm transition-all max-sm:p-4"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
@@ -107,9 +28,7 @@ export default function ProjectExpandableCard() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          {projects.map((element) => (
-            <Carousel images={element.galleryImages} />
-          ))}
+          <Carousel images={project.galleryImages} />
         </motion.div>
 
         <motion.div
@@ -154,7 +73,7 @@ export default function ProjectExpandableCard() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
             >
-              <h3 className="text-2xl">Why Amravati Hills?</h3>
+              <h3 className="text-2xl">Why {project.name}?</h3>
               <ul className="text-gray-700 mt-2">
                 {project.highlights.map((point, i) => (
                   <li className="mb-1 w-fit px-2 py-1 accentfont" key={i}>
@@ -194,12 +113,10 @@ export default function ProjectExpandableCard() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
-              {projects.map((element) => (
-                <BentoImageGrid images={element.galleryImages} />
-              ))}
+              <BentoImageGrid images={project.galleryImages} />
             </motion.div>
 
-            {/* Brochure Button */}
+            {/* Brochure */}
             <motion.div
               className="text-center mt-6"
               initial={{ opacity: 0, scale: 0.95 }}

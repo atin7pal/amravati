@@ -130,7 +130,7 @@ export function About(props) {
             className="w-full h-full flex flex-col text-center gap-4 justify-center items-center bg-white p-20 shadow-lg shadow-[#ece4d9] max-sm:p-4"
             {...fadeInProps}
           >
-            <h2 className="text-5xl max-sm:text-4xl">OUR MOTIVE</h2>
+            <h2 className="text-5xl max-sm:text-4xl">OUR MISSION</h2>
             <p className="accentfont">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum,
               nobis illo rerum facere id magnam cumque tenetur ullam animi nemo

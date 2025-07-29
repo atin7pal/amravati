@@ -59,11 +59,6 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/blog" className="accentfont">
-                  Blogs
-                </Link>
-              </li>
-              <li>
                 <Link to="/contact" className="accentfont">
                   Contact
                 </Link>
