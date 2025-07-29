@@ -1,0 +1,162 @@
+import React from "react";
+import Navbar from "../../components/user/Navbar";
+import { Footer } from "../../components/user/Footer";
+import retail from "../../assets/retail.jpg";
+import principal from "../../assets/principal.jpeg";
+import CarouselSlides from "../../components/user/CartouselSlides";
+import school1 from "../../assets/school/school1.jpeg";
+import school2 from "../../assets/school/school10.jpeg";
+import school3 from "../../assets/school/school3.jpeg";
+import school4 from "../../assets/school/school4.jpeg";
+import school5 from "../../assets/school/school5.jpeg";
+import school6 from "../../assets/school/school6.jpeg";
+import school7 from "../../assets/school/school7.jpeg";
+import school8 from "../../assets/school/school8.jpeg";
+
+const Retail = () => {
+  const images = [
+    school1,
+    school2,
+    school3,
+    school4,
+    school5,
+    school6,
+    school7,
+    school8,
+  ];
+
+  return (
+    <>
+      <Navbar />
+      <section className="section themebg">
+        <div className="row relative">
+          <img
+            src={retail}
+            className="h-[45vh] w-full object-cover"
+            alt="vidyalya"
+          />
+          <div className="w-full h-full bgcolorfont absolute top-0 left-0 bg-[#ece4d9]/70 flex justify-center items-center p-20 flex-col gap-4">
+            <h2 className="font-semibold text-4xl w-[80%] text-center">
+              Welcome to Everyday Supermarket
+            </h2>
+            <h2 className="text-xl font-semibold">
+              Your Friendly Neighbourhood Grocery Destination
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="row">
+          <div className="flex flex-col justify-center items-start text-start gap-8">
+            {/* Our Story */}
+            <div>
+              <h2 className="text-3xl font-semibold mb-4">Our Story</h2>
+              <p className="accentfont text-lg leading-relaxed">
+                Everyday Supermarket was founded with the understanding that
+                modern families need more than just groceries — they need{" "}
+                <span className="font-bold">trust, convenience, and value</span>
+                . We began our journey with a single thought:{" "}
+                <span className="font-semibold">
+                  "Why not create a shopping space that feels like an extension
+                  of your own kitchen — always stocked, always welcoming, and
+                  always budget-friendly?"
+                </span>
+              </p>
+              <p className="accentfont text-lg mt-4">
+                From the very beginning, our mission has been clear:{" "}
+                <span className="font-bold">
+                  To provide quality essentials for everyday life, with
+                  unmatched service and honest pricing.
+                </span>{" "}
+                With each new outlet, we’ve grown not just in size, but in
+                heart. Every shelf is thoughtfully curated, every product
+                carefully selected, and every customer valued like family.
+              </p>
+            </div>
+
+            {/* What Sets Us Apart */}
+            <div>
+              <h2 className="text-3xl font-semibold mb-4">
+                What Sets Us Apart
+              </h2>
+              <ul className="accentfont list-disc pl-6 text-lg space-y-3">
+                <li>
+                  <span className="font-bold">Curated Essentials:</span> From
+                  grains, dairy, and dry groceries to snacks, beverages,
+                  cleaning supplies, and personal care — everything is
+                  handpicked to suit your daily needs.
+                </li>
+                <li>
+                  <span className="font-bold">Staff That Cares:</span> Our
+                  courteous team of over 30 trained staff ensures that every
+                  visit is smooth and enjoyable — from helping you find products
+                  to assisting at checkout.
+                </li>
+                <li>
+                  <span className="font-bold">Value for Money:</span> In-house
+                  deals, combo offers, and seasonal discounts ensure you get the
+                  best bang for your buck.
+                </li>
+                <li>
+                  <span className="font-bold">
+                    Clean, Organised & Hygienic:
+                  </span>{" "}
+                  All outlets are maintained with rigorous hygiene checks and
+                  sanitized regularly for a clean, clutter-free shopping
+                  experience.
+                </li>
+                <li>
+                  <span className="font-bold">Easy Access & Parking:</span>{" "}
+                  Strategically located stores with ample parking make your
+                  visits quick and hassle-free.
+                </li>
+              </ul>
+            </div>
+
+            {/* Looking Ahead */}
+            <div>
+              <h2 className="text-3xl font-semibold mb-4">Looking Ahead</h2>
+              <p className="accentfont text-lg leading-relaxed">
+                We’re not just building a chain of supermarkets — we’re building
+                a <span className="font-bold">community brand</span>. A name
+                that families can trust for consistency, quality, and care.
+              </p>
+              <p className="accentfont text-lg mt-4">
+                With plans to expand into{" "}
+                <span className="font-bold">
+                  online ordering, home delivery, and customer loyalty programs
+                </span>
+                , Everyday Supermarket is evolving to meet the needs of modern
+                households while staying rooted in the values that built our
+                foundation.
+              </p>
+            </div>
+
+            {/* Visit Us Today */}
+            <div>
+              <h2 className="text-3xl font-semibold mb-4">Visit Us Today</h2>
+              <p className="accentfont text-lg leading-relaxed">
+                Whether you’re in{" "}
+                <span className="font-bold">
+                  Sector 11 or Sector 20 of Panchkula
+                </span>
+                , or driving through{" "}
+                <span className="font-bold">Baddi’s bustling markets</span>,
+                there’s an Everyday Supermarket nearby — waiting to serve you
+                with a smile.
+              </p>
+              <p className="accentfont text-lg mt-4 italic font-semibold">
+                Stop by and discover why we’re more than just a store — we’re a
+                part of your everyday.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer />
+    </>
+  );
+};
+
+export default Retail;

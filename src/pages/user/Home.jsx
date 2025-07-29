@@ -23,6 +23,7 @@ import BlogSection from "../../components/user/BlogSection.jsx";
 import { SendQuery } from "../../components/user/SendQuery.jsx";
 import Loader from "../../components/Loader.jsx";
 import { Helmet } from "react-helmet-async";
+import herobg from '../../assets/herobg.webp'
 
 export function Home() {
   const fadeInProps = {
@@ -78,30 +79,20 @@ export function Home() {
       </Helmet>
 
       <Navbar />
-      <section className="section bg-fixed relative bg-gradient-to-b from-[#ece4d9] via-[#ece4d9]/90 h-[80vh] justify-center">
-        <video
-          src={homevideo}
-          loop
-          muted
-          autoPlay
+      <section className="section bg-fixed relative bg-gradient-to-b h-[80vh] justify-center from-[#ece4d9] via-[#ece4d9]/90">
+        <img
+          src={herobg}
           className="absolute h-screen object-cover object-center w-full top-0 left-0 -z-10"
-        ></video>
+        />
         <div className="row absolute top-0 left-0 h-full">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="w-full flex justify-center items-center h-full flex-col gap-4"
+            className="w-full flex justify-center items-start h-full flex-col gap-4"
           >
-            <h2 className="text-6xl max-sm:text-4xl bgcolorfont capitalize">EXPERIENCE AMRAVATI</h2>
-            
-            <div className="h-[1px] w-[30%] bg-[#4B352A] max-sm:w-[70%]"></div>
-            <div className="flex justify-start font-light items-center gap-4 text-3xl max-sm:text-xl">
-              <p className="accentfont">QUALITY</p>
-              <p className="border-r-1 border-l-1 px-3 accentfont border-[#4B352A]">
-                LUXURY
-              </p>
-              <p className="accentfont">PEACE</p>
-            </div>
+            <h2 className="text-6xl max-sm:text-4xl bgcolorfont capitalize max-sm:text-center leading-[70px]">
+              BUILDING DREAMS, <br /> ONE HOME AT A TIME
+            </h2>
           </motion.div>
         </div>
       </section>
@@ -111,7 +102,7 @@ export function Home() {
           {...fadeInProps}
           className="text-5xl p-20 text-start max-sm:text-3xl max-sm:p-10 max-sm:pb-0"
         >
-          A UNITY OF PEACE AND LUXURY
+          BUILDING
         </motion.h2>
         <div className="row">
           <motion.div
@@ -197,7 +188,7 @@ export function Home() {
           <FeatureSection />
         </div>
       </section>
-  <Footer />
+      <Footer />
     </>
   );
 }

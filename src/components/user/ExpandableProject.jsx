@@ -4,16 +4,18 @@ import {
   MdOutlineKeyboardArrowUp,
 } from "react-icons/md";
 import { motion, AnimatePresence } from "framer-motion";
-import hillcover from "../../assets/project1/hills/image8.webp";
-import image1 from "../../assets/project1/hills/image1.webp";
-import image2 from "../../assets/project1/hills/image2.webp";
-import image3 from "../../assets/project1/hills/image3.webp";
-import image4 from "../../assets/project1/hills/image4.webp";
-import image5 from "../../assets/project1/hills/image5.webp";
-import image6 from "../../assets/project1/hills/image6.webp";
-import image7 from "../../assets/project1/hills/image7.webp";
-import image8 from "../../assets/project1/hills/image8.webp";
+import hillcover from "../../assets/project1/hills/image1.webp";
+import image1 from "../../assets/project1/hills/hills1.webp";
+import image2 from "../../assets/project1/hills/hills2.webp";
+import image3 from "../../assets/project1/image6.jpg";
+import image4 from "../../assets/project1/image7.jpg";
+import image5 from "../../assets/project1/hills/hills5.webp";
+import image6 from "../../assets/project1/hills/hills6.webp";
+import image7 from "../../assets/project1/hills/hills12.webp";
+import image8 from "../../assets/project1/hills/hills8.webp";
+import image9 from "../../assets/project1/hills/hills9.webp";
 import BentoImageGrid from "./BentoGrid";
+import Carousel from "./Carousel";
 
 const projects = [
   {
@@ -38,7 +40,7 @@ const projects = [
         alt: "image 1",
       },
       {
-        src: image4,
+        src: image9,
         alt: "image 1",
       },
       {
@@ -105,11 +107,9 @@ export default function ProjectExpandableCard() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          <img
-            src={project.coverImage}
-            alt={project.name}
-            className="w-full object-cover"
-          />
+          {projects.map((element) => (
+            <Carousel images={element.galleryImages} />
+          ))}
         </motion.div>
 
         <motion.div

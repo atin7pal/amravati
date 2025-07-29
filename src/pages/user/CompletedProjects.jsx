@@ -52,20 +52,18 @@ const projects = [
   return (
     <>
       <Navbar />
-      <section className="section h-[80vh] themebg max-sm:h-full">
+      <section className="section themebg max-sm:h-full">
         <div className="row">
-          <div className="w-full flex flex-col justify-center items-start gap-4 max-sm:items-center max-sm:text-center">
+          <div className="w-full flex flex-col justify-center items-center gap-4 max-sm:items-center text-center">
             <h2 className="text-5xl max-sm:text-4xl">COMPLETED PROJECTS</h2>
-            <p className="accentfont text-lg w-[90%]">
+            <p className="accentfont text-lg w-[80%]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Dignissimos et nobis eos eaque, labore eligendi fuga sapiente
               voluptatem quas maiores debitis exercitationem dolorum provident
               quam cumque quibusdam numquam, architecto itaque.
             </p>
           </div>
-          <div className="w-full flex justify-center items-center">
-            <img src={completed} className="h-[450px]" alt="" />
-          </div>
+       
         </div>
       </section>
       <section className="section themebg">

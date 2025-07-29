@@ -1,15 +1,4 @@
 import React, { useState } from "react";
-import bedroom from '../../assets/project1/bed1.jpg'
-import bathroom from '../../assets/project1/bathroom.jpg'
-import jacuzzi from '../../assets/project1/jacuzzi.jpg'
-import living from '../../assets/project1/living.jpg'
-import outdoorseating from '../../assets/project1/outdoorseating.jpg'
-import livingdining from '../../assets/project1/livingdining.jpg'
-import livingdining1 from '../../assets/project1/livingdining2.jpg'
-import livingdining2 from '../../assets/project1/libvingdiining2.jpg'
-import outdoor from '../../assets/project1/outdoor.jpg'
-import outdoor1 from '../../assets/project1/outdoor1.jpg'
-import view from '../../assets/project1/view.jpg'
 
 // const images = [
 //   {
@@ -76,10 +65,10 @@ export default function BentoImageGrid({images}) {
       {/* Popup Modal */}
       {selectedImg && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
+          className="fixed inset-0 bg-black/50 backdrop-blur-xs flex items-center justify-center z-50"
           onClick={() => setSelectedImg(null)}
         >
-          <div className="max-w-4xl max-h-[90vh] overflow-hidden shadow-lg">
+          <div className="h-[90vh] w-full overflow-hidden shadow-lg">
             <img src={selectedImg.src} alt={selectedImg.alt} className="object-contain w-full h-full" />
           </div>
         </div>

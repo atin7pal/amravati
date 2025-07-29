@@ -10,6 +10,9 @@ import Projects2 from "./pages/user/Projects2";
 import CompletedProjects from "./pages/user/CompletedProjects";
 import NewProjects from "./pages/user/NewProjects";
 import Ventures from "./pages/user/Ventures";
+import Realty from "./pages/user/Realty";
+import Retail from "./pages/user/Retail";
+import Vidyalya from "./pages/user/Vidyalya";
 
 const routes = [
   { path: "/", element: <Home /> },
@@ -22,6 +25,15 @@ const routes = [
   { path: "completed", element: <CompletedProjects /> },
   { path: "/upcoming", element: <NewProjects /> },
   { path: "/ventures", element: <Ventures /> },
+  {
+    path: "/amravatirealty", element : <Realty/>
+  },
+  {
+    path: "/amravatiretail", element : <Retail/>
+  },
+  {
+    path: "/amravatividyalya", element : <Vidyalya/>
+  }
 ];
 
 export default routes;

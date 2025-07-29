@@ -87,7 +87,7 @@ const Navbar = ({ absolute = "", background = "themebg" }) => {
                   style={{ width: "100%" }}
                 />
 
-                {/* Projects Dropdown */}
+                {/* Projects Dropdown
                 {link.label === "PROJECTS" && (
                   <div className="absolute left-0 top-full mt-2 w-56 shadow-lg border bg-white border-[#574d41] opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-300 z-50">
                     <Link
@@ -103,7 +103,7 @@ const Navbar = ({ absolute = "", background = "themebg" }) => {
                       UPCOMING PROJECTS
                     </Link>
                   </div>
-                )}
+                )} */}
               </div>
             ))}
           </div>

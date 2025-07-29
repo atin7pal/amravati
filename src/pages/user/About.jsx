@@ -78,7 +78,7 @@ export function About(props) {
                 className="w-full h-[20vh] object-cover"
                 alt=""
               />
-              <div className="w-full h-[20vh] brownbg"></div>
+              <div className="w-full h-[20vh] brownbg max-sm:hidden"></div>
             </div>
           </motion.div>
           <motion.div
@@ -203,7 +203,7 @@ export function About(props) {
               assumenda quibusdam provident.{" "}
               <BiSolidQuoteRight className="absolute bottom-0 right-0" />
             </p>
-            <p className="">Mr. Amaravati | Managing Director</p>
+            <p className="">Mr. Hargobind Goyal | Director</p>
           </motion.div>
         </div>
       </section>

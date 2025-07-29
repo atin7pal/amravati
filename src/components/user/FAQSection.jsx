@@ -55,10 +55,11 @@ export default function FAQSection() {
             </button>
             {openIndex === index && (
               <motion.div
-              initial = {{opacity : 0}}
-              animate = {{opacity : 1}}
-              exit={{opacity: 0}}
-              className="px-4 py-3  w-full accentfont">
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="px-4 py-3  w-full accentfont"
+              >
                 {faq.answer}
               </motion.div>
             )}

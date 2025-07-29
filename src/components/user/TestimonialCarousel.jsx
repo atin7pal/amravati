@@ -83,21 +83,29 @@ const TestimonialCarousel = () => {
     <div className="w-full mx-auto p-20 pb-0 pt-0 max-sm:p-4">
       <div className="mb-20 flex justify-center items-start gap-4 max-sm:flex-col">
         <div className="flex flex-col gap-4 justify-center items-start">
-        <h2 className="text-4xl text-start max-sm:text-3xl">What Our Clients Say</h2>
-        <p className="w-[100%] accentfont">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-          atque placeat possimus commodi cumque incidunt asperiores ducimus
-          officiis nam accusamus.
-        </p>
-</div>
+          <h2 className="text-4xl text-start max-sm:text-3xl">
+            What Our Clients Say
+          </h2>
+          <p className="w-[100%] accentfont">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            atque placeat possimus commodi cumque incidunt asperiores ducimus
+            officiis nam accusamus.
+          </p>
+        </div>
         <div className="flex justify-end items-center gap-4 w-full max-sm:justify-start">
-        <button onClick={prevSlide} className="px-4 py-2 bg-[#4B352A] text-[#F8F3D9] transition btn">
-          &#10094; Prev
-        </button>
-        <button onClick={nextSlide} className="px-4 py-2 transition bg-[#4B352A] text-[#F8F3D9] btn">
-          Next &#10095;
-        </button>
-      </div>
+          <button
+            onClick={prevSlide}
+            className="px-4 py-2 bg-[#4B352A] text-[#F8F3D9] transition btn"
+          >
+            &#10094; Prev
+          </button>
+          <button
+            onClick={nextSlide}
+            className="px-4 py-2 transition bg-[#4B352A] text-[#F8F3D9] btn"
+          >
+            Next &#10095;
+          </button>
+        </div>
       </div>
       <div className="relative overflow-hidden">
         <div
@@ -129,7 +137,6 @@ const TestimonialCarousel = () => {
       </div>
 
       {/* Navigation */}
-      
     </div>
   );
 };
