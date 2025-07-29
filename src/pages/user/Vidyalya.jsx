@@ -227,7 +227,7 @@ const Vidyalya = () => {
         </div>
       </section>
       <section className="section themebg">
-        <div className="px-20 w-full pb-20 max-sm:px-4 max-sm:pb-10">
+        <div className="p-20 py-10 w-full max-sm:px-4 max-sm:py-10">
           <CarouselSlides images={images} />
         </div>
       </section>
