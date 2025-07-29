@@ -55,7 +55,9 @@ const Retail = () => {
               <p className="accentfont text-lg leading-relaxed">
                 Everyday Supermarket was founded with the understanding that
                 modern families need more than just groceries — they need{" "}
-                <span className="font-bold">trust, convenience, and value</span>
+                <span className="font-bold accentfont">
+                  trust, convenience, and value
+                </span>
                 . We began our journey with a single thought:{" "}
                 <span className="font-semibold">
                   "Why not create a shopping space that feels like an extension
@@ -65,7 +67,7 @@ const Retail = () => {
               </p>
               <p className="accentfont text-lg mt-4">
                 From the very beginning, our mission has been clear:{" "}
-                <span className="font-bold">
+                <span className="font-bold accentfont">
                   To provide quality essentials for everyday life, with
                   unmatched service and honest pricing.
                 </span>{" "}
@@ -82,24 +84,28 @@ const Retail = () => {
               </h2>
               <ul className="accentfont list-disc pl-6 text-lg space-y-3">
                 <li>
-                  <span className="font-bold">Curated Essentials:</span> From
-                  grains, dairy, and dry groceries to snacks, beverages,
+                  <span className="font-bold accentfont">
+                    Curated Essentials:
+                  </span>{" "}
+                  From grains, dairy, and dry groceries to snacks, beverages,
                   cleaning supplies, and personal care — everything is
                   handpicked to suit your daily needs.
                 </li>
                 <li>
-                  <span className="font-bold">Staff That Cares:</span> Our
-                  courteous team of over 30 trained staff ensures that every
+                  <span className="font-bold accentfont">
+                    Staff That Cares:
+                  </span>{" "}
+                  Our courteous team of over 30 trained staff ensures that every
                   visit is smooth and enjoyable — from helping you find products
                   to assisting at checkout.
                 </li>
                 <li>
-                  <span className="font-bold">Value for Money:</span> In-house
-                  deals, combo offers, and seasonal discounts ensure you get the
-                  best bang for your buck.
+                  <span className="font-bold accentfont">Value for Money:</span>{" "}
+                  In-house deals, combo offers, and seasonal discounts ensure
+                  you get the best bang for your buck.
                 </li>
                 <li>
-                  <span className="font-bold">
+                  <span className="font-bold accentfont">
                     Clean, Organised & Hygienic:
                   </span>{" "}
                   All outlets are maintained with rigorous hygiene checks and
@@ -107,7 +113,9 @@ const Retail = () => {
                   experience.
                 </li>
                 <li>
-                  <span className="font-bold">Easy Access & Parking:</span>{" "}
+                  <span className="font-bold accentfont">
+                    Easy Access & Parking:
+                  </span>{" "}
                   Strategically located stores with ample parking make your
                   visits quick and hassle-free.
                 </li>
@@ -119,12 +127,13 @@ const Retail = () => {
               <h2 className="text-3xl font-semibold mb-4">Looking Ahead</h2>
               <p className="accentfont text-lg leading-relaxed">
                 We’re not just building a chain of supermarkets — we’re building
-                a <span className="font-bold">community brand</span>. A name
-                that families can trust for consistency, quality, and care.
+                a <span className="font-bold accentfont">community brand</span>.
+                A name that families can trust for consistency, quality, and
+                care.
               </p>
               <p className="accentfont text-lg mt-4">
                 With plans to expand into{" "}
-                <span className="font-bold">
+                <span className="font-bold accentfont">
                   online ordering, home delivery, and customer loyalty programs
                 </span>
                 , Everyday Supermarket is evolving to meet the needs of modern
@@ -138,12 +147,14 @@ const Retail = () => {
               <h2 className="text-3xl font-semibold mb-4">Visit Us Today</h2>
               <p className="accentfont text-lg leading-relaxed">
                 Whether you’re in{" "}
-                <span className="font-bold">
+                <span className="font-bold accentfont">
                   Sector 11 or Sector 20 of Panchkula
                 </span>
                 , or driving through{" "}
-                <span className="font-bold">Baddi’s bustling markets</span>,
-                there’s an Everyday Supermarket nearby — waiting to serve you
+                <span className="font-bold accentfont">
+                  Baddi’s bustling markets
+                </span>
+                , there’s an Everyday Supermarket nearby — waiting to serve you
                 with a smile.
               </p>
               <p className="accentfont text-lg mt-4 italic font-semibold">
