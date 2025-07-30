@@ -107,10 +107,9 @@ export const Projects = [
       },
     ],
     highlights: [
-      "Clubhouse 13000 sqft",
       "Perfect Location in the city",
       "Event Space, Banquet",
-      "Clubhouse with cafe, restaurant & wellness facilities",
+      "13000 sqft Clubhouse with cafe, restaurant & wellness facilities",
       "Villas & apartments with premium interiors",
       "School Amravati Vidyalya 27000 sqft",
     ],
