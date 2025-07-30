@@ -4,7 +4,7 @@ import Navbar from "../../components/user/Navbar.jsx";
 import { Footer } from "../../components/user/Footer.jsx";
 import homevideo from "../../assets/homevideo.mp4";
 import map from "../../assets/map.jpg";
-import home5 from "../../assets/project1/outdoor1.jpg";
+import home5 from "../../assets/project1/hills/hills12.webp";
 import floral from "../../assets/floral.jpg";
 import home3 from "../../assets/project1/livingdining.jpg";
 import home4 from "../../assets/project1/outdoor.jpg";
@@ -79,7 +79,7 @@ export function Home() {
       </Helmet>
 
       <Navbar />
-      <section className="section bg-fixed relative bg-gradient-to-b h-[80vh] justify-center from-[#ece4d9] via-[#ece4d9]/90">
+      <section className="section bg-fixed relative bg-gradient-to-b h-[80vh] justify-center">
         <img
           src={herobg}
           className="absolute h-screen object-cover object-center w-full top-0 left-0 -z-10"
@@ -100,14 +100,14 @@ export function Home() {
       <div className="section min-h-screen themebg bg-center bg-no-repeat bg-contain">
         <motion.h2
           {...fadeInProps}
-          className="text-5xl p-20 text-start max-sm:text-3xl max-sm:p-10 max-sm:pb-0"
+          className="text-5xl p-20 text-center max-sm:text-3xl max-sm:p-10 max-sm:pb-0 pb-12"
         >
-          BUILDING
+          BUILDING TOMORROW, TODAY
         </motion.h2>
         <div className="row">
           <motion.div
             {...fadeInProps}
-            className="w-full flex justify-center items-center h-[60vh] bg-contain bg-no-repeat bg-center relative"
+            className="w-full flex justify-center items-center h-[60vh] max-sm:h-[36vh] bg-contain bg-no-repeat bg-center relative"
             style={{ backgroundImage: `url(${map})` }}
           >
             <img
@@ -121,7 +121,7 @@ export function Home() {
             {...fadeInProps}
             className="w-full flex justify-center items-start max-sm:items-center max-sm:text-center flex-col gap-4"
           >
-            <h2 className="text-5xl max-sm:text-4xl">WELCOME</h2>
+            <h2 className="text-4xl max-sm:text-3xl">WELCOME</h2>
             <p className="w-[80%] accentfont max-sm:w-full">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
               architecto tenetur ab rerum, illum esse amet atque aspernatur sunt
@@ -143,12 +143,12 @@ export function Home() {
         style={{
           backgroundImage: `linear-gradient(#ece4d9ed, #ece4d9, #ece4d9),url(${floral})`,
         }}
-        className="section min-h-screen bg-gradient-to-b py-20 max-sm:p-10 max-sm:px-0 pb-10 bg-center bg-no-repeat bg-cover"
+        className="section bg-gradient-to-b py-20 max-sm:p-10 max-sm:px-0 pb-10 bg-center bg-no-repeat bg-cover"
       >
         <div className="p-10 pt-5 pb-0 max-sm:p-0">
           <motion.h2
             {...fadeInProps}
-            className="text-5xl text-center max-sm:text-3xl max-sm:mb-10"
+            className="text-5xl text-center max-sm:text-3xl bgcolorfont"
           >
             HOW WE WORK
           </motion.h2>
@@ -161,7 +161,7 @@ export function Home() {
                     {...fadeInProps}
                     className="p-8 border gap-4 flex justify-center items-start flex-col"
                   >
-                    <h2 className="text-3xl">{element.heading}</h2>
+                    <h2 className="text-2xl max-sm:text-xl">{element.heading}</h2>
                     <p className="accentfont text-sm">{element.description}</p>
                   </motion.div>
                 ))}
@@ -170,20 +170,7 @@ export function Home() {
           </div>
         </div>
       </section>
-
-      {/* <section className="section accentbg">
-        <motion.h2
-          {...fadeInProps}
-          className="text-5xl p-20 pt-0 max-sm:p-4 max-sm:text-3xl max-sm:text-center"
-        >
-          A Glimpse Of Our Projects
-        </motion.h2>
-        <div className="row">
-          <Carousel />
-        </div>
-      </section> */}
-
-      <section className="section accentbg">
+      <section className="section accentbg pb-20 max-sm:pb-10">
         <div className="row">
           <FeatureSection />
         </div>

@@ -62,10 +62,10 @@ const Vidyalya = () => {
     <>
       <Navbar />
       <section className="section themebg">
-        <div className="row relative">
+        <div className="row relative ">
           <img
             src={vidyalya}
-            className="h-[45vh] w-full object-cover"
+            className="h-[45vh] max-sm:h-[50vh] w-full object-cover"
             alt="vidyalya"
           />
         <div className="w-full h-full bgcolorfont absolute top-0 left-0 bg-[#ece4d9]/70 flex justify-center items-center p-20 flex-col gap-4 max-sm:p-4">
@@ -81,7 +81,7 @@ const Vidyalya = () => {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section max-sm:pb-10 bgcolorfont">
         <div className="row">
           <div className="flex flex-col justify-center items-start text-start gap-8">
             <p className="accentfont text-lg">

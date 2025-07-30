@@ -37,12 +37,12 @@ export default function ProjectExpandableCard({ projects, project }) {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
         >
-          <h2 className="text-3xl capitalize">{project.name}</h2>
+          <h2 className="text-3xl capitalize max-sm:text-2xl">{project.name}</h2>
           <p className="text-lg text-gray-500">{project.location}</p>
-          <p className="text-xl font-medium mt-2 accentfont">
+          <p className="text-xl font-medium mt-2 accentfont max-sm:text-lg">
             {project.tagline}
           </p>
-          <p className="mt-2 accentfont w-[90%]">{project.description}</p>
+          <p className="mt-2 accentfont w-[90%] max-sm:text-sm">{project.description}</p>
 
           <motion.button className="btn mt-4 flex items-center gap-1">
             {expanded ? (

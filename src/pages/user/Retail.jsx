@@ -39,19 +39,19 @@ const Retail = () => {
             <h2 className=" text-4xl max-sm:text-3xl w-[80%] text-center max-sm:w-full font-semibold">
               WELCOME TO EVERYDAY SUPERMARKET
             </h2>
-            <h2 className="text-xl font-semibold accentfont max-sm:text-lg">
+            <h2 className="text-xl font-semibold accentfont max-sm:text-lg text-center">
               YOUR FRIENDLY NEIGHBOURHOOD GROCERY DESTINATION
             </h2>
           </div>
         </div>
       </section>
 
-      <section className="section">
+      <section className="section bgcolorfont max-sm:pb-10">
         <div className="row">
           <div className="flex flex-col justify-center items-start text-start gap-8">
             {/* Our Story */}
             <div>
-              <h2 className="text-3xl  mb-4">Our Story</h2>
+              <h2 className="text-3xl max-sm:text-3xl mb-4">Our Story</h2>
               <p className="accentfont text-lg leading-relaxed">
                 Everyday Supermarket was founded with the understanding that
                 modern families need more than just groceries — they need{" "}

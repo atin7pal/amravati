@@ -14,15 +14,15 @@ const Projects2 = () => {
         style={{
           backgroundImage: `linear-gradient(#00000000,#0000005d, #0000005d),url(${dreamscape})`,
         }}
-        className="section min-h-[120vh] bg-fixed text-center bg-cover bg-no-repeat bg-center flex justify-center items-center flex-col"
+        className="section min-h-[120vh] bg-fixed text-center bg-cover bg-no-repeat bg-center flex justify-center items-center flex-col max-sm:pb-10"
       >
         <div className="row">
-          <div className="flex flex-col gap-5 justify-center items-center">
-            <h1 className="text-5xl mb-6 w-[60%] mt-[70px] max-sm:mt-[110px] max-sm:w-full text-white max-sm:text-4xl">
+          <div className="flex flex-col gap-5 justify-center items-center max-sm:gap-3">
+            <h1 className="text-5xl mb-6 w-[60%] mt-[70px] max-sm:mt-[110px] max-sm:w-full text-white max-sm:text-3xl">
               {" "}
               Where Heart and Mind Converge to Create Thoughtful Real Estate.
             </h1>
-            <p className="text-xl max-w-5xl max-sm:w-full text-center accentfont p-4 text-white text-shadow-lg">
+            <p className="text-xl max-w-5xl max-sm:max-w-full max-sm:w-full text-center accentfont p-4 text-white text-shadow-lg">
               At Amravati Group, we believe that true craftsmanship in real
               estate begins at the intersection Of passion and purpose. Our
               commitment to thoughtful developments reflects not just a vision,

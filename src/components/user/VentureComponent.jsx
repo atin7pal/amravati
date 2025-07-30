@@ -36,7 +36,7 @@ export default function VentureComponent() {
 
   return (
     <AnimatePresence>
-      <div className="flex flex-col md:flex-row min-h-[80vh] max-sm:h-full transition-all duration-500 w-full">
+      <div className="flex flex-col md:flex-row min-h-[80vh] max-sm:h-full transition-all duration-500 w-full max-sm:pb-6">
         {/* Left Panel */}
         <div className="w-full p-20 flex flex-col justify-center items-start max-sm:p-4">
           {companies.map((company, index) => (
@@ -50,7 +50,7 @@ export default function VentureComponent() {
               onClick={() => setActiveIndex(index)}
             >
               <h2
-                className={`text-3xl flex items-center gap-2 w-full transition-colors duration-300 max-sm:text-2xl ${
+                className={`text-3xl flex items-center gap-2 w-full transition-colors duration-300 max-sm:text-2xl bgcolorfont ${
                   index === activeIndex ? "" : ""
                 }`}
               >

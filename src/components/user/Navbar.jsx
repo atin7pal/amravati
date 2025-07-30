@@ -53,7 +53,7 @@ const Navbar = ({ absolute = "", background = "themebg" }) => {
           <div className="flex-shrink-0">
             <Link to="/">
               <img
-                className="h-[200px] w-[200px] object-contain"
+                className="h-[200px] w-[200px] object-contain max-sm:h-[120px] max-sm:w-[120px]"
                 src={logo}
                 alt="Logo"
               />
@@ -114,7 +114,7 @@ const Navbar = ({ absolute = "", background = "themebg" }) => {
               onClick={() => setMenuOpen(!menuOpen)}
               className="text-2xl text-gray-800"
             >
-              {menuOpen ? <FaTimes /> : <FaBars />}
+              {menuOpen ? <FaTimes fontSize={20}/> : <FaBars fontSize={20} />}
             </button>
           </div>
         </div>
@@ -124,11 +124,11 @@ const Navbar = ({ absolute = "", background = "themebg" }) => {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
+            initial={{ height: 0 }}
+            animate={{ height: "200px", opacity: 1 }}
+            exit={{ height: 0}}
             transition={{ duration: 0.3 }}
-            className="md:hidden themebg border-t px-4 pt-4 pb-4 space-y-3 shadow-md overflow-hidden"
+            className="md:hidden themebg border-t px-4 pt-4 pb-4 space-y-3 shadow-md overflow-hidden max-sm:border-b"
           >
             {navLinks.map((link) => (
               <React.Fragment key={link.path}>
@@ -166,13 +166,7 @@ const Navbar = ({ absolute = "", background = "themebg" }) => {
               </React.Fragment>
             ))}
 
-            <Link
-              to="/contact"
-              onClick={() => setMenuOpen(false)}
-              className="btn"
-            >
-              Contact Us
-            </Link>
+          
           </motion.div>
         )}
       </AnimatePresence>

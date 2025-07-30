@@ -40,11 +40,11 @@ export default function TeamSection() {
   return (
     <section className="">
     
-      <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 w-full">
+      <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 w-full max-sm:gap-4">
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className="themebg p-6 flex flex-col items-center text-center group transition-all h-[300px] w-[400px]"
+            className="themebg p-6 flex flex-col items-center text-center group transition-all h-[300px] w-[400px] max-sm:w-full"
           >
             <img
               src={member.image}

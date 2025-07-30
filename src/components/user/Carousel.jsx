@@ -33,7 +33,7 @@ const Carousel = ({ images }) => {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-center w-full mx-auto overflow-hidden">
       {/* Image Container */}
-      <div className="relative w-full h-[400px]">
+      <div className="relative w-full h-[400px] max-sm:h-[250px]">
         {images?.map((slide, index) => (
           <img
             key={index}

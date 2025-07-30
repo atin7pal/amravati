@@ -31,10 +31,10 @@ export function Contact(props) {
       <section className="section themebg max-sm:h-full">
         <div className="row">
           <motion.div
-            className="w-full text-md h-full flex justify-around items-start flex-col gap-4"
+            className="w-full text-md h-full flex justify-around items-start flex-col gap-4 max-sm:gap-3"
             {...fadeInProps}
           >
-            <h2 className="text-5xl mb-2 max-sm:text-4xl max-sm:mb-1">CONTACT US</h2>
+            <h2 className="text-5xl mb-2 max-sm:text-3xl max-sm:mb-1">CONTACT US</h2>
             <div className="py-2 w-[90%]">
               For questions about property listings, investments, or quotations,
               please contact us. Our knowledgeable team will respond promptly to
@@ -82,11 +82,11 @@ export function Contact(props) {
           </motion.div>
 
           <motion.div
-            className="w-full h-[450px] flex flex-col justify-center items-start gap-4 px-4"
+            className="w-full h-[450px] flex flex-col justify-center items-start gap-4 px-4 max-sm:h-full max-sm:pb-10 max-sm:pt-4"
             {...fadeInProps}
           >
             <h2 className="text-lg accentfont">OUR LOCATION</h2>
-            <h2 className="text-4xl">CONNECTING NEAR AND FAR</h2>
+            <h2 className="text-4xl max-sm:text-3xl bgcolorfont">CONNECTING NEAR AND FAR</h2>
             <span className="text-xl accentfont">Headquartered at</span>
             <p className="accentfont">
               Amaravati complex <br />

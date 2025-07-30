@@ -2,9 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import Navbar from "../../components/user/Navbar";
 import { Footer } from "../../components/user/Footer";
-import aboutbanner from "../../assets/project1/outdoor1.jpg";
-import aboutbanner1 from "../../assets/project1/livingdining2.jpg";
-import aboutbanner2 from "../../assets/project1/view.jpg";
+import aboutbanner from "../../assets/project1/hills/hills11.webp";
+import aboutbanner1 from "../../assets/project1/hills/image5.webp";
+import aboutbanner2 from "../../assets/project1/hills/hills12.webp";
 import floral from "../../assets/floral.jpg";
 import { BiSolidQuoteLeft, BiSolidQuoteRight } from "react-icons/bi";
 import map from "../../assets/tropo.jpg";
@@ -37,7 +37,7 @@ export function About(props) {
             {...fadeInProps}
           >
             <h2 className="text-xl brownbg px-2 py-1 max-sm:text-sm">ABOUT US</h2>
-            <h2 className="text-5xl max-sm:text-4xl">AMRAVATI GROUP</h2>
+            <h2 className="text-5xl max-sm:text-3xl">AMRAVATI GROUP</h2>
             <p className="w-[80%] accentfont max-sm:w-full">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Laboriosam, quidem, obcaecati optio delectus alias hic ipsum illum
@@ -63,19 +63,19 @@ export function About(props) {
             <div className="w-full h-full">
               <img
                 src={aboutbanner1}
-                className="w-full h-[350px] object-cover"
+                className="w-full h-[350px] max-sm:h-[300px] object-cover"
                 alt=""
               />
             </div>
             <div className="flex w-full gap-4">
               <img
                 src={aboutbanner}
-                className="w-full h-[20vh] object-cover"
+                className="w-full max-sm:h-[15vh] h-[20vh] object-cover"
                 alt=""
               />
               <img
                 src={aboutbanner2}
-                className="w-full h-[20vh] object-cover"
+                className="w-full max-sm:h-[15vh] h-[20vh] object-cover"
                 alt=""
               />
               <div className="w-full h-[20vh] brownbg max-sm:hidden"></div>
@@ -85,7 +85,7 @@ export function About(props) {
             className="w-full h-[50vh] max-sm:h-[100%] px-5 flex gap-4 flex-col max-sm:text-center"
             {...fadeInProps}
           >
-            <h2 className="text-5xl max-sm:p-4 max-sm:pt-10 max-sm:text-4xl max-sm:text-center">
+            <h2 className="text-5xl  max-sm:pt-6 max-sm:text-3xl max-sm:text-center bgcolorfont">
               WELCOME
             </h2>
             <p className="accentfont">
@@ -96,7 +96,7 @@ export function About(props) {
               Atque molestiae nostrum fugiat id labore ipsa facere, porro eum
               modi obcaecati, ullam esse, quae in.
             </p>
-            <br />
+            
             <p className="accentfont">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
               nulla velit a aperiam? Voluptatibus amet illum reprehenderit illo
@@ -113,12 +113,12 @@ export function About(props) {
           backgroundImage: `linear-gradient(#fff,#ffffffe0, #ece4d9),url(${floral})`,
         }}
       >
-        <div className="flex p-20 pt-10 max-sm:flex-col max-sm:p-4">
+        <div className="row">
           <motion.div
-            className="w-full h-full flex flex-col text-center gap-4 justify-center items-center p-20 max-sm:p-4"
+            className="w-full h-full flex flex-col text-center gap-4 justify-center items-center p-20 max-sm:p-4 max-sm:border"
             {...fadeInProps}
           >
-            <h2 className="text-5xl max-sm:text-4xl">OUR VISION</h2>
+            <h2 className="text-5xl max-sm:text-3xl bgcolorfont">OUR VISION</h2>
             <p className="accentfont">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
               suscipit maiores itaque laborum, eum quasi, cumque optio expedita,
@@ -127,10 +127,10 @@ export function About(props) {
             </p>
           </motion.div>
           <motion.div
-            className="w-full h-full flex flex-col text-center gap-4 justify-center items-center bg-white p-20 shadow-lg shadow-[#ece4d9] max-sm:p-4"
+            className="w-full h-full flex flex-col text-center gap-4 justify-center items-center bg-white p-20 shadow-lg shadow-[#ece4d9] max-sm:p-4 max-sm:border"
             {...fadeInProps}
           >
-            <h2 className="text-5xl max-sm:text-4xl">OUR MISSION</h2>
+            <h2 className="text-5xl max-sm:text-3xl bgcolorfont">OUR MISSION</h2>
             <p className="accentfont">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum,
               nobis illo rerum facere id magnam cumque tenetur ullam animi nemo
@@ -158,36 +158,36 @@ export function About(props) {
         style={{
           backgroundImage: `linear-gradient(to right, #fff, #fff, #fffffff0),url(${map})`,
         }}
-        className="section bg-no-repeat bg-center bg-cover"
+        className="section bg-no-repeat bg-center bg-cover max-sm:pb-10"
       >
         <motion.h2
-          className="text-5xl p-20 max-sm:p-4 max-sm:mt-10 max-sm:text-4xl max-sm:text-center"
+          className="text-5xl p-20 pb-0 max-sm:p-0 max-sm:mt-10 max-sm:text-3xl max-sm:text-center bgcolorfont"
           {...fadeInProps}
         >
           MEET THE VISIONARIES
         </motion.h2>
         <div className="row">
-          <motion.div {...fadeInProps}>
+          <motion.div className="w-full" {...fadeInProps}>
             <TeamSection />
           </motion.div>
         </div>
       </section>
 
-      <section className="section themebg">
+      <section className="section themebg max-sm:pb-10">
         <motion.h2
-          className="text-5xl pt-10 max-sm:p-4 max-sm:text-4xl max-sm:mt-10 max-sm:text-center"
+          className="text-5xl pt-10 max-sm:px-2.5 max-sm:text-3xl max-sm:mt-4 max-sm:text-center"
           {...fadeInProps}
         >
           A MESSAGE FROM THE DIRECTOR
         </motion.h2>
         <div className="row">
           <motion.div
-            className="w-full flex flex-col justify-center items-center gap-4 text-center p-10 bg-white"
+            className="w-full flex flex-col justify-center items-center gap-4 text-center p-10 bg-white max-sm:p-4 max-sm:py-6"
             {...fadeInProps}
           >
             <img
               src={aboutbanner1}
-              className="w-[100px] rounded-full h-[100px] object-cover"
+              className="w-[100px] rounded-full h-[100px] object-cover max-sm:h-full"
               alt=""
             />
             <p className="w-[90%] accentfont relative max-sm:w-full">

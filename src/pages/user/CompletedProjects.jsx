@@ -12,7 +12,7 @@ const CompletedProjects = () => {
     <>
       <Navbar />
       <section className="section themebg max-sm:h-full">
-        <div className="row">
+        <div className="rowPadding">
           <div className="w-full flex flex-col justify-center items-center gap-4 max-sm:items-center text-center">
             <h2 className="text-5xl max-sm:text-3xl">COMPLETED PROJECTS</h2>
             <p className="accentfont text-lg w-[80%] max-sm:w-full">
