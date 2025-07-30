@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Navbar from "../../components/user/Navbar";
 import { Footer } from "../../components/user/Footer";
 import realtyCover from "../../assets/project1/hills/image5.webp"; // Replace with your actual image
@@ -12,6 +12,20 @@ import { Link } from "react-router-dom";
 
 const Realty = () => {
   const images = [project1, project2, project3, project4, project5];
+
+  const [isFixed, setIsFixed] = useState(false);
+  const heroRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const heroBottom =
+        heroRef.current?.getBoundingClientRect().bottom || 0;
+      setIsFixed(heroBottom <= 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
@@ -30,18 +44,29 @@ const Realty = () => {
             <h2 className="text-xl text-center accentfont">
               WHERE NATURE MEETS SOPHISTICATION, AND DESIGN MEETS PURPOSE
             </h2>
+  <div ref={heroRef} className="h-[1px] w-full"></div>
+
+      {/* Button bar */}
+      <div
+        className={`w-full ${
+          isFixed
+            ? "fixed top-0 left-0 z-40 bg-[#ece4d9]/90 backdrop-blur-md shadow-md"
+            : "relative"
+        } transition-all duration-300`}
+      >
+        <div className="px-8 py-4 flex gap-4 justify-center">
+          <Link to="/completed">
+            <button className="btn">COMPLETED PROJECTS</button>
+          </Link>
+          <Link to="/upcoming">
+            <button className="btn">UPCOMING PROJECTS</button>
+          </Link>
+        </div>
+      </div>
           </div>
         </div>
       </section>
-      <div className="flex p-5 px-20 gap-4 items-center justify-start sticky top-0 bg-white z-30 border-b border-gray-200 border-t">
-        <h2 className="text-3xl">View Our</h2>
-        <Link to="/completed">
-          <button className="btn">COMPLETED PROJECTS</button>
-        </Link>
-        <Link to="/upcoming">
-          <button className="btn">UPCOMING PROJECTS</button>
-        </Link>
-      </div>
+    
       <section className="section">
         <div className="row">
           <div className="flex flex-col justify-center items-start text-start gap-8">
