@@ -53,7 +53,7 @@ const Realty = () => {
                   : "relative"
               } transition-all duration-300`}
             >
-              <div className="px-8 py-4 flex gap-4 justify-center">
+              <div className="px-8 py-4 flex gap-4 justify-center max-sm:flex-col">
                 <Link to="/completed">
                   <button className="btn">COMPLETED PROJECTS</button>
                 </Link>
