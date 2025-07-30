@@ -107,12 +107,12 @@ export const Projects = [
       },
     ],
     highlights: [
-      "Sprawling across 145 bighas of scenic landscape",
-      "Breathtaking Himalayan valley views",
-      "Located just 45 km from Chandigarh",
-      "Clubhouse with café, restaurant & wellness facilities",
-      "Villas & apartments with modern architecture and luxury interiors",
-      "Fully managed leasing with StayVista",
+      "Clubhouse 13000 sqft",
+      "Perfect Location in the city",
+      "Event Space, Banquet",
+      "Clubhouse with cafe, restaurant & wellness facilities",
+      "Villas & apartments with premium interiors",
+      "School Amravati Vidyalya 27000 sqft",
     ],
     offerings: [
       {
@@ -138,6 +138,10 @@ export const Projects = [
       {
         type: "Amravati Eco Homes Phase-1 - 40 Units",
         size: "1000 sqft",
+      },
+      {
+        type: "Commercial Units - 12 units",
+        size: "2800 sqft (each)",
       },
     ],
   },
