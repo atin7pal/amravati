@@ -10,21 +10,21 @@ const companies = [
   {
     title: "AMRAVATI REALTY",
     description:
-      "Amravati Realty transforms land into vibrant spaces through sustainable and modern developments. We create residential and commercial projects designed for long-term impact and quality living.",
+      "Modern spaces for modern lives. Amravati Realty is shaping the skylines of Himachal Pradesh and Chandigarh with thoughtfully designed residential and commercial projects. From contemporary homes to smart spaces, we bring together innovation, functionality, and timeless aesthetics to create environments where life and work flourish.",
     image: realty,
     link: "/amravatirealty",
   },
   {
     title: "AMRAVATI RETAIL",
     description:
-      "Amravati Retail blends physical and digital retail to deliver quality products and seamless shopping. We empower local businesses and prioritize customer-first experiences.",
+      "Your everyday essentials, delivered with care. Amravati Retail brings convenience and quality together through our growing network of Everyday Supermarkets.",
     image: retail,
     link: "/amravatiretail",
   },
   {
     title: "AMRAVATI VIDYALYA",
     description:
-      "Amravati Vidyalya fosters holistic education through academic excellence and value-based learning. We help students grow into confident, responsible individuals.",
+      "Shaping bright futures - Amravati Vidyalaya is our commitment to nurturing young minds through value-based education and holistic development.",
     image: school,
     link: "/amravatividyalya",
   },
@@ -67,7 +67,9 @@ export default function VentureComponent() {
                 <p className="leading-relaxed w-full accentfont">
                   {company.description}
                 </p>
-                <Link className="btn mt-2 w-fit" to={company.link}>Know More</Link>
+                <Link className="btn mt-2 w-fit" to={company.link}>
+                  Know More
+                </Link>
               </div>
             </div>
           ))}

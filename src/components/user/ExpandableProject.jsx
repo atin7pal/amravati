@@ -97,7 +97,7 @@ export default function ProjectExpandableCard({ projects, project }) {
                     Size: {offering.size}
                   </p>
                   <ul className="text-gray-700">
-                    {offering.features.map((feat, idx) => (
+                    {offering?.features?.map((feat, idx) => (
                       <li key={idx} className="mb-1 w-fit px-2 py-1 accentfont">
                         {feat}
                       </li>
