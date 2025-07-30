@@ -3,7 +3,7 @@ import Navbar from "../../components/user/Navbar";
 import { Footer } from "../../components/user/Footer";
 import completed from "../../assets/completed.jpg";
 import ProjectExpandableCard from "../../components/user/ExpandableProject";
-import { Projects } from "../../assets/arrays/projects";
+import { Projects } from "../../assets/arrays/Projects.jsx";
 
 const CompletedProjects = () => {
 
