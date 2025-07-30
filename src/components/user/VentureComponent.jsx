@@ -50,7 +50,7 @@ export default function VentureComponent() {
               onClick={() => setActiveIndex(index)}
             >
               <h2
-                className={`text-3xl flex items-center gap-2 w-full transition-colors duration-300 ${
+                className={`text-3xl flex items-center gap-2 w-full transition-colors duration-300 max-sm:text-2xl ${
                   index === activeIndex ? "" : ""
                 }`}
               >
@@ -61,7 +61,7 @@ export default function VentureComponent() {
               </h2>
               <div
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                  index === activeIndex ? "max-h-[200px] mt-2" : "max-h-0"
+                  index === activeIndex ? "max-h-[240px] mt-2" : "max-h-0"
                 }`}
               >
                 <p className="leading-relaxed w-full accentfont">

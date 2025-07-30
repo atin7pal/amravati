@@ -18,8 +18,7 @@ const Realty = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const heroBottom =
-        heroRef.current?.getBoundingClientRect().bottom || 0;
+      const heroBottom = heroRef.current?.getBoundingClientRect().bottom || 0;
       setIsFixed(heroBottom <= 0);
     };
 
@@ -37,36 +36,36 @@ const Realty = () => {
             className="h-[45vh] w-full object-cover"
             alt="Amravati Realty"
           />
-          <div className="w-full h-full bgcolorfont absolute top-0 left-0 bg-[#ece4d9]/70 flex justify-center items-center p-20 flex-col gap-4">
-            <h2 className="text-4xl w-[80%] text-center">
+          <div className="w-full h-full bgcolorfont absolute top-0 left-0 bg-[#ece4d9]/70 flex justify-center items-center p-20 flex-col gap-4 max-sm:p-4">
+            <h2 className=" text-4xl max-sm:text-3xl w-[80%] text-center max-sm:w-full font-semibold">
               AMRAVATI REALTY: BUILDING TOMORROW, TODAY
             </h2>
-            <h2 className="text-xl text-center accentfont">
+            <h2 className="text-xl text-center accentfont max-sm:text-lg">
               WHERE NATURE MEETS SOPHISTICATION, AND DESIGN MEETS PURPOSE
             </h2>
-  <div ref={heroRef} className="h-[1px] w-full"></div>
+            <div ref={heroRef} className="h-[1px] w-full"></div>
 
-      {/* Button bar */}
-      <div
-        className={`w-full ${
-          isFixed
-            ? "fixed top-0 left-0 z-40 bg-[#ece4d9]/90 backdrop-blur-md shadow-md"
-            : "relative"
-        } transition-all duration-300`}
-      >
-        <div className="px-8 py-4 flex gap-4 justify-center">
-          <Link to="/completed">
-            <button className="btn">COMPLETED PROJECTS</button>
-          </Link>
-          <Link to="/upcoming">
-            <button className="btn">UPCOMING PROJECTS</button>
-          </Link>
-        </div>
-      </div>
+            {/* Button bar */}
+            <div
+              className={`w-full ${
+                isFixed
+                  ? "fixed top-0 left-0 z-40 bg-[#ece4d9]/90 backdrop-blur-md shadow-md"
+                  : "relative"
+              } transition-all duration-300`}
+            >
+              <div className="px-8 py-4 flex gap-4 justify-center">
+                <Link to="/completed">
+                  <button className="btn">COMPLETED PROJECTS</button>
+                </Link>
+                <Link to="/upcoming">
+                  <button className="btn">UPCOMING PROJECTS</button>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-    
+
       <section className="section">
         <div className="row">
           <div className="flex flex-col justify-center items-start text-start gap-8">

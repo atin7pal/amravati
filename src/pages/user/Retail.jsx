@@ -35,12 +35,12 @@ const Retail = () => {
             className="h-[45vh] w-full object-cover"
             alt="vidyalya"
           />
-          <div className="w-full h-full bgcolorfont absolute top-0 left-0 bg-[#ece4d9]/70 flex justify-center items-center p-20 flex-col gap-4">
-            <h2 className="font-semibold text-4xl w-[80%] text-center">
-              Welcome to Everyday Supermarket
+          <div className="w-full h-full bgcolorfont absolute top-0 left-0 bg-[#ece4d9]/70 flex justify-center items-center p-20 flex-col gap-4 max-sm:p-4">
+            <h2 className=" text-4xl max-sm:text-3xl w-[80%] text-center max-sm:w-full font-semibold">
+              WELCOME TO EVERYDAY SUPERMARKET
             </h2>
-            <h2 className="text-xl font-semibold">
-              Your Friendly Neighbourhood Grocery Destination
+            <h2 className="text-xl font-semibold accentfont max-sm:text-lg">
+              YOUR FRIENDLY NEIGHBOURHOOD GROCERY DESTINATION
             </h2>
           </div>
         </div>
@@ -51,7 +51,7 @@ const Retail = () => {
           <div className="flex flex-col justify-center items-start text-start gap-8">
             {/* Our Story */}
             <div>
-              <h2 className="text-3xl font-semibold mb-4">Our Story</h2>
+              <h2 className="text-3xl  mb-4">Our Story</h2>
               <p className="accentfont text-lg leading-relaxed">
                 Everyday Supermarket was founded with the understanding that
                 modern families need more than just groceries — they need{" "}
@@ -59,7 +59,7 @@ const Retail = () => {
                   trust, convenience, and value
                 </span>
                 . We began our journey with a single thought:{" "}
-                <span className="font-semibold">
+                <span className="">
                   "Why not create a shopping space that feels like an extension
                   of your own kitchen — always stocked, always welcoming, and
                   always budget-friendly?"
@@ -79,9 +79,7 @@ const Retail = () => {
 
             {/* What Sets Us Apart */}
             <div>
-              <h2 className="text-3xl font-semibold mb-4">
-                What Sets Us Apart
-              </h2>
+              <h2 className="text-3xl  mb-4">What Sets Us Apart</h2>
               <ul className="accentfont list-disc pl-6 text-lg space-y-3">
                 <li>
                   <span className="font-bold accentfont">
@@ -124,7 +122,7 @@ const Retail = () => {
 
             {/* Looking Ahead */}
             <div>
-              <h2 className="text-3xl font-semibold mb-4">Looking Ahead</h2>
+              <h2 className="text-3xl  mb-4">Looking Ahead</h2>
               <p className="accentfont text-lg leading-relaxed">
                 We’re not just building a chain of supermarkets — we’re building
                 a <span className="font-bold accentfont">community brand</span>.
@@ -144,7 +142,7 @@ const Retail = () => {
 
             {/* Visit Us Today */}
             <div>
-              <h2 className="text-3xl font-semibold mb-4">Visit Us Today</h2>
+              <h2 className="text-3xl  mb-4">Visit Us Today</h2>
               <p className="accentfont text-lg leading-relaxed">
                 Whether you’re in{" "}
                 <span className="font-bold accentfont">
@@ -157,7 +155,7 @@ const Retail = () => {
                 , there’s an Everyday Supermarket nearby — waiting to serve you
                 with a smile.
               </p>
-              <p className="accentfont text-lg mt-4 italic font-semibold">
+              <p className="accentfont text-lg mt-4 italic ">
                 Stop by and discover why we’re more than just a store — we’re a
                 part of your everyday.
               </p>

@@ -68,13 +68,14 @@ const Vidyalya = () => {
             className="h-[45vh] w-full object-cover"
             alt="vidyalya"
           />
-          <div className="w-full h-full bgcolorfont absolute top-0 left-0 bg-[#ece4d9]/70 flex justify-center items-center p-20 flex-col gap-4">
-            <h2 className="font-semibold text-4xl w-[80%] text-center">
+        <div className="w-full h-full bgcolorfont absolute top-0 left-0 bg-[#ece4d9]/70 flex justify-center items-center p-20 flex-col gap-4 max-sm:p-4">
+            <h2 className=" text-4xl max-sm:text-3xl w-[80%] text-center max-sm:w-full font-semibold">
+
               WELCOME TO AMRAVATI VIDYALYA, BADDI
             </h2>
-            <h2 className="text-xl font-semibold">
-              where every student steps through our gates with curiosity and
-              steps out with confidence.
+            <h2 className="text-xl  accentfont text-center max-sm:text-lg">
+              WHERE EVERY STUDENT STEPS THROUGH OUR GATES WITH CURIOSITY AND
+              STEPS OUT WITH CONFIDENCE.
             </h2>
           </div>
         </div>
@@ -131,7 +132,7 @@ const Vidyalya = () => {
               </p>
             </div>
 
-            <h2 className="text-2xl font-semibold">
+            <h2 className="text-2xl ">
               Amravati Vidyalaya, Baddi — Nurturing Young Minds, Shaping Bright
               Futures
             </h2>
@@ -180,7 +181,7 @@ const Vidyalya = () => {
             </p>
 
             {/* Timeline Section */}
-            <h2 className="text-2xl font-semibold mt-10">
+            <h2 className="text-2xl  mt-10">
               Our Journey: From 2007 Till Today
             </h2>
             <div className="relative border-l-1 border-primary ml-4 mt-6 space-y-8">
@@ -188,13 +189,13 @@ const Vidyalya = () => {
                 <div key={index} className="ml-6 relative">
                   <div className="absolute -left-9 top-1.5 w-6 h-6 bg-primary rounded-full border-4 border-white themebg shadow" />
                   <h3 className="text-xl font-bold">{event.year}</h3>
-                  <h4 className="text-lg font-semibold">{event.title}</h4>
+                  <h4 className="text-lg ">{event.title}</h4>
                   <p className="accentfont">{event.description}</p>
                 </div>
               ))}
             </div>
 
-            <h3 className="text-2xl font-semibold">Vision Forward</h3>
+            <h3 className="text-2xl ">Vision Forward</h3>
             <ul className="list-disc pl-6 accentfont text-lg space-y-2">
               <li>
                 Sustaining paths to premier institutions like IIT and other top
@@ -213,13 +214,13 @@ const Vidyalya = () => {
               </li>
             </ul>
 
-            <p className="accentfont text-lg font-bold">
-              <span className="font-bold">
-                In summary: Since 2007, <strong>Amravati Vidyalaya</strong> has
+            <p className="accentfont text-lg">
+              <span className="">
+                In summary: Since 2007, <span className = "font-semibold">Amravati Vidyalaya</span> has
                 transformed from a humble start into a beacon of academic
-                achievement and holistic development. From our first IIT
-                admission to stellar board results and rich extracurricular
-                opportunities, we continue to evolve—committed to preparing
+                achievement and holistic development. From our first  <span className = "font-semibold">IIT
+                admission</span> to stellar <span className = "font-semibold"> board results</span> and <span className = "font-semibold">rich extracurricular
+                opportunities</span>, we continue to evolve—committed to preparing
                 students for a promising tomorrow.
               </span>
             </p>
