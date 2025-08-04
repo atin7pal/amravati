@@ -1,28 +1,32 @@
 import React from "react";
-import { FaBuilding, FaVideo, FaDraftingCompass, FaBalanceScale } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { FaLightbulb, FaUsers, FaTools, FaLeaf } from "react-icons/fa";
 
 const features = [
   {
-    title: "PROPERTY MANAGEMENT",
-    description: "End-to-end property handling including tenant coordination, maintenance, and rent collection.",
-    icon: <FaBuilding size={24} />,
+    title: "VISION-LED DEVELOPMENT",
+    description:
+      "Every project begins with a bold vision one that blends functionality, aesthetics, and long-term value.",
+    icon: <FaLightbulb size={24} />, // symbolizes innovation and vision
     highlighted: true,
   },
   {
-    title: "VIRTUAL TOURS",
-    description: "Experience properties remotely with immersive 360° virtual walkthroughs and video previews.",
-    icon: <FaVideo size={24} />,
+    title: "CUSTOMER-CENTRIC APPROACH",
+    description:
+      "We listen, we learn, and we build keeping your needs at the heart of every decision we make.",
+    icon: <FaUsers size={24} />, // represents people-focused mindset
   },
   {
-    title: "ARCHITECTURE & INTERIORS",
-    description: "We offer custom architecture and interior solutions for your dream spaces.",
-    icon: <FaDraftingCompass size={24} />,
+    title: "QUALITY-FIRST EXECUTION",
+    description:
+      "From materials to manpower, we ensure excellence in every step, with no compromises.",
+    icon: <FaTools size={24} />, // represents construction, tools, and execution
   },
   {
-    title: "LOAN AND LEGAL",
-    description: "Assistance with home loans, registration, and property-related legal documentation.",
-    icon: <FaBalanceScale size={24} />,
+    title: "SUSTAINABLE GROWTH",
+    description:
+      "Whether it’s green spaces or future-focused planning, we build with tomorrow in mind.",
+    icon: <FaLeaf size={24} />, // represents sustainability and eco-consciousness
   },
 ];
 
@@ -33,15 +37,13 @@ const FeatureSection = () => {
         {/* Left Column */}
         <div className="flex flex-col justify-center">
           <h2 className="text-2xl md:text-3xl bgcolorfont mb-4 leading-snug">
-            WE ARE COMMITTED <br /> TO YOUR REAL ESTATE JOURNEY.
+            WE ARE COMMITTED <br /> TO YOUR REAL ESTATE JOURNEY
           </h2>
           <p className="mb-6 bgcolorfont accentfont">
-            From buying your first home to managing commercial properties, we support every step.
+            Turning vision into reality through thoughtful planning, precision, and purpose.
           </p>
           <Link to="/contact">
-          <button className="btnlight w-fit">
-            Contact us
-          </button>
+            <button className="btnlight w-fit">Get In Touch</button>
           </Link>
         </div>
 
@@ -51,16 +53,12 @@ const FeatureSection = () => {
             <div
               key={index}
               className={`p-6 transition ${
-                feature.highlighted
-                  ? "themebg text-white"
-                  : "accentbg"
+                feature.highlighted ? "themebg text-white" : "accentbg"
               }`}
             >
               <div className="mb-4">{feature.icon}</div>
-              <h4 className="text-lg mb-2">{feature.title}</h4>
-              <p className="text-sm accentfont">
-                {feature.description}
-              </p>
+              <h4 className="text mb-2 text-nowrap">{feature.title}</h4>
+              <p className="text-sm accentfont">{feature.description}</p>
             </div>
           ))}
         </div>

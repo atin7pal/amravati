@@ -13,6 +13,7 @@ import ContactForm from "../../components/user/ContactForm";
 import FAQSection from "../../components/user/FAQSection";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import { FaLocationDot } from "react-icons/fa6";
 
 export function Contact(props) {
   const fadeInProps = {
@@ -34,7 +35,9 @@ export function Contact(props) {
             className="w-full text-md h-full flex justify-around items-start flex-col gap-4 max-sm:gap-3"
             {...fadeInProps}
           >
-            <h2 className="text-5xl mb-2 max-sm:text-3xl max-sm:mb-1">CONTACT US</h2>
+            <h2 className="text-5xl mb-2 max-sm:text-3xl max-sm:mb-1">
+              CONTACT US
+            </h2>
             <div className="py-2 w-[90%]">
               For questions about property listings, investments, or quotations,
               please contact us. Our knowledgeable team will respond promptly to
@@ -48,20 +51,14 @@ export function Contact(props) {
               <div className="flex justify-center items-center gap-2 accentfont">
                 <BiPhone /> +91-7429299696
               </div>
-            </div>
-            <div className="text-sm flex flex-col justify-center items-center gap-4 w-full mt-2">
-              <div className="flex flex-col justify-center items-start w-full gap-2">
-                <BiSupport className="text-2xl" />
-                <h2 className="text-xl">ENQUIRY</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
-              </div>
 
-              <div className="flex flex-col justify-center gap-2 items-start w-full">
-                <BiMoney className="text-2xl" />
-                <h2 className="text-xl">SALES</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
+              <div className="flex justify-center items-start gap-2 accentfont">
+                <FaLocationDot />
+                Amravati Group, SCO 10-11, Sector 2 <br />
+                Panchkula, Haryana (134109)
               </div>
             </div>
+            <div className="text-sm flex flex-col justify-center items-center gap-4 w-full mt-2"></div>
           </motion.div>
 
           <motion.div className="w-full" {...fadeInProps}>
@@ -74,29 +71,11 @@ export function Contact(props) {
         <div className="row">
           <motion.div className="w-full" {...fadeInProps}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.7922325037102!2d76.9072783750383!3d30.752337084685884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f9223bfffffff%3A0x10e24c8c02899a72!2sAmravati%20Vidyalaya!5e0!3m2!1sen!2sin!4v1752346418292!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.772183349509!2d76.86136467985679!3d30.6966853219063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f930011b30a4b%3A0x6f0535d373a1e141!2sAmravati%20Group!5e0!3m2!1sen!2sin!4v1754134426207!5m2!1sen!2sin"
               width="100%"
               height="400px"
               loading="lazy"
             ></iframe>
-          </motion.div>
-
-          <motion.div
-            className="w-full h-[450px] flex flex-col justify-center items-start gap-4 px-4 max-sm:h-full max-sm:pb-10 max-sm:pt-4"
-            {...fadeInProps}
-          >
-            <h2 className="text-lg accentfont">OUR LOCATION</h2>
-            <h2 className="text-4xl max-sm:text-3xl bgcolorfont">CONNECTING NEAR AND FAR</h2>
-            <span className="text-xl accentfont">Headquartered at</span>
-            <p className="accentfont">
-              Amaravati complex <br />
-              Sector 2 <br />
-              Panchkula <br />
-              Haryana <br />
-            </p>
-            <Link to="/about">
-              <button className="btn">About Us</button>
-            </Link>
           </motion.div>
         </div>
       </section>

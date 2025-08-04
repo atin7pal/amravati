@@ -70,6 +70,10 @@
     @apply bg-[#ece4d9] border border-[#ece4d9] hover:bg-transparent hover:border-[#574d41] hover:text-[#574d41] flex justify-center items-center gap-2 px-5 py-3 text-[#574d41]
 }
 
+.input {
+  @apply p-2 border border-gray-300 ;
+}
+
 .smallbtn {
     @apply bg-[#574d41] border border-[#574d41] hover:bg-transparent max-sm:text-sm hover:text-[#574d41] flex justify-center items-center gap-2 px-5 py-3 max-sm:px-3 max-sm:py-2 text-[#ece4d9] capitalize
 }

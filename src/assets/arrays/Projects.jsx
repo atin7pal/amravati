@@ -1,11 +1,11 @@
 import hillcover from "../project1/hills/image1.webp";
-import image1 from "../project1/hills/hills1.webp";
+import image1 from "../project1/hills/hills1.png";
 import image2 from "../project1/hills/hills2.webp";
-import image3 from "../project1/image6.jpg";
-import image4 from "../project1/image7.jpg";
+import image3 from "../project1/hills/hills14.webp";
+import image4 from "../project1/hills/hills12.webp";
 import image5 from "../project1/hills/hills5.webp";
 import image6 from "../project1/hills/hills6.webp";
-import image7 from "../project1/hills/hills12.webp";
+import image7 from "../project1/hills/hills10.webp";
 import image8 from "../project1/hills/hills8.webp";
 import image9 from "../project1/hills/hills9.webp";
 import baddi1 from "../projectbaddi/baddi1.webp";
@@ -21,18 +21,18 @@ export const Projects = [
     coverImage: hillcover,
     brochureLink: "/pdfs/solan_brochure_singlepg.pdf",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio deserunt voluptatum culpa ullam dolores alias cum non, porro, saepe autem dolorem laboriosam aperiam cumque qui tempore odit reprehenderit, asperiores iusto?",
+      "Get ready to elevate your living experience with the stunning Amravati Alpine Apartments, available for immediate booking! These spacious 2 & 3 BHK bedroom apartments are designed for modern living, blending style, comfort and technology to create ultimate home environment.",
     galleryImages: [
       {
         src: image1,
         alt: "image 1",
       },
       {
-        src: image2,
+        src: image3,
         alt: "image 1",
       },
       {
-        src: image3,
+        src: image2,
         alt: "image 1",
       },
       {
@@ -70,7 +70,8 @@ export const Projects = [
     ],
     offerings: [
       {
-        type: "4 BHK Villas – The Den",
+        name: "THE DEN",
+        type: "4 BHK Villas",
         size: "4250 sq ft",
         features: [
           "Jacuzzi, electric fireplace, and panoramic terrace views",
@@ -81,13 +82,13 @@ export const Projects = [
     ],
   },
   {
-    name: "AMRAVATI APPARTMENTS",
+    name: "AMRAVATI APARTMENTS",
     location: "Baddi, Himachal Pradesh",
-    tagline: "Premium Appartments With All The Amenities",
+    tagline: "Premium Apartments With All The Amenities",
     coverImage: hillcover,
     brochureLink: "/pdfs/solan_brochure_singlepg.pdf",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio deserunt voluptatum culpa ullam dolores alias cum non, porro, saepe autem dolorem laboriosam aperiam cumque qui tempore odit reprehenderit, asperiores iusto?",
+      "Amravati Apartments is situated adjoining to Housing Board, Phase III, Baddi at a beautiful location in the surroundings of hills. Amravati Apartmernts is a one of a kind integrated township, which now houses over 10,000 happy customers. It was set up in the year 2005 and since then has become one of the most preferred in the Baddi Nalagarh Inudstrial region. The cohesive township is located with a picturequse hilly backdrop, just 30 kms away from Panchkula and 22 kms from New Chandigarh.",
     galleryImages: [
       {
         src: baddi1,
@@ -107,39 +108,53 @@ export const Projects = [
       },
     ],
     highlights: [
-      "Perfect Location in the city",
-      "Event Space, Banquet",
-      "13000 sqft Clubhouse with cafe, restaurant & wellness facilities",
-      "Villas & apartments with premium interiors",
-      "School Amravati Vidyalya 27000 sqft",
+      "Group housing spread across 131 bigha 19 biswa",
+      "Amravati Junior School – Kindergarten + Junior Wing",
+      "Amravati Vidyalaya High School affiliated with CBSE",
+      "Modern shopping complexes, showrooms, double-storey shops & booths",
+      "Just 3 KMs from National Highway 21A (Pinjore-Nalagarh road)",
+      "30 kms from Panchkula City",
+      "Apartments from 1 to 3 bedrooms",
+      "Built-up plots from 112 sq/m to 180 sq/m",
+      "Wide metaled roads with paver construction",
+      "Green surroundings with scenic hills nearby",
+      "Amravati Club House with health club, kitty room, TT room, billiards room & party hall",
+      "Deviwati Durga Mandir within premises",
     ],
     offerings: [
       {
-        type: "Studio Appartments - Lilly 320 Units",
+        name: "LILLY",
+        type: "Studio Apartments",
         size: "676 sqft",
       },
       {
-        type: "2 Bedroom + Kitchen (Open Plan Studio) - Jasmine 336 Units",
+        name: "JASMINE",
+        type: "2 Bedroom + Kitchen (Open Plan Studio)",
         size: "854 sqft",
       },
       {
-        type: "2 BHK Appartment - Daisy",
+        name: "DAISY",
+        type: "2 BHK Apartment",
         size: "1137 sqft",
       },
       {
-        type: "3 BHK Appartment - Zynia 96 Units",
+        name: "ZYNIA",
+        type: "3 BHK Apartment",
         size: "1137 sqft",
       },
       {
-        type: "3 BHK Appartment - Sunflower 96 Units",
+        name: "SUNFLOWER",
+        type: "3 BHK Apartment",
         size: "1490 sqft",
       },
       {
-        type: "Amravati Eco Homes Phase-1 - 40 Units",
+        name: "AMRAVATI ECO HOMES PHASE-1",
+        type: "Eco Homes",
         size: "1000 sqft",
       },
       {
-        type: "Commercial Units - 12 units",
+        name: "COMMERCIAL UNITS",
+        type: "Commercial",
         size: "2800 sqft (each)",
       },
     ],

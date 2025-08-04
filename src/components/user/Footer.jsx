@@ -7,6 +7,8 @@ import {
   FaYoutube,
   FaPhoneAlt,
 } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+
 import { MdEmail, MdLocationOn } from "react-icons/md";
 import logo from "../../assets/fulllogo.svg";
 import { BsArrowUp } from "react-icons/bs";
@@ -78,11 +80,11 @@ const Footer = () => {
           <div className="max-sm:text-center text-center">
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <div className="flex items-start gap-3 text-sm mb-3 max-sm:items-center max-sm:justify-center justify-center">
-              <MdLocationOn className="text-lg mt-1" />
-              <span className="accentfont">
-                123 Harmony Road,
-                <br /> Amravati, India
-              </span>
+              <p className="accentfont flex items-center gap-3 text-sm mb-1 max-sm:justify-center justify-center">
+                <FaLocationDot />
+                Amravati Group, SCO 10-11, Sector 2 <br />
+                Panchkula, Haryana (134109)
+              </p>
             </div>
             <div className="flex items-center gap-3 text-sm mb-3 max-sm:justify-center justify-center">
               <FaPhoneAlt className="text-base" />

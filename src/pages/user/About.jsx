@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Navbar from "../../components/user/Navbar";
 import { Footer } from "../../components/user/Footer";
-import aboutbanner from "../../assets/project1/hills/hills11.webp";
+import aboutbanner from "../../assets/project1/hills/hills9.webp";
 import aboutbanner1 from "../../assets/project1/hills/image5.webp";
 import aboutbanner2 from "../../assets/project1/hills/hills12.webp";
 import floral from "../../assets/floral.jpg";
@@ -36,13 +36,17 @@ export function About(props) {
             className="w-full flex flex-col justify-center items-start max-sm:items-center max-sm:text-center gap-4"
             {...fadeInProps}
           >
-            <h2 className="text-xl brownbg px-2 py-1 max-sm:text-sm">ABOUT US</h2>
+            <h2 className="text-xl brownbg px-2 py-1 max-sm:text-sm">
+              ABOUT US
+            </h2>
             <h2 className="text-5xl max-sm:text-3xl">AMRAVATI GROUP</h2>
             <p className="w-[80%] accentfont max-sm:w-full">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Laboriosam, quidem, obcaecati optio delectus alias hic ipsum illum
-              saepe earum expedita possimus? Deleniti, quos laboriosam. Nam
-              provident maxime nobis perferendis rerum!
+              At the heart of Amravati Group lies a mission: to build not just
+              spaces, but trust—through timely delivery, uncompromised quality,
+              and community-driven vision. Our developments are a reflection of
+              thoughtful planning, architectural brilliance, and seamless
+              execution, brought to life by a team of acclaimed architects,
+              engineers, designers, and planners.
             </p>
           </motion.div>
           <motion.div
@@ -89,20 +93,25 @@ export function About(props) {
               WELCOME
             </h2>
             <p className="accentfont">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni,
-              aspernatur autem maxime architecto iure tempore laudantium, eius
-              quas reiciendis laborum perferendis possimus iusto sed illum
-              obcaecati dolorem odio eum doloribus maiores pariatur placeat vel.
-              Atque molestiae nostrum fugiat id labore ipsa facere, porro eum
-              modi obcaecati, ullam esse, quae in.
+              Founded in the year 1997 under the visionary leadership of Late
+              Shri Amarnath Aggarwal, Amravati Group began its journey with a
+              simple yet ambitious goal: to redefine the real estate landscape
+              through timeless design and trustworthy execution. Guided today by
+              his son Mr. Hargobind Goyal and grandsons Ainesh Goyal and Viren
+              Goyal, the Group has grown into a diversified enterprise with
+              interests spanning residential and commercial real estate, retail,
+              and education.
             </p>
-            
+
             <p className="accentfont">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-              nulla velit a aperiam? Voluptatibus amet illum reprehenderit illo
-              quasi ducimus!
+              What began as a real estate enterprise has thoughtfully expanded
+              into Everyday Supermarket, our retail chain for daily essentials,
+              and Amravati Vidyalaya, an educational institution focused on
+              nurturing future-ready minds.
             </p>
-            <button className="btn w-fit max-sm:mx-auto mt-4">CONTACT US</button>
+            <button className="btn w-fit max-sm:mx-auto mt-4">
+              CONTACT US
+            </button>
           </motion.div>
         </div>
       </section>
@@ -120,22 +129,23 @@ export function About(props) {
           >
             <h2 className="text-5xl max-sm:text-3xl bgcolorfont">OUR VISION</h2>
             <p className="accentfont">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-              suscipit maiores itaque laborum, eum quasi, cumque optio expedita,
-              sunt saepe voluptate debitis distinctio blanditiis ducimus.
-              Repudiandae deserunt ab soluta blanditiis.
+              To shape the future of luxury living through contemporary,
+              sustainable spaces that combine timeless design with lasting
+              value—building communities that embody elegance, innovation, and
+              trust.
             </p>
           </motion.div>
           <motion.div
             className="w-full h-full flex flex-col text-center gap-4 justify-center items-center bg-white p-20 shadow-lg shadow-[#ece4d9] max-sm:p-4 max-sm:border"
             {...fadeInProps}
           >
-            <h2 className="text-5xl max-sm:text-3xl bgcolorfont">OUR MISSION</h2>
+            <h2 className="text-5xl max-sm:text-3xl bgcolorfont">
+              OUR MISSION
+            </h2>
             <p className="accentfont">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum,
-              nobis illo rerum facere id magnam cumque tenetur ullam animi nemo
-              accusantium odit debitis ab eveniet! Dolore quos qui provident
-              necessitatibus.
+              To build lasting value through thoughtfully designed spaces,
+              delivered with integrity, innovation, and an unwavering commitment
+              to quality.
             </p>
           </motion.div>
         </div>
@@ -192,15 +202,12 @@ export function About(props) {
             />
             <p className="w-[90%] accentfont relative max-sm:w-full">
               <BiSolidQuoteLeft />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ut
-              maxime omnis, laborum suscipit consectetur voluptates eligendi
-              dolorum nobis ab labore, doloribus sapiente est error, ratione
-              nihil voluptatum pariatur consequuntur quis blanditiis unde
-              temporibus. Expedita atque eum quo nulla sed, ullam, optio aliquam
-              ut ducimus magnam et cum illo dignissimos cumque autem aliquid
-              maiores deleniti beatae amet animi, voluptatibus accusantium.
-              Obcaecati harum voluptatibus sed necessitatibus excepturi velit
-              assumenda quibusdam provident.{" "}
+              At Amravati Group, we believe that great spaces are not just
+              built- they’re envisioned with purpose, care, and a deep
+              commitment to quality. With every brick we lay, we strive to shape
+              not just structures, but lifestyles that stand the test of time.
+              We are here to build dreams - responsibly, passionately, and with
+              unwavering integrity.
               <BiSolidQuoteRight className="absolute bottom-0 right-0" />
             </p>
             <p className="">Mr. Hargobind Goyal | Director</p>

@@ -4,7 +4,7 @@ import Navbar from "../../components/user/Navbar.jsx";
 import { Footer } from "../../components/user/Footer.jsx";
 import homevideo from "../../assets/homevideo.mp4";
 import map from "../../assets/map.jpg";
-import home5 from "../../assets/project1/hills/hills12.webp";
+import home5 from "../../assets/chair.jpeg";
 import floral from "../../assets/floral.jpg";
 import home3 from "../../assets/project1/livingdining.jpg";
 import home4 from "../../assets/project1/outdoor.jpg";
@@ -23,7 +23,7 @@ import BlogSection from "../../components/user/BlogSection.jsx";
 import { SendQuery } from "../../components/user/SendQuery.jsx";
 import Loader from "../../components/Loader.jsx";
 import { Helmet } from "react-helmet-async";
-import herobg from '../../assets/herobg.webp'
+import herobg from "../../assets/herobg2.png";
 
 export function Home() {
   const fadeInProps = {
@@ -88,7 +88,7 @@ export function Home() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="w-full flex justify-center items-start h-full flex-col gap-4"
+            className="w-full flex justify-top items-end h-full flex-col gap-4"
           >
             <h2 className="text-6xl max-sm:text-4xl bgcolorfont capitalize max-sm:text-center leading-[70px]">
               BUILDING DREAMS, <br /> ONE HOME AT A TIME
@@ -102,7 +102,7 @@ export function Home() {
           {...fadeInProps}
           className="text-5xl p-20 text-center max-sm:text-3xl max-sm:p-10 max-sm:pb-0 pb-12"
         >
-          BUILDING TOMORROW, TODAY
+          WELCOME TO AMRAVATI GROUP
         </motion.h2>
         <div className="row">
           <motion.div
@@ -113,7 +113,7 @@ export function Home() {
             <img
               src={home5}
               alt=""
-              className="absolute -bottom-5 right-10 h-[500px] w-[450px] object-cover max-sm:h-[300px] max-sm:w-[300px] max-sm:bottom-5"
+              className="absolute -bottom-10 right-10 h-[500px] w-[450px] object-cover max-sm:h-[300px] max-sm:w-[300px] max-sm:bottom-5"
             />
           </motion.div>
 
@@ -121,58 +121,38 @@ export function Home() {
             {...fadeInProps}
             className="w-full flex justify-center items-start max-sm:items-center max-sm:text-center flex-col gap-4"
           >
-            <h2 className="text-4xl max-sm:text-3xl">WELCOME</h2>
-            <p className="w-[80%] accentfont max-sm:w-full">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
-              architecto tenetur ab rerum, illum esse amet atque aspernatur sunt
-              eum tempore deleniti sed quod. Ad facere sit facilis ea esse vel?
-              Hic eaque provident voluptatem vero est ea maiores officia iste
-              voluptates excepturi incidunt, quos quae consequuntur, aliquam
-              facilis quasi.
+            <h2 className="text-3xl max-sm:text-xl">
+              WHERE TOMORROW BEGINS TODAY.
+            </h2>
+            <div className="w-[60%] h-0.5 brownbg"></div>
+            <p className="w-[80%] accentfont max-sm:w-full text-pretty">
+              At Amravati Group, we’re shaping modern lifestyles through
+              innovative real estate that blends design, comfort, and purpose.
+              With years of experience and a strong legacy in the industry,
+              we’ve built a reputation for trust and quality. Whether it’s
+              contemporary spaces in the lush landscapes of Himachal or smart
+              spaces in the heart of Chandigarh, our developments are built for
+              the future — stylish, sustainable, and thoughtfully planned.
+              Beyond real estate, we’re also creating impact through our
+              everyday retail stores and our forward-thinking educational
+              venture.
             </p>
             <br />
-            <p className="w-[80%] max-sm:w-full">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-              explicabo.
-            </p>
+            <p className="w-[80%] max-sm:w-full"></p>
           </motion.div>
         </div>
       </div>
 
-      <section
-        style={{
-          backgroundImage: `linear-gradient(#ece4d9ed, #ece4d9, #ece4d9),url(${floral})`,
-        }}
-        className="section bg-gradient-to-b py-20 max-sm:p-10 max-sm:px-0 pb-10 bg-center bg-no-repeat bg-cover"
-      >
-        <div className="p-10 pt-5 pb-0 max-sm:p-0">
-          <motion.h2
-            {...fadeInProps}
-            className="text-5xl text-center max-sm:text-3xl bgcolorfont"
-          >
-            HOW WE WORK
-          </motion.h2>
-          <div className="row">
-            <div className="w-full flex justify-center items-center">
-              <div className="w-full grid grid-cols-2 gap-4 max-sm:grid-cols-1">
-                {uniquePoints.map((element, i) => (
-                  <motion.div
-                    key={i}
-                    {...fadeInProps}
-                    className="p-8 border gap-4 flex justify-center items-start flex-col"
-                  >
-                    <h2 className="text-2xl max-sm:text-xl">{element.heading}</h2>
-                    <p className="accentfont text-sm">{element.description}</p>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="section accentbg pb-20 max-sm:pb-10">
+      <section className="section accentbg ">
         <div className="row">
           <FeatureSection />
+        </div>
+      </section>
+
+      <section className="accentbg pb-20 max-sm:pb-10">
+        <div className="text-2xl p-10 flex justify-center items-center italic accentfont">
+          "Wherever we build, we build with intent — for communities, for
+          progress, and for generations to come."
         </div>
       </section>
       <Footer />

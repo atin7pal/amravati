@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import realty from "../../assets/project1/hills/image5.webp";
 import retail from "../../assets/retail.jpg";
-import school from "../../assets/vidyalya.webp";
+import school from "../../assets/school/vidyalya.jpeg";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 

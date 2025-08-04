@@ -92,7 +92,8 @@ export default function ProjectExpandableCard({ projects, project }) {
               <h3 className="text-2xl">Available Units</h3>
               {project.offerings.map((offering, i) => (
                 <div key={i} className="mt-2">
-                  <h4 className="">{offering.type}</h4>
+                  <h2 className="text-lg">{offering.name}</h2>
+                  <h4 className="accentfont">{offering.type}</h4>
                   <p className="text-sm text-gray-500 mb-1 accentfont">
                     Size: {offering.size}
                   </p>

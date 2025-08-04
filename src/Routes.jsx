@@ -13,6 +13,10 @@ import Ventures from "./pages/user/Ventures";
 import Realty from "./pages/user/Realty";
 import Retail from "./pages/user/Retail";
 import Vidyalya from "./pages/user/Vidyalya";
+import Dashboard from "./pages/admin/Dashboard";
+import Enquiries from './pages/admin/Enquiries.jsx'
+import { CompletedProjectsAdmin } from "./pages/admin/CompletedProjectsAdmin.jsx";
+import CompletedList from "./pages/admin/CompletedList.jsx";
 
 const routes = [
   { path: "/", element: <Home /> },
@@ -33,7 +37,25 @@ const routes = [
   },
   {
     path: "/amravatividyalya", element : <Vidyalya/>
-  }
+  },
+ {
+  path: "/admin",
+  element: <Dashboard />,
+  children: [
+    {
+      path: "enquiries",
+      element: <Enquiries/>
+    },
+    {
+      path : "completedprojects",
+      element : <CompletedProjectsAdmin/>
+    },
+     {
+      path : "completedlist",
+      element : <CompletedList/>
+    }
+  ]
+}
 ];
 
 export default routes;

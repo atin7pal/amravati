@@ -4,6 +4,8 @@ import { Footer } from "../../components/user/Footer";
 import completed from "../../assets/completed.jpg";
 import ProjectExpandableCard from "../../components/user/ExpandableProject";
 import { Projects } from "../../assets/arrays/Projects.jsx";
+import { Upcoming } from "../../assets/arrays/Upcoming.jsx";
+import ExpandableUpcoming from "../../components/user/ExpandableUpcoming.jsx";
 
 const NewProjects = () => {
   return (
@@ -25,8 +27,8 @@ const NewProjects = () => {
       <section className="section themebg">
         <div className="row">
           <div>
-            {Projects.map((project, index) => (
-              <ProjectExpandableCard
+            {Upcoming.map((project, index) => (
+              <ExpandableUpcoming
                 key={index}
                 projects={Projects}
                 project={project}

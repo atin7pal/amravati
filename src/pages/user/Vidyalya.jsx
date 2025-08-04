@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../components/user/Navbar";
 import { Footer } from "../../components/user/Footer";
-import vidyalya from "../../assets/vidyalya.webp";
+import vidyalya from "../../assets/school/vidyalya.jpeg";
 import principal from "../../assets/principal.jpeg";
 import CarouselSlides from "../../components/user/CartouselSlides";
 import school1 from "../../assets/school/school1.jpeg";
@@ -65,7 +65,7 @@ const Vidyalya = () => {
         <div className="row relative ">
           <img
             src={vidyalya}
-            className="h-[45vh] max-sm:h-[50vh] w-full object-cover"
+            className="h-[45vh] max-sm:h-[50vh] w-full object-contain"
             alt="vidyalya"
           />
         <div className="w-full h-full bgcolorfont absolute top-0 left-0 bg-[#ece4d9]/70 flex justify-center items-center p-20 flex-col gap-4 max-sm:p-4">
