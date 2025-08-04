@@ -107,7 +107,7 @@ export function Home() {
         <div className="row">
           <motion.div
             {...fadeInProps}
-            className="w-full flex justify-center items-center h-[60vh] max-sm:h-[36vh] bg-contain bg-no-repeat bg-center relative"
+            className="w-full flex justify-center items-center h-[60vh] max-sm:h-[40vh] bg-contain bg-no-repeat bg-center relative"
             style={{ backgroundImage: `url(${map})` }}
           >
             <img
