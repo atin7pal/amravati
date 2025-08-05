@@ -1,29 +1,15 @@
 import React from "react";
 import Navbar from "../../components/user/Navbar";
 import { Footer } from "../../components/user/Footer";
-import retail from "../../assets/retail.jpg";
-import principal from "../../assets/principal.jpeg";
+import retail from "../../assets/store/storelogo.jpeg";
 import CarouselSlides from "../../components/user/CartouselSlides";
-import school1 from "../../assets/school/school1.jpeg";
-import school2 from "../../assets/school/school10.jpeg";
-import school3 from "../../assets/school/school3.jpeg";
-import school4 from "../../assets/school/school4.jpeg";
-import school5 from "../../assets/school/school5.jpeg";
-import school6 from "../../assets/school/school6.jpeg";
-import school7 from "../../assets/school/school7.jpeg";
-import school8 from "../../assets/school/school8.jpeg";
+import store1 from "../../assets/store/store1.webp";
+import store2 from "../../assets/store/store2.webp";
+import store3 from "../../assets/store/store3.webp";
+import store4 from "../../assets/store/store4.webp";
 
 const Retail = () => {
-  const images = [
-    school1,
-    school2,
-    school3,
-    school4,
-    school5,
-    school6,
-    school7,
-    school8,
-  ];
+  const images = [store1, store2, store3, store4];
 
   return (
     <>
@@ -161,6 +147,11 @@ const Retail = () => {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="section themebg">
+        <div className="p-20 py-10 w-full max-sm:px-4 max-sm:py-10">
+          <CarouselSlides images={images} />
         </div>
       </section>
       <Footer />
