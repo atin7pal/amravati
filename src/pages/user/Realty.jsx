@@ -8,9 +8,43 @@ import project3 from "../../assets/project1/hills/hills6.webp";
 import project4 from "../../assets/project1/hills/hills9.webp";
 import project5 from "../../assets/project1/hills/image5.webp";
 import CarouselSlides from "../../components/user/CartouselSlides";
+import logo from "../../assets/logofooter.svg";
 import { Link } from "react-router-dom";
 
 const Realty = () => {
+  const features = [
+    {
+      title: "Modern Architecture:",
+      description:
+        "Clean lines, open spaces, and intelligent design that maximizes light, air, and utility.",
+    },
+    {
+      title: "Prime Locations:",
+      description:
+        "Strategically chosen sites that offer the perfect mix of connectivity and tranquillity.",
+    },
+    {
+      title: "Quality Craftsmanship:",
+      description:
+        "We use only premium materials and trusted construction techniques to ensure homes that stand the test of time.",
+    },
+    {
+      title: "Future-Ready Living:",
+      description:
+        "From smart home features to energy-efficient systems, we build homes that are ready for tomorrow.",
+    },
+    {
+      title: "Customer-Centric Approach:",
+      description:
+        "Transparent dealings, on-time delivery, and attention to detail define our work ethic and culture",
+    },
+    {
+  title: "Innovative Community Spaces:",
+  description:
+    "Thoughtfully designed common areas that encourage interaction, recreation, and a strong sense of belonging.",
+}
+  ];
+
   const images = [project1, project2, project3, project4, project5];
 
   const [isFixed, setIsFixed] = useState(false);
@@ -29,7 +63,7 @@ const Realty = () => {
   return (
     <>
       <Navbar />
-      <section className="section themebg">
+      <section className="section themebg bgcolorfont">
         <div className="row relative">
           <img
             src={realtyCover}
@@ -66,100 +100,93 @@ const Realty = () => {
         </div>
       </section>
 
-      <section className="section max-sm:pb-10 bgcolorfont">
-        <div className="row">
-          <div className="flex flex-col justify-center items-start text-start gap-8">
+      <section className="section max-sm:pb-10">
+        <div className="row gap-6">
+          <div className="flex flex-col justify-center items-start w-full gap-4 themebg p-10">
+            <h2 className="text-5xl max-sm:text-3xl">Who We Are</h2>
+
+            <p className="accentfont text-lg leading-relaxed">
+              At Amravati Realty, a proud vertical of the Amravati Group, we are
+              redefining what it means to live beautifully. Rooted in vision and
+              driven by innovation, we specialize in crafting modern,
+              thoughtfully designed spaces across{" "}
+              <span className="">Himachal Pradesh and Chandigarh</span> — where
+              nature meets sophistication and design meets purpose.
+            </p>
+            <Link to="/about">
+              <button className="btn">Know More</button>
+            </Link>
+          </div>
+          <div className="flex w-full">
+            <img src={logo} alt="" />
+          </div>
+        </div>
+        <div className="rowpadding px-20 max-sm:px-4 bgcolorfont ">
+          <div className="flex flex-col justify-center items-start text-start gap-8 max-sm:gap-4">
             {/* About */}
-            <div>
-              <h2 className="text-3xl  mb-4">Who We Are</h2>
-              <p className="accentfont text-lg leading-relaxed">
-                At <span className="font-bold">Amravati Realty</span>, a proud
-                vertical of the Amravati Group, we are redefining what it means
-                to live beautifully. Rooted in vision and driven by innovation,
-                we specialize in crafting modern, thoughtfully designed spaces
-                across <span className="">Himachal Pradesh and Chandigarh</span>{" "}
-                — where nature meets sophistication and design meets purpose.
-              </p>
-              <p className="accentfont text-lg mt-4">
-                Under the dynamic leadership of{" "}
-                <span className="font-bold">Mr. Hargobind Goyal</span>, Director
-                of Amravati Group, we build more than spaces—we build
-                lifestyles. Our projects reflect today’s aspirations:
-                contemporary architecture, intelligent space planning,
-                sustainability, and harmony with the environment.
-              </p>
-            </div>
+
+            <p className="accentfont text-xl text-center">
+              Under the dynamic leadership of Mr. Hargobind Goyal, Director of
+              Amravati Group, we build more than spaces—we build lifestyles. Our
+              projects reflect today’s aspirations: contemporary architecture,
+              intelligent space planning, sustainability, and harmony with the
+              environment.
+            </p>
 
             {/* What Sets Us Apart */}
-            <div>
-              <h2 className="text-3xl  mb-4">What Sets Us Apart</h2>
-              <ul className="accentfont list-disc pl-6 text-lg space-y-3">
-                <li>
-                  <span className="font-bold accentfont">
-                    Modern Architecture:
-                  </span>{" "}
-                  Clean lines, open spaces, and intelligent design that
-                  maximizes light, air, and utility.
-                </li>
-                <li>
-                  <span className="font-bold accentfont">Prime Locations:</span>{" "}
-                  Strategically chosen sites that offer the perfect mix of
-                  connectivity and tranquillity.
-                </li>
-                <li>
-                  <span className="font-bold accentfont">
-                    Quality Craftsmanship:
-                  </span>{" "}
-                  We use only premium materials and trusted construction
-                  techniques to ensure homes that stand the test of time.
-                </li>
-                <li>
-                  <span className="font-bold accentfont">
-                    Future-Ready Living:
-                  </span>{" "}
-                  From smart home features to energy-efficient systems, we build
-                  homes that are ready for tomorrow.
-                </li>
-                <li>
-                  <span className="font-bold accentfont">
-                    Customer-Centric Approach:
-                  </span>{" "}
-                  Transparent dealings, on-time delivery, and attention to
-                  detail define our work ethic.
-                </li>
-              </ul>
+
+            <div className="py-10 max-sm:py-6 w-full bgcolorfont">
+              <div className="w-full">
+                <h2 className="text-5xl max-sm:text-3xl mb-10 max-sm:mb-6 text-center">
+                  What Sets Us Apart
+                </h2>
+                <ul className="accentfont text-lg grid grid-cols-3 gap-4 max-sm:grid-cols-1">
+                  {features.map((feature, index) => (
+                    <li
+                      key={index}
+                      className="p-6 min-h-[120px] themebg flex justify-start items-start flex-col accentfont gap-2"
+                    >
+                      <span className="accentfont font-bold text-2xl">
+                        {feature.title}
+                      </span>{" "}
+                      {feature.description}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
 
             {/* Our Vision */}
-            <div>
-              <h2 className="text-3xl  mb-4">Our Vision</h2>
+            <div className="text-center bgcolorfont">
+              <h2 className="text-5xl max-sm:text-3xl text-center mb-10 max-sm:mb-6">
+                Our Vision
+              </h2>
               <p className="accentfont text-lg leading-relaxed">
                 Amravati Realty isn't just about building structures—it's about
                 shaping communities, nurturing dreams, and creating spaces that
                 feel like home the moment you walk in.
               </p>
-              <p className="accentfont text-lg mt-4">
-                Whether nestled in the serenity of the{" "}
-                <span className="font-bold">Himalayan foothills</span> or in the
-                urban pulse of <span className="font-bold">Chandigarh</span>,
-                every home is designed to offer a perfect balance between{" "}
-                <span className="">
-                  luxury and comfort, elegance and function.
-                </span>
+              <p className="accentfont text-lg">
+                Whether nestled in the serenity of the Himalayan foothills or in
+                the urban pulse of Chandigarh, every home is designed to offer a
+                perfect balance between luxury and comfort, elegance and
+                function.
               </p>
             </div>
 
             {/* Explore Projects */}
-            <div>
-              <h2 className="text-3xl  mb-4">At A Glimpse</h2>
-              
+            <div className="bgcolorfont">
+              <h2 className="text-5xl max-sm:text-3xl text-center my-10 max-sm:my-6">
+                At A Glimpse
+              </h2>
+
               <CarouselSlides images={images} />
             </div>
 
             {/* Call to Action */}
-            <div>
-              <h2 className="text-3xl  mb-4">Let’s Build Together</h2>
-              <p className="accentfont text-lg leading-relaxed">
+            <div className="my-10 max-sm:my-6 max-sm:mb-6 bgcolorfont">
+              <h2 className="text-5xl max-sm:text-3xl  mb-4 text-center">Let’s Build Together</h2>
+              <p className="accentfont text-lg leading-relaxed text-center">
                 Take the first step toward{" "}
                 <span className="font-bold accentfont">
                   the home you've always imagined

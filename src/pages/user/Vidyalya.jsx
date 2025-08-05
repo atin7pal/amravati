@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../components/user/Navbar";
 import { Footer } from "../../components/user/Footer";
 import vidyalya from "../../assets/school/vidyalya.jpeg";
+import schoolactual from "../../assets/vidyalya.webp";
 import principal from "../../assets/principal.jpeg";
 import CarouselSlides from "../../components/user/CartouselSlides";
 import school1 from "../../assets/school/school1.jpeg";
@@ -46,6 +47,13 @@ const milestones = [
   },
 ];
 
+const highlights = [
+  "Sustaining paths to premier institutions like IIT and other top universities.",
+  "Ensuring over-the-top board exam results, year after year.",
+  "Broadening student potential—academic, creative, physical, and ethical.",
+  "Inspiring every young mind to dream, achieve, and lead",
+];
+
 const Vidyalya = () => {
   const images = [
     school1,
@@ -68,9 +76,8 @@ const Vidyalya = () => {
             className="h-[45vh] max-sm:h-[50vh] w-full object-contain"
             alt="vidyalya"
           />
-        <div className="w-full h-full bgcolorfont absolute top-0 left-0 bg-[#ece4d9]/70 flex justify-center items-center p-20 flex-col gap-4 max-sm:p-4">
+          <div className="w-full h-full bgcolorfont absolute top-0 left-0 bg-[#ece4d9]/70 flex justify-center items-center p-20 flex-col gap-4 max-sm:p-4">
             <h2 className=" text-4xl max-sm:text-3xl w-[80%] text-center max-sm:w-full font-semibold">
-
               WELCOME TO AMRAVATI VIDYALYA, BADDI
             </h2>
             <h2 className="text-xl  accentfont text-center max-sm:text-lg">
@@ -84,33 +91,34 @@ const Vidyalya = () => {
       <section className="section max-sm:pb-10 bgcolorfont">
         <div className="row">
           <div className="flex flex-col justify-center items-start text-start gap-8">
-            <p className="accentfont text-lg">
-              <span className="font-bold">Amravati Vidyalaya, Baddi</span>,
-              established in 2007, is located in the peaceful surroundings of{" "}
-              <span className="font-bold">Baddi, Himachal Pradesh</span>. The
-              school offers a safe, encouraging space with ventilated classrooms
-              and a well-maintained playground. Managed by the Amravati Welfare
-              Society, under the leadership of{" "}
-              <span className="font-bold">Mr. Hargobind Goyal</span>, it is
-              affiliated to the <span className="font-bold">CBSE</span>,
-              offering classes from Nursery to Class 10. With a commitment to
-              NEP 2020 goals, the school fosters critical thinking, life skills,
-              and values-driven education. Our students consistently deliver
-              outstanding results,
-              <span className="font-bold">
-                {" "}
-                including our first IIT admission
-              </span>
-              . These are milestones of excellence supported by strong academics
-              and moral grounding. At Amravati Vidyalaya, Baddi, we don’t just
-              impart education —{" "}
-              <span className="font-bold">
-                {" "}
-                we shape dreams, ignite young minds, and prepare future leaders
-                for a brighter tomorrow{" "}
-              </span>
-              .
-            </p>
+            <div className="flex gap-6 max-sm:flex-col">
+              <div className="w-full min-h-[350px] flex justify-center items-center max-sm:h-full flex-col">
+                <p className="accentfont text-lg text-pretty">
+                  Amravati Vidyalaya, Baddi, established in 2007, is located in
+                  the peaceful surroundings of Baddi, Himachal Pradesh. The
+                  school offers a safe, encouraging space with ventilated
+                  classrooms and a well-maintained playground. Managed by the
+                  Amravati Welfare Society, under the leadership of Mr.
+                  Hargobind Goyal, it is affiliated to the CBSE, offering
+                  classes from Nursery to Class 10. With a commitment to NEP
+                  2020 goals, the school fosters critical thinking, life skills,
+                  and values-driven education. 
+                </p>
+                <p className="accentfont text-lg text-pretty mt-4">Our students consistently deliver
+                  outstanding results, including our first IIT admission. These
+                  are milestones of excellence supported by strong academics and
+                  moral grounding. At Amravati Vidyalaya, Baddi, we don’t just
+                  impart education — we shape dreams, ignite young minds, and
+                  prepare future leaders for a brighter tomorrow .</p>
+              </div>
+              <div className="w-full">
+                <img
+                  src={schoolactual}
+                  className="w-full h-[350px] object-cover"
+                  alt=""
+                />
+              </div>
+            </div>
 
             <div className="flex justify-start items-center gap-6 max-sm:flex-col max-sm:items-start">
               <img
@@ -118,21 +126,21 @@ const Vidyalya = () => {
                 className="h-[200px] w-[200px] object-cover"
                 alt=""
               />
-              <p>
+              <p className="accentfont">
                 Under the dynamic and visionary leadership of our Principal,{" "}
-                <span className="font-bold">Mrs. Suman Sharma</span>, our
-                students are nurtured in an environment that fosters academic
-                excellence, personal growth, and social responsibility. With a
-                strong emphasis on holistic development, she inspires both
-                faculty and students to pursue innovation, embrace diversity,
-                and uphold the highest standards of integrity. Her guidance
-                ensures that every learner is equipped not only with knowledge
-                and skills but also with the values and mindset needed to thrive
-                as compassionate, future-ready global citizens.
+                Mrs. Suman Sharma, our students are nurtured in an environment
+                that fosters academic excellence, personal growth, and social
+                responsibility. With a strong emphasis on holistic development,
+                she inspires both faculty and students to pursue innovation,
+                embrace diversity, and uphold the highest standards of
+                integrity. Her guidance ensures that every learner is equipped
+                not only with knowledge and skills but also with the values and
+                mindset needed to thrive as compassionate, future-ready global
+                citizens.
               </p>
             </div>
 
-            <h2 className="text-2xl ">
+            <h2 className="text-3xl">
               Amravati Vidyalaya, Baddi — Nurturing Young Minds, Shaping Bright
               Futures
             </h2>
@@ -146,7 +154,7 @@ const Vidyalya = () => {
 
             <p className="text-lg accentfont">
               Leadership is cultivated through democratic elections for{" "}
-              <span className="font-bold">Head Boy/Girl and Captains</span>,
+              Head Boy/Girl and Captains,
               encouraging confidence and civic awareness.
             </p>
 
@@ -170,23 +178,11 @@ const Vidyalya = () => {
               </ul>
             </div>
 
-            <p className="text-lg accentfont">
-              Our mission is beyond ranks. We build character, creativity,
-              compassion—through supportive teachers and immersive experiences
-              in sports, arts, and leadership.
-            </p>
-            <p className="text-lg accentfont font-bold">
-              Join our journey — where learning is joyful, dreams find wings,
-              and every student is prepared to shine in a changing world!
-            </p>
-
             {/* Timeline Section */}
-            <h2 className="text-2xl  mt-10">
-              Our Journey: From 2007 Till Today
-            </h2>
-            <div className="relative border-l-1 border-primary ml-4 mt-6 space-y-8">
+            <h2 className="text-5xl max-sm:text-3xl  mt-10 max-sm:mt-4 max-sm:w-full max-sm:text-center">Our Journey</h2>
+            <div className="relative border-l-1 border-primary ml-4 mt-6 space-y-4 max-sm:mt-2">
               {milestones.map((event, index) => (
-                <div key={index} className="ml-6 relative">
+                <div key={index} className="ml-6 relative themebg p-4">
                   <div className="absolute -left-9 top-1.5 w-6 h-6 bg-primary rounded-full border-4 border-white themebg shadow" />
                   <h3 className="text-xl font-bold">{event.year}</h3>
                   <h4 className="text-lg ">{event.title}</h4>
@@ -195,41 +191,52 @@ const Vidyalya = () => {
               ))}
             </div>
 
-            <h3 className="text-2xl ">Vision Forward</h3>
-            <ul className="list-disc pl-6 accentfont text-lg space-y-2">
-              <li>
-                Sustaining paths to premier institutions like IIT and other top
-                universities.
-              </li>
-              <li>
-                Ensuring over-the-top board exam results, year after year.
-              </li>
-              <li>
-                Broadening student potential—academic, creative, physical, and
-                ethical.
-              </li>
-              <li>
-                Inspiring every young mind to{" "}
-                <strong>dream, achieve, and lead</strong>.
-              </li>
-            </ul>
+            <h3 className="text-5xl max-sm:text-3xl py-10 max-sm:py-4 max-sm:text-center max-sm:w-full">Vision Forward</h3>
+            <div className="flex gap-6 max-sm:flex-col max-sm:gap-8">
+              <ul className="grid w-full grid-cols-2 accentfont text-lg gap-4">
+                {highlights.map((item, index) => (
+                  <li
+                    className="themebg p-4 flex flex-col justify-center items-start"
+                    key={index}
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
 
-            <p className="accentfont text-lg">
-              <span className="">
-                In summary: Since 2007, <span className = "font-semibold">Amravati Vidyalaya</span> has
-                transformed from a humble start into a beacon of academic
-                achievement and holistic development. From our first  <span className = "font-semibold">IIT
-                admission</span> to stellar <span className = "font-semibold"> board results</span> and <span className = "font-semibold">rich extracurricular
-                opportunities</span>, we continue to evolve—committed to preparing
-                students for a promising tomorrow.
-              </span>
-            </p>
+              <div className="w-full flex justify-center items-center min-h-[300px]">
+                <p className="accentfont text-lg ">
+                  <span className="accentfont">
+                    In summary: Since 2007, Amravati Vidyalaya has transformed
+                    from a humble start into a beacon of academic achievement
+                    and holistic development. From our first IIT admission to
+                    stellar board results and rich extracurricular opportunities
+                    , we continue to evolve—committed to preparing students for
+                    a promising tomorrow.{" "}
+                  </span>
+
+                  <span className="accentfont">
+                    Our mission is beyond ranks. We build character, creativity,
+                    compassion—through supportive teachers and immersive
+                    experiences in sports, arts, and leadership.
+                  </span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section className="section themebg">
-        <div className="p-20 py-10 w-full max-sm:px-4 max-sm:py-10">
+      <section className="section">
+        <div className="p-20 py-10 w-full max-sm:px-4 max-sm:py-4">
           <CarouselSlides images={images} />
+        </div>
+      </section>
+      <section className="section max-sm:pb-10 max-sm:text-center">
+        <div className="row">
+          <p className="text-xl accentfont">
+            Join our journey — where learning is joyful, dreams find wings, and
+            every student is prepared to shine in a changing world!
+          </p>
         </div>
       </section>
       <Footer />

@@ -68,7 +68,7 @@ const CarouselSlides = ({ images }) => {
               <img
                 src={src}
                 alt={`Slide ${index}`}
-                className="w-full h-64 object-cover"
+                className="w-full h-64 object-cover max-sm:h-52"
               />
             </div>
           ))}
