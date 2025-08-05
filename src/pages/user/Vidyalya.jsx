@@ -120,7 +120,7 @@ const Vidyalya = () => {
               </div>
             </div>
 
-            <div className="flex justify-start items-center gap-6 max-sm:flex-col max-sm:items-start">
+            <div className="flex justify-start items-center gap-4 max-sm:flex-col max-sm:items-start">
               <img
                 src={principal}
                 className="h-[200px] w-[200px] object-cover"
@@ -140,7 +140,7 @@ const Vidyalya = () => {
               </p>
             </div>
 
-            <h2 className="text-3xl">
+            <h2 className="text-3xl max-sm:text-2xl">
               Amravati Vidyalaya, Baddi — Nurturing Young Minds, Shaping Bright
               Futures
             </h2>
@@ -163,15 +163,15 @@ const Vidyalya = () => {
                 Where Dreams Take Flight and Futures Are Shaped Right!
               </h2>
               <ul className="accentfont list-disc pl-5">
-                <li className="text-lg">
+                <li className="text-lg accentfont">
                   Since 2007, we’ve nurtured curiosity and prepared students to
                   excel across all spheres.
                 </li>
-                <li className="text-lg">
+                <li className="text-lg accentfont">
                   We embrace innovative teaching, a warm atmosphere, and
                   enriching activities.
                 </li>
-                <li className="text-lg">
+                <li className="text-lg accentfont">
                   From IIT to global careers, our alumni reflect our academic
                   and moral strength.
                 </li>
