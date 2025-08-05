@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import Navbar from "../../components/user/Navbar";
 import { Footer } from "../../components/user/Footer";
 import realtyCover from "../../assets/project1/hills/image5.webp"; // Replace with your actual image
-import project1 from "../../assets/project1/hills/hills1.webp"; // Add realty project images
+import project1 from "../../assets/project1/hills/hills1.png"; // Add realty project images
 import project2 from "../../assets/project1/hills/hills5.webp";
 import project3 from "../../assets/project1/hills/hills6.webp";
 import project4 from "../../assets/project1/hills/hills9.webp";
