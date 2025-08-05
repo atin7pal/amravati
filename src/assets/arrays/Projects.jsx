@@ -21,7 +21,7 @@ export const Projects = [
     coverImage: hillcover,
     brochureLink: "/pdfs/solan_brochure_singlepg.pdf",
     description:
-      "Get ready to elevate your living experience with the stunning Amravati Alpine Apartments, available for immediate booking! These spacious 2 & 3 BHK bedroom apartments are designed for modern living, blending style, comfort and technology to create ultimate home environment.",
+      "Welcome to The Den, where elegance meets comfort in a stunning 4-bedroom home ideal for families and discerning buyers. With a spacious layout and modern amenities, this property offers everything you need for an exquisite lifestyle. Spread across 3 floors plus a terrace with balconies stretching upto 8 ft wide with an uninteruppted view of the himalayan valley. Exclusive tie up with StayVista for property and lease management. Limited units only.",
     galleryImages: [
       {
         src: image1,

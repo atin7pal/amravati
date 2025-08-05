@@ -151,11 +151,8 @@ const Realty = () => {
 
             {/* Explore Projects */}
             <div>
-              <h2 className="text-3xl  mb-4">Explore Projects</h2>
-              <p className="accentfont text-lg mb-4">
-                Browse through some of our signature developments and envision
-                your future with Amravati Realty.
-              </p>
+              <h2 className="text-3xl  mb-4">At A Glimpse</h2>
+              
               <CarouselSlides images={images} />
             </div>
 

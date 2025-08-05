@@ -54,6 +54,11 @@
     color: #574d41;
 }
 
+.accenttextimp {
+   
+    color: #ece4d9 !important;
+}
+
 .section {
     @apply flex items-center flex-col
 }

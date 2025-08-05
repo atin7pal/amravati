@@ -89,7 +89,7 @@ export default function ProjectExpandableCard({ projects, project }) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
             >
-              <h3 className="text-2xl">Available Units</h3>
+              <h3 className="text-2xl">Sold Units</h3>
               {project.offerings.map((offering, i) => (
                 <div key={i} className="mt-2">
                   <h2 className="text-lg">{offering.name}</h2>

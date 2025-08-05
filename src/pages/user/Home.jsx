@@ -23,7 +23,7 @@ import BlogSection from "../../components/user/BlogSection.jsx";
 import { SendQuery } from "../../components/user/SendQuery.jsx";
 import Loader from "../../components/Loader.jsx";
 import { Helmet } from "react-helmet-async";
-import herobg from "../../assets/herobg2.png";
+import herobg from "../../assets/herobg.webp";
 
 export function Home() {
   const fadeInProps = {
@@ -79,20 +79,22 @@ export function Home() {
       </Helmet>
 
       <Navbar />
-      <section className="section bg-fixed relative bg-gradient-to-b h-[80vh] justify-center">
+      <section className="section bg-fixed relative bg-gradient-to-b h-[80vh] max-sm:h-[60vh] justify-center">
         <img
           src={herobg}
-          className="absolute h-screen object-cover object-center w-full top-0 left-0 -z-10"
+          className="absolute h-screen max-sm:h-[60vh] object-cover object-center w-full top-0 left-0 -z-10"
         />
         <div className="row absolute top-0 left-0 h-full">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="w-full flex justify-top items-end h-full flex-col gap-4"
+            className="w-full flex justify-top items-end max-sm:items-center max-sm:justify-center h-full flex-col gap-4"
           >
-            <h2 className="text-6xl max-sm:text-4xl bgcolorfont capitalize max-sm:text-center leading-[70px]">
+            <h2 className="text-6xl max-sm:hidden max-sm:text-4xl bgcolorfont capitalize max-sm:text-end leading-[70px] max-sm:leadinmg-[0px]">
               BUILDING DREAMS, <br /> ONE HOME AT A TIME
             </h2>
+
+            <h2 className="hidden max-sm:block text-6xl bg-[#ece4d9]/80 max-sm:text-3xl bgcolorfont p-4 capitalize max-sm:text-center leading-[70px] max-sm:leadinmg-[0px]">BUILDING DREAMS, <br /> ONE HOME AT A TIME</h2>
           </motion.div>
         </div>
       </section>
@@ -107,7 +109,7 @@ export function Home() {
         <div className="row">
           <motion.div
             {...fadeInProps}
-            className="w-full flex justify-center items-center h-[60vh] max-sm:h-[40vh] bg-contain bg-no-repeat bg-center relative"
+            className="w-full flex justify-center items-center h-[60vh] max-sm:h-[38vh] bg-contain bg-no-repeat bg-center relative"
             style={{ backgroundImage: `url(${map})` }}
           >
             <img

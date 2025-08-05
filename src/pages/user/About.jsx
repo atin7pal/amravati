@@ -109,9 +109,7 @@ export function About(props) {
               and Amravati Vidyalaya, an educational institution focused on
               nurturing future-ready minds.
             </p>
-            <button className="btn w-fit max-sm:mx-auto mt-4">
-              CONTACT US
-            </button>
+          
           </motion.div>
         </div>
       </section>
