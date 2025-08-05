@@ -1,4 +1,6 @@
-import hillcover from "../project1/hills/image1.webp";
+import hillcover from "../project1/hills/image4.webp";
+import amravatiapartments from '../projectbaddi/baddi1.webp'
+
 
 export const Upcoming = [
   {
@@ -36,17 +38,24 @@ export const Upcoming = [
     name: "AMRAVATI APARTMENTS",
     location: "Baddi, Himachal Pradesh",
     tagline: "Premium Apartments With All The Amenities",
-    coverImage: hillcover,
+    coverImage: amravatiapartments,
     brochureLink: "/pdfs/solan_brochure_singlepg.pdf",
     description:
-      "Amravati Apartments is situated adjoining to Housing Board, Phase III, Baddi at a beautiful location in the surroundings of hills. Amravati Apartmernts is a one of a kind integrated township, which now houses over 10000 happy customers. It was set up in the year 2005 and since then has become one of the most preferred zip codes in the Baddi Nalagarh Inudstrial region. The cohesive township is located with a picturequse hilly backdrop, just 30 kms away from Panchkula and 22 kms from New Chandigarh. The township is spread across 132 bighas of land and has all the facilities of a fully functioning city. This project has all the modern facilities like water supply through over head water tank, storm water drainage, electricity, roads, street lights, sewerage treatment plant, schools, club, temple, parks and power backup for lifts.",
+      "Amravati Apartments is situated adjoining to Housing Board, Phase III, Baddi at a beautiful location in the surroundings of hills. Amravati Apartmernts is a one of a kind integrated township, which now houses over 10,000 happy customers. It was set up in the year 2005 and since then has become one of the most preferred in the Baddi Nalagarh Inudstrial region. The cohesive township is located with a picturequse hilly backdrop, just 30 kms away from Panchkula and 22 kms from New Chandigarh.",
     galleryImages: [],
     highlights: [
-      "Perfect Location in the city",
-      "Event Space, Banquet",
-      "13000 sqft Clubhouse with cafe, restaurant & wellness facilities",
-      "Villas & apartments with premium interiors",
-      "School Amravati Vidyalya 27000 sqft",
+      "Group housing spread across 131 bigha 19 biswa",
+      "Amravati Junior School – Kindergarten + Junior Wing",
+      "Amravati Vidyalaya High School affiliated with CBSE",
+      "Modern shopping complexes, showrooms, double-storey shops & booths",
+      "Just 3 KMs from National Highway 21A (Pinjore-Nalagarh road)",
+      "30 kms from Panchkula City",
+      "Apartments from 1 to 3 bedrooms",
+      "Built-up plots from 112 sq/m to 180 sq/m",
+      "Wide metaled roads with paver construction",
+      "Green surroundings with scenic hills nearby",
+      "Amravati Club House with health club, kitty room, TT room, billiards room & party hall",
+      "Deviwati Durga Mandir within premises",
     ],
     offerings: [
       {

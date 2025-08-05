@@ -6,8 +6,6 @@ import ProjectExpandableCard from "../../components/user/ExpandableProject";
 import { Projects } from "../../assets/arrays/Projects.jsx";
 
 const CompletedProjects = () => {
-
-
   return (
     <>
       <Navbar />
@@ -16,22 +14,25 @@ const CompletedProjects = () => {
           <div className="w-full flex flex-col justify-center items-center gap-4 max-sm:items-center text-center">
             <h2 className="text-5xl max-sm:text-3xl">COMPLETED PROJECTS</h2>
             <p className="accentfont text-lg w-[80%] max-sm:w-full">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Dignissimos et nobis eos eaque, labore eligendi fuga sapiente
-              voluptatem quas maiores debitis exercitationem dolorum provident
-              quam cumque quibusdam numquam, architecto itaque.
+              With each completed project, Amravati Group has delivered more
+              than structures—we’ve delivered promises fulfilled. These
+              landmarks stand as testaments to our commitment to quality, timely
+              delivery, and creating spaces where communities thrive.
             </p>
           </div>
-       
         </div>
       </section>
       <section className="section themebg">
         <div className="row">
           <div>
             {Projects.map((project, index) => (
-        <ProjectExpandableCard key={index} projects={Projects} project={project} />
-      ))}
-      </div>
+              <ProjectExpandableCard
+                key={index}
+                projects={Projects}
+                project={project}
+              />
+            ))}
+          </div>
         </div>
       </section>
       <Footer />
