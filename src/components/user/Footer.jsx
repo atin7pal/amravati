@@ -10,7 +10,7 @@ import {
 import { FaLocationDot } from "react-icons/fa6";
 
 import { MdEmail, MdLocationOn } from "react-icons/md";
-import logo from "../../assets/fulllogo.svg";
+import logo from "../../assets/logofooter.svg";
 import { BsArrowUp } from "react-icons/bs";
 import { IoMdArrowDropup } from "react-icons/io";
 import footervideo from "../../assets/footervideo.mp4";
