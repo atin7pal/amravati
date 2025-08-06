@@ -39,10 +39,18 @@ const Navbar = ({ absolute = "", background = "themebg" }) => {
         </div>
         <div className="flex justify-end items-center gap-1 accentfont w-full">
           <p className="accentfont text-xs">Follow Us On</p> |
-          <FaFacebook className="text-xs" />
-          <FaInstagram className="text-xs" />
-          <FaLinkedin className="text-xs" />
-          <FaYoutube className="text-xs" />
+          <a
+            target="_blank"
+            href="https://www.instagram.com/amravatigroup?igsh=MWg4M2hhMjMwdGZ4aA%3D%3D&utm_source=qr"
+          >
+            <FaFacebook className="text-xs" />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/share/1Eid13a82B/?mibextid=wwXIfr"
+          >
+            <FaInstagram className="text-xs" />
+          </a>
         </div>
       </div>
 
@@ -114,7 +122,7 @@ const Navbar = ({ absolute = "", background = "themebg" }) => {
               onClick={() => setMenuOpen(!menuOpen)}
               className="text-2xl text-gray-800"
             >
-              {menuOpen ? <FaTimes fontSize={20}/> : <FaBars fontSize={20} />}
+              {menuOpen ? <FaTimes fontSize={20} /> : <FaBars fontSize={20} />}
             </button>
           </div>
         </div>
@@ -126,7 +134,7 @@ const Navbar = ({ absolute = "", background = "themebg" }) => {
           <motion.div
             initial={{ height: 0 }}
             animate={{ height: "200px", opacity: 1 }}
-            exit={{ height: 0}}
+            exit={{ height: 0 }}
             transition={{ duration: 0.3 }}
             className="md:hidden themebg border-t px-4 pt-4 pb-4 space-y-3 shadow-md overflow-hidden max-sm:border-b"
           >
@@ -165,8 +173,6 @@ const Navbar = ({ absolute = "", background = "themebg" }) => {
                 )}
               </React.Fragment>
             ))}
-
-          
           </motion.div>
         )}
       </AnimatePresence>
