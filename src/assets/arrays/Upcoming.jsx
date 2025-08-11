@@ -18,7 +18,6 @@ export const Upcoming = [
       "Located just 45 km from Chandigarh",
       "Clubhouse with café, restaurant & wellness facilities",
       "Villas & apartments with modern architecture and luxury interiors",
-      "Fully managed leasing with StayVista",
     ],
     offerings: [
       {

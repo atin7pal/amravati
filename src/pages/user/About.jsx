@@ -59,7 +59,7 @@ export function About(props) {
       </section>
 
       <section className="section h-full">
-        <div className="row">
+        <div className="rownopad">
           <motion.div
             className="w-full flex flex-col justify-center items-center gap-4"
             {...fadeInProps}
@@ -90,7 +90,7 @@ export function About(props) {
             {...fadeInProps}
           >
             <h2 className="text-5xl  max-sm:pt-6 max-sm:text-3xl max-sm:text-center bgcolorfont">
-              WELCOME
+              OUR STORY
             </h2>
             <p className="accentfont">
               Founded in the year 1997 under the visionary leadership of Late
@@ -206,7 +206,7 @@ export function About(props) {
               not just structures, but lifestyles that stand the test of time.
               We are here to build dreams - responsibly, passionately, and with
               unwavering integrity.
-              <BiSolidQuoteRight className="absolute bottom-0 right-0" />
+              <BiSolidQuoteRight className="absolute bottom-0 -right-5" />
             </p>
             <p className="">Mr. Hargobind Goyal | Director</p>
           </motion.div>
@@ -228,7 +228,9 @@ export function About(props) {
       </section>
 
       <SendQuery video={video2} /> */}
+      <div className="animate-radial-bg-move">
       <Footer />
+      </div>
     </>
   );
 }

@@ -65,11 +65,6 @@ const Realty = () => {
       <Navbar />
       <section className="section themebg bgcolorfont">
         <div className="row relative">
-          <img
-            src={realtyCover}
-            className="h-[45vh] w-full object-cover max-sm:h-[55vh]"
-            alt="Amravati Realty"
-          />
           <div className="w-full h-full bgcolorfont absolute top-0 left-0 bg-[#ece4d9]/70 flex justify-center items-center p-20 flex-col gap-4 max-sm:p-4">
             <h2 className=" text-4xl max-sm:text-3xl w-[80%] text-center max-sm:w-full font-semibold">
               AMRAVATI REALTY: BUILDING TOMORROW, TODAY
@@ -110,7 +105,7 @@ const Realty = () => {
               redefining what it means to live beautifully. Rooted in vision and
               driven by innovation, we specialize in crafting modern,
               thoughtfully designed spaces across{" "}
-              <span className="">Himachal Pradesh and Chandigarh</span> — where
+              Himachal Pradesh and Chandigarh — where
               nature meets sophistication and design meets purpose.
             </p>
             <Link to="/about">

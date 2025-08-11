@@ -47,22 +47,15 @@ const Retail = () => {
   return (
     <>
       <Navbar />
-      <section className="section themebg">
-        <div className="row relative">
-          <div className="w-full h-full bgcolorfont bg-[#ece4d9]/70 flex justify-center items-start max-sm:items-center max-sm:text-center p-20 flex-col gap-4 max-sm:p-0">
-            <h2 className=" text-4xl max-sm:text-3xl w-[80%] max-sm:w-full font-semibold">
+<section className="section">
+        <div className="row themebg">
+          <div className="flex flex-col justify-center items-center text-center gap-4 max-sm:pb-10">
+            <h2 className=" text-4xl max-sm:text-3xl max-sm:w-full font-semibold">
               WELCOME TO EVERYDAY SUPERMARKET
             </h2>
-            <h2 className="text-xl font-semibold accentfont max-sm:text-lg">
+            <p className="text-xl font-semibold accentfont max-sm:text-lg">
               YOUR FRIENDLY NEIGHBOURHOOD GROCERY DESTINATION
-            </h2>
-          </div>
-          <div className="w-full">
-            <img
-              src={retail}
-              className="h-[45vh] max-sm:h-full w-full object-contain"
-              alt="vidyalya"
-            />
+            </p>
           </div>
         </div>
       </section>
@@ -119,6 +112,12 @@ const Retail = () => {
               </div>
             </div>
 
+            <section className="section">
+              <div className="py-10 max-sm:py-4 w-full max-sm:px-0">
+                <CarouselSlides images={images} />
+              </div>
+            </section>
+
             {/* Looking Ahead */}
             <h2 className="text-5xl max-sm:text-3xl pt-10 pb-6 text-center max-sm:pt-2 max-sm:pb-0 w-full">
               Looking Ahead
@@ -151,19 +150,13 @@ const Retail = () => {
                   <span className="font-bold accentfont">
                     To provide quality essentials for everyday life, with
                     unmatched service and honest pricing.
-                  </span>{" "}
+                  </span>{" "} 
                   With each new outlet, we’ve grown not just in size, but in
                   heart. Every shelf is thoughtfully curated, every product
                   carefully selected, and every customer valued like family.
                 </p>
               </div>
             </div>
-
-            <section className="section">
-              <div className="py-10 max-sm:py-4 w-full max-sm:px-0">
-                <CarouselSlides images={images} />
-              </div>
-            </section>
 
             {/* Visit Us Today */}
           </div>
@@ -176,7 +169,7 @@ const Retail = () => {
         <p className="accentfont text-lg leading-relaxed">
           Whether you’re in{" "}
           <span className="font-bold accentfont">
-            Sector 11 or Sector 20 of Panchkula
+             Panchkula
           </span>
           , or driving through{" "}
           <span className="font-bold accentfont">Baddi’s bustling markets</span>

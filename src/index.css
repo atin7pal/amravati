@@ -100,3 +100,20 @@
     max-width: 100%;
     overflow: hidden;
 }
+
+@keyframes radialGradientFade {
+  0% {
+    background: radial-gradient(circle, white 0%, #ece4d9 100%);
+  }
+  50% {
+    background: radial-gradient(circle, #ece4d9 0%, white 100%);
+  }
+  100% {
+    background: radial-gradient(circle, white 0%, #ece4d9 100%);
+  }
+}
+
+.radial-gradient-animated {
+  animation: radialGradientFade 6s ease-in-out infinite;
+  background-size: 150% 150%;
+}

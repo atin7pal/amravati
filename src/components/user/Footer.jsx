@@ -18,16 +18,24 @@ import footervideo from "../../assets/footervideo.mp4";
 const Footer = () => {
   return (
     <>
-      <div className="flex justify-between items-center px-10 py-2 accentbg border-b max-sm:px-4 relative">
+      <div className="flex  justify-between items-center px-10 py-2 accentbg border-b max-sm:px-4 relative">
         <h3 className="text-lg">Follow Us</h3>
         <div className="flex gap-4 max-sm:gap-2">
-          <a target="_blank" href="https://www.facebook.com/share/1Eid13a82B/?mibextid=wwXIfr" className="rounded-full">
+          <a
+            target="_blank"
+            href="https://www.facebook.com/share/1Eid13a82B/?mibextid=wwXIfr"
+            className="rounded-full"
+          >
             <FaFacebookF />
           </a>
-          <a target="_blank" href="https://www.instagram.com/amravatigroup?igsh=MWg4M2hhMjMwdGZ4aA%3D%3D&utm_source=qr" className="rounded-full">
+          <a
+            target="_blank"
+            href="https://www.instagram.com/amravatigroup?igsh=MWg4M2hhMjMwdGZ4aA%3D%3D&utm_source=qr"
+            className="rounded-full"
+          >
             <FaInstagram />
           </a>
-               </div>
+        </div>
       </div>
       <footer className="accentbg pt-12 px-6 md:px-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pb-10 border-[#574d41]">

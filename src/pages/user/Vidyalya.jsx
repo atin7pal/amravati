@@ -69,21 +69,16 @@ const Vidyalya = () => {
   return (
     <>
       <Navbar />
-      <section className="section themebg">
-        <div className="row relative ">
-          <img
-            src={vidyalya}
-            className="h-[45vh] max-sm:h-[50vh] w-full object-contain"
-            alt="vidyalya"
-          />
-          <div className="w-full h-full bgcolorfont absolute top-0 left-0 bg-[#ece4d9]/70 flex justify-center items-center p-20 flex-col gap-4 max-sm:p-4">
-            <h2 className=" text-4xl max-sm:text-3xl w-[80%] text-center max-sm:w-full font-semibold">
+<section className="section">
+        <div className="row themebg">
+          <div className="flex flex-col justify-center items-center text-center gap-4 max-sm:pb-10">
+             <h2 className=" text-4xl max-sm:text-3xl w-[80%] text-center max-sm:w-full font-semibold">
               WELCOME TO AMRAVATI VIDYALYA, BADDI
             </h2>
-            <h2 className="text-xl  accentfont text-center max-sm:text-lg">
+            <p className="text-xl  accentfont text-center max-sm:text-lg w-[80%] max-sm:w-full">
               WHERE EVERY STUDENT STEPS THROUGH OUR GATES WITH CURIOSITY AND
               STEPS OUT WITH CONFIDENCE.
-            </h2>
+            </p>
           </div>
         </div>
       </section>
@@ -120,10 +115,10 @@ const Vidyalya = () => {
               </div>
             </div>
 
-            <div className="flex justify-start items-center gap-4 max-sm:flex-col max-sm:items-start">
+            <div className="flex justify-start items-center gap-4 max-sm:flex-col max-sm:items-start themebg p-6">
               <img
                 src={principal}
-                className="h-[200px] w-[200px] object-cover"
+                className="h-[200px] w-[250px] object-cover rounded-full"
                 alt=""
               />
               <p className="accentfont">

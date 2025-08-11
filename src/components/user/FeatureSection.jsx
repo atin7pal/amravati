@@ -57,7 +57,7 @@ const FeatureSection = () => {
               }`}
             >
               <div className="mb-4">{feature.icon}</div>
-              <h4 className="text mb-2 text-nowrap">{feature.title}</h4>
+              <h4 className="text mb-2">{feature.title}</h4>
               <p className="text-sm accentfont">{feature.description}</p>
             </div>
           ))}

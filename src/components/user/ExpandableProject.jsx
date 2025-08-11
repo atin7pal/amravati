@@ -73,7 +73,7 @@ export default function ProjectExpandableCard({ projects, project }) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
             >
-              <h3 className="text-2xl">Why {project.name}?</h3>
+              <h3 className="text-2xl">PROJECT OVERVIEW </h3>
               <ul className="text-gray-700 mt-2">
                 {project.highlights.map((point, i) => (
                   <li className="mb-1 w-fit px-2 py-1 accentfont" key={i}>
