@@ -2,12 +2,17 @@ import React, { useState, useEffect, useRef } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa6";
 
-const CarouselSlides = ({ images, heights = "max-sm:h-52 h-64" }) => {
+const CarouselFloor = ({
+  images,
+  heights = "max-sm:h-52 h-64",
+  autoplay = true,
+  interval = 3000,
+}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [itemsPerSlide, setItemsPerSlide] = useState(3);
   const intervalRef = useRef(null);
 
-  // Update items per slide based on screen size
+  // Update items per slide on resize
   useEffect(() => {
     const updateItemsPerSlide = () => {
       setItemsPerSlide(window.innerWidth < 640 ? 1 : 3);
@@ -18,8 +23,6 @@ const CarouselSlides = ({ images, heights = "max-sm:h-52 h-64" }) => {
   }, []);
 
   const totalItems = images.length;
-
-  // Maximum starting index for visible slides
   const maxIndex = totalItems - itemsPerSlide;
 
   const nextSlide = () => {
@@ -32,14 +35,21 @@ const CarouselSlides = ({ images, heights = "max-sm:h-52 h-64" }) => {
 
   // Autoplay
   useEffect(() => {
-    intervalRef.current = setInterval(nextSlide, 3000);
+    if (!autoplay) return;
+    intervalRef.current = setInterval(nextSlide, interval);
     return () => clearInterval(intervalRef.current);
-  }, [itemsPerSlide, maxIndex]);
+  }, [itemsPerSlide, maxIndex, autoplay, interval]);
 
   const slideWidthPercent = 100 / itemsPerSlide;
 
   return (
-    <div className="relative w-full mx-auto overflow-hidden">
+    <div
+      className="relative mx-auto overflow-hidden w-full"
+      onMouseEnter={() => clearInterval(intervalRef.current)}
+      onMouseLeave={() =>
+        autoplay && (intervalRef.current = setInterval(nextSlide, interval))
+      }
+    >
       {/* Navigation */}
       <div className="flex gap-4 mb-4 justify-start">
         <button onClick={prevSlide} className="btn">
@@ -55,21 +65,26 @@ const CarouselSlides = ({ images, heights = "max-sm:h-52 h-64" }) => {
         <div
           className="flex transition-transform duration-700 ease-in-out"
           style={{
-            width: `${(images.length * 100) / itemsPerSlide}%`,
-            transform: `translateX(-${currentSlide * (100 / images.length)}%)`,
+            width: `${(totalItems * 100) / itemsPerSlide}%`,
+            transform: `translateX(-${currentSlide * slideWidthPercent}%)`,
           }}
         >
-          {images.map((src, index) => (
+          {images.map(({ src, alt }, index) => (
             <div
               key={index}
-              className="px-2"
+              className="px-2 flex flex-col items-center w-full"
               style={{ width: `${slideWidthPercent}%` }}
             >
               <img
                 src={src}
-                alt={`Slide ${index}`}
-                className={`w-full  object-cover ${heights}`}
+                alt={alt || `Slide ${index + 1}`}
+                className={`w-full object-cover ${heights}`}
               />
+              {alt && (
+                <p className="text-sm text-center text-gray-700 mt-2 accentfont">
+                  {alt}
+                </p>
+              )}
             </div>
           ))}
         </div>
@@ -78,4 +93,4 @@ const CarouselSlides = ({ images, heights = "max-sm:h-52 h-64" }) => {
   );
 };
 
-export default CarouselSlides;
+export default CarouselFloor;

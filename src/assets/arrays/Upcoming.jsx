@@ -1,6 +1,10 @@
 import hillcover from "../project1/hills/image4.webp";
-import amravatiapartments from '../projectbaddi/baddi1.webp'
-
+import amravatiapartments from "../projectbaddi/baddi1.webp";
+import image1 from "../projectbaddi/baddi1.webp";
+import image2 from "../projectbaddi/baddi2.webp";
+import image3 from "../projectbaddi/baddi3.webp";
+import image4 from "../projectbaddi/baddi4.webp";
+import image5 from "../projectbaddi/baddi5.webp";
 
 export const Upcoming = [
   {
@@ -41,7 +45,28 @@ export const Upcoming = [
     brochureLink: "/pdfs/solan_brochure_singlepg.pdf",
     description:
       "Amravati Apartments is situated adjoining to Housing Board, Phase III, Baddi at a beautiful location in the surroundings of hills. Amravati Apartmernts is a one of a kind integrated township, which now houses over 10,000 happy customers. It was set up in the year 2005 and since then has become one of the most preferred in the Baddi Nalagarh Inudstrial region. The cohesive township is located with a picturequse hilly backdrop, just 30 kms away from Panchkula and 22 kms from New Chandigarh.",
-    galleryImages: [],
+    galleryImages: [
+      {
+        src: image1,
+        alt: "image 1",
+      },
+      {
+        src: image3,
+        alt: "image 1",
+      },
+      {
+        src: image2,
+        alt: "image 1",
+      },
+      {
+        src: image4,
+        alt: "image 1",
+      },
+      {
+        src: image5,
+        alt: "image 1",
+      },
+    ],
     highlights: [
       "Group housing spread across 131 bigha 19 biswa",
       "Amravati Junior School – Kindergarten + Junior Wing",

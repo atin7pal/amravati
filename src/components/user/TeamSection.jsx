@@ -2,39 +2,40 @@ import React from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 // You can replace these image imports with your own or use URLs
-import arjunImg from "../../assets/team/team1.jpg";
-import snehaImg from "../../assets/team/team2.jpg";
-import raviImg from "../../assets/team/team3.jpg";
+import aniesh from "../../assets/team/aniesh.png";
+import vivek from "../../assets/team/vivek.png";
+import director from "../../assets/team/director.png";
 
 const teamMembers = [
-  {
-    name: "Arjun Mehta",
-    position: "Co-Founder & CEO",
-    facebook: "https://facebook.com/arjunmehta",
-    instagram: "https://instagram.com/arjun.mehta",
-    linkedin: "https://linkedin.com/in/arjunmehta",
-    quote: "Leadership is not about titles, it’s about impact, influence, and inspiration.",
-    image: raviImg,
-  },
-  {
-    name: "Sneha Kapoor",
-    position: "Head of Design",
-    facebook: "https://facebook.com/snehakapoor",
-    instagram: "https://instagram.com/sneha.designs",
-    linkedin: "https://linkedin.com/in/snehakapoor",
-    quote: "Design is not just what it looks like. Design is how it works.",
-    image: raviImg,
-  },
-  {
-    name: "Ravi Singh",
-    position: "Lead Frontend Developer",
+    {
+    name: "Hargobind Goyal",
+    position: "Managing Director",
     facebook: "https://facebook.com/ravisingh",
     instagram: "https://instagram.com/ravi.codes",
     linkedin: "https://linkedin.com/in/ravisingh",
-    quote: "Code is like humor. When you have to explain it, it’s bad.",
-    image: raviImg,
+    quote: "Managing real estate is not about selling property, it’s about building dreams that last generations.",
+    image: director,
+  },
+  {
+    name: "Ainesh Goyal",
+    position: "President",
+    facebook: "https://facebook.com/arjunmehta",
+    instagram: "https://instagram.com/arjun.mehta",
+    linkedin: "https://linkedin.com/in/arjunmehta",
+    quote: "Great leadership in real estate is about creating communities, not just buildings.",
+    image: aniesh,
+  },
+  {
+    name: "Viren Goya",
+    position: "Vice President",
+    facebook: "https://facebook.com/snehakapoor",
+    instagram: "https://instagram.com/sneha.designs",
+    linkedin: "https://linkedin.com/in/snehakapoor",
+    quote: "Every project is a promise—of quality, trust, and a better way of living.",
+    image: vivek,
   },
 ];
+
 
 export default function TeamSection() {
   return (
@@ -54,17 +55,7 @@ export default function TeamSection() {
             <h3 className="text-xl ">{member.name}</h3>
             <p className="text-sm">{member.position}</p>
             <p className="italic mt-3 mb-4 px-2 accentfont hidden group-hover:block">“{member.quote}”</p>
-            <div className="space-x-4 justify-center flex opacity-0 group-hover:opacity-100">
-              <a href={member.facebook} target="_blank" rel="noopener noreferrer">
-                <FaFacebookF className="hover:text-blue-600" />
-              </a>
-              <a href={member.instagram} target="_blank" rel="noopener noreferrer">
-                <FaInstagram className="hover:text-pink-500" />
-              </a>
-              <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-                <FaLinkedinIn className="hover:text-blue-800" />
-              </a>
-            </div>
+          
           </div>
         ))}
       </div>

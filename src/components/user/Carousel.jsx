@@ -18,7 +18,7 @@ const slides = [
   },
 ];
 
-const Carousel = ({ images }) => {
+const Carousel = ({ images, height = "h-[400px]" }) => {
   const [current, setCurrent] = useState(0);
   const total = slides.length;
 
@@ -33,7 +33,7 @@ const Carousel = ({ images }) => {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-center w-full mx-auto overflow-hidden">
       {/* Image Container */}
-      <div className="relative w-full h-[400px] max-sm:h-[250px]">
+      <div className={`relative w-full ${height} max-sm:h-[250px]`}>
         {images?.map((slide, index) => (
           <img
             key={index}

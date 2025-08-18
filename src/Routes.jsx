@@ -17,6 +17,8 @@ import Dashboard from "./pages/admin/Dashboard";
 import Enquiries from './pages/admin/Enquiries.jsx'
 import { CompletedProjectsAdmin } from "./pages/admin/CompletedProjectsAdmin.jsx";
 import CompletedList from "./pages/admin/CompletedList.jsx";
+import { ProjectDescription } from "./pages/user/ProjectDescription.jsx";
+import { SubProject } from "./pages/user/SubProject.jsx";
 
 const routes = [
   { path: "/", element: <Home /> },
@@ -24,8 +26,8 @@ const routes = [
   { path: "/contact", element: <Contact /> },
   { path: "/blogs", element: <BlogPage /> },
   { path: "*", element: <NotFound /> },
-  { path: "/projects", element: <Projects2 /> },
-  { path: "/projects1", element: <Projects2 /> },
+  { path: "/projects", element: <Projects /> },
+  { path: "/projects1", element: <Projects /> },
   { path: "completed", element: <CompletedProjects /> },
   { path: "/upcoming", element: <NewProjects /> },
   { path: "/ventures", element: <Ventures /> },
@@ -37,6 +39,10 @@ const routes = [
   },
   {
     path: "/amravatividyalya", element : <Vidyalya/>
+  },
+
+  {
+   path : "/projects/:subproject", element : <SubProject/>
   },
  {
   path: "/admin",

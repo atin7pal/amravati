@@ -14,6 +14,7 @@ import { SendQuery } from "../../components/user/SendQuery";
 import video2 from "../../assets/video2.mp4";
 import BentoImageGrid from "../../components/user/BentoGrid";
 import { Helmet } from "react-helmet-async";
+import director from "../../assets/team/director.png";
 
 export function About(props) {
   const fadeInProps = {
@@ -188,13 +189,14 @@ export function About(props) {
         >
           A MESSAGE FROM THE DIRECTOR
         </motion.h2>
+  
         <div className="row">
           <motion.div
             className="w-full flex flex-col justify-center items-center gap-4 text-center p-10 bg-white max-sm:p-4 max-sm:py-6"
             {...fadeInProps}
           >
             <img
-              src={aboutbanner1}
+              src={director}
               className="w-[100px] rounded-full h-[100px] object-cover max-sm:h-full"
               alt=""
             />
