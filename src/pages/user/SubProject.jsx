@@ -45,7 +45,7 @@ export function SubProject() {
       </section>
 
       {/* Description */}
-      <div className="flex justify-center items-center px-20 max-sm:px-4 themebg">
+      <div className="flex justify-center items-center px-20 max-sm:p-4 themebg">
         <section className="section w-full text-center bg-white accentfont">
           <div className="row accentfont">
             <div className="flex flex-col justify-center items-center gap-4">
@@ -156,7 +156,7 @@ export function SubProject() {
 
  <section className="section">
         <div className="row">
-           <div className="w-full flex flex-col justify-center items-start gap-4">
+           <div className="w-full flex flex-col justify-center items-start gap-4 max-sm:mb-4">
             <h2 className="text-3xl text-start w-full font-semibold bgcolorfont">
               Location
             </h2>
