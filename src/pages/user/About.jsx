@@ -15,6 +15,8 @@ import video2 from "../../assets/video2.mp4";
 import BentoImageGrid from "../../components/user/BentoGrid";
 import { Helmet } from "react-helmet-async";
 import director from "../../assets/team/director.png";
+import memory1 from '../../assets/memory1.jpeg'
+import memory2 from '../../assets/memory2.jpeg'
 
 export function About(props) {
   const fadeInProps = {
@@ -58,7 +60,7 @@ export function About(props) {
           </motion.div>
         </div>
       </section>
-
+      <div className="bg-gradient-to-b from-[#ece4d9] to-white">
       <section className="section h-full">
         <div className="rownopad">
           <motion.div
@@ -117,11 +119,9 @@ export function About(props) {
 
       <section
         className="section bg-center bg-no-repeat bg-cover"
-        style={{
-          backgroundImage: `linear-gradient(#fff,#ffffffe0, #ece4d9),url(${floral})`,
-        }}
+        
       >
-        <div className="row">
+        <div className="rowPadding">
           <motion.div
             className="w-full h-full flex flex-col text-center gap-4 justify-center items-center p-20 max-sm:p-4 max-sm:border"
             {...fadeInProps}
@@ -164,9 +164,6 @@ export function About(props) {
         </div>
       </section> */}
       <section
-        style={{
-          backgroundImage: `linear-gradient(to right, #fff, #fff, #fffffff0),url(${map})`,
-        }}
         className="section bg-no-repeat bg-center bg-cover max-sm:pb-10"
       >
         <motion.h2
@@ -181,6 +178,24 @@ export function About(props) {
           </motion.div>
         </div>
       </section>
+       
+      </div>
+
+       <section className="section themebg max-sm:pb-10">
+        <motion.h2
+          className="text-5xl pt-10 max-sm:px-2.5 max-sm:text-3xl max-sm:mt-4 max-sm:text-center"
+          {...fadeInProps}
+        >
+          FROM OUR GALLERY
+        </motion.h2>
+        <div className="row">
+          <motion.div className="w-full flex  gap-4" {...fadeInProps}>
+            <img src={memory1} className="w-full h-[400px] object-cover" alt="" />
+            <img src={memory2} alt="" className="w-full h-[400px] object-cover" />
+          </motion.div>
+        </div>
+      </section>
+
 
       <section className="section themebg max-sm:pb-10">
         <motion.h2
