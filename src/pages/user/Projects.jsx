@@ -42,8 +42,8 @@ const Projects = () => {
               <h2 className="text-2xl max-sm:text-3xl bgcolorfont">
                 {element.title}
               </h2>
-              <p className="line-clamp-2">{element.description}</p>
-              <button className="btn">
+              <p className="accentfont">{element.description}</p>
+              <button className="btn ">
                 {expanded === index ? "Hide Projects" : "View Projects"}
               </button>
             </div>

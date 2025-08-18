@@ -42,7 +42,7 @@ export const AllProjects = [
   {
     title: "AMRAVATI HILLS",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, quidem cumque soluta harum deleniti, quam sed minus optio commodi pariatur et iusto, dolores voluptatem atque aliquid nisi cupiditate asperiores vel neque. Perferendis necessitatibus ab fugit iste inventore dolorem quas sequi temporibus delectus. Adipisci nam iure, beatae asperiores in odio modi!",
+      "Introducing the prestigious Amravati Hills project, nestled in the serene Subhatu Road, Solan, at an exquisite hilltop location. Established in 2011 , this township has rapidly gained recognition as one of the most sought-after addresses in the Solan region, where residents are treated to a breath-taking panoramic view, enhanced by the clean, fresh air and top-notch air quality that this stunning environment offers.",
     link: "/projects/hills",
     gallery: [
       {
@@ -202,7 +202,7 @@ export const AllProjects = [
   {
     title: "AMRAVATI APARTMENTS",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis labore molestiae eum excepturi voluptatibus sequi cupiditate deserunt numquam ab ut magnam tempore nam quis iste reiciendis, quam autem velit hic. Ipsum minima ea sed omnis corporis magnam libero reiciendis quos deserunt adipisci architecto porro sapiente in, autem quam eum? Blanditiis!",
+      "Amravati Apartments is situated adjoining to Housing Board, Phase III, Baddi at a beautiful location in the surroundings of hills. Amravati Apartmernts is a one of a kind integrated township, which now houses over 10000 happy customers. It was set up in the year 2005 and since then has become one of the most preferred zip codes in the Baddi Nalagarh Inudstrial region.",
     link: "/projects/apartments",
     maplink:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3421.9715541467517!2d76.81120007558863!3d30.94335897448331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ff559f83bda21%3A0x2ed548b93835143d!2sAmravati%20Apartments%20-%20Baddi%2C%20Baddi%2C%20Himachal%20Pradesh%20173205!5e0!3m2!1sen!2sin!4v1755476634666!5m2!1sen!2sin",
