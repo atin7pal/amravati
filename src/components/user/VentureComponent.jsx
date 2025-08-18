@@ -12,7 +12,7 @@ const companies = [
     description:
       "Modern spaces for modern lives. Amravati Realty is shaping the skylines of Himachal Pradesh and Chandigarh with thoughtfully designed residential and commercial projects. From contemporary homes to smart spaces, we bring together innovation, functionality, and timeless aesthetics to create environments where life and work flourish.",
     image: realty,
-    link: "/amravatirealty",
+    link: "/projects",
   },
   {
     title: "AMRAVATI RETAIL",
