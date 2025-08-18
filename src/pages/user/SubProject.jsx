@@ -49,7 +49,7 @@ export function SubProject() {
         <section className="section w-full text-center bg-white accentfont">
           <div className="row accentfont">
             <div className="flex flex-col justify-center items-center gap-4">
-              <h2 className="text-3xl bgcolorfont font-semibold">
+              <h2 className="text-3xl bgcolorfont ">
                 PROJECT OVERVIEW
               </h2>
               <motion.p
@@ -88,7 +88,7 @@ export function SubProject() {
               />
             </div>
             <div className="w-full flex flex-col justify-center items-start gap-4 p-6">
-              <h2 className="text-3xl font-semibold ">Highlights</h2>
+              <h2 className="text-3xl  ">Highlights</h2>
               <ul className="list-disc pl-6 space-y-2">
                 {project.highlights.map((point, i) => (
                   <li className=" accentfont" key={i}>
@@ -106,7 +106,7 @@ export function SubProject() {
         <section className="section w-full mx-auto">
           <div className="rowPadding">
             <div className="flex flex-col justify-center items-center gap-4">
-              <h2 className="text-4xl font-semibold mb-6 text-start w-full bgcolorfont">
+              <h2 className="text-4xl  mb-6 text-start w-full bgcolorfont">
                 At A Glimpse
               </h2>
               <BentoImageGrid images={project.galleryImages} />
@@ -120,7 +120,7 @@ export function SubProject() {
         <section className="section">
           <div className="row">
             <div className="w-full">
-              <h2 className="text-3xl font-semibold mb-4 bgcolorfont">Units</h2>
+              <h2 className="text-3xl  mb-4 bgcolorfont">Units</h2>
 
               {project.offerings.map((offering, i) => (
                 <div key={i} className="mt-2 w-full">
@@ -146,7 +146,7 @@ export function SubProject() {
       <section className="section themebg">
         <div className="row">
           <div className="w-full flex flex-col justify-center items-start gap-4">
-            <h2 className="text-3xl text-start w-full font-semibold bgcolorfont">
+            <h2 className="text-3xl text-start w-full  bgcolorfont">
               Floor Plans
             </h2>
             <CarouselFloor images={project.floorPlans} heights="h-full max-sm:h-full" />
@@ -157,7 +157,7 @@ export function SubProject() {
  <section className="section">
         <div className="row">
            <div className="w-full flex flex-col justify-center items-start gap-4 max-sm:mb-4">
-            <h2 className="text-3xl text-start w-full font-semibold bgcolorfont">
+            <h2 className="text-3xl text-start w-full  bgcolorfont">
               Location
             </h2>
         <iframe src={project.maplink} width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
