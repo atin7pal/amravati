@@ -19,7 +19,7 @@ const Projects = () => {
 
       {/* Hero Section */}
       <section className="section themebg h-[70vh] p-20 text-center bg-cover bg-no-repeat bg-center flex justify-center items-center flex-col">
-        <h1 className="text-5xl mb-4 w-[60%] mt-[70px]">
+        <h1 className="text-5xl mb-4 w-[60%] mt-[70px] max-sm:w-full max-sm:text-3xl">
           Where Heart and Mind Converge to Create Thoughtful{" "}
           <span className="">Real Estate.</span>
         </h1>
@@ -29,12 +29,12 @@ const Projects = () => {
 
       {/* Projects Section */}
       {AllProjects.map((element, index) => (
-        <section key={index} className="section p-10 pb-0">
+        <section key={index} className="section p-10 pb-0 max-sm:p-4">
           <div
-            className="h-full themebg flex justify-start items-center p-0 w-full bg-no-repeat bg-center bg-cover cursor-pointer"
+            className="h-full themebg flex justify-start items-center p-0 w-full bg-no-repeat bg-center bg-cover cursor-pointer max-sm:flex-col"
             onClick={() => toggleExpand(index)}
           >
-            <div className="h-full w-full flex justify-center items-start p-10 flex-col gap-4">
+            <div className="h-full w-full flex justify-center items-start p-10 flex-col gap-4 max-sm:p-4">
              <img className="h-[400px] w-full object-cover" src={element.projects[1].coverImage} alt="" />
             </div>
 
@@ -51,10 +51,10 @@ const Projects = () => {
 
           {/* Expandable Content */}
           <AnimatePresence>
-            <div className="w-full themebg overflow-hidden flex justify-center items-center">
+            <div className="w-full themebg overflow-hidden flex justify-center items-center max-sm:flex-col">
             {expanded === index && (
               <motion.div
-                className="p-6 pb-10 pt-0 px-10 themebg w-full overflow-hidden"
+                className="p-6 pb-10 pt-0 px-10 themebg w-full overflow-hidden max-sm:p-4"
                 initial={{ height: "0px", opacity: 0 }}
                 animate={{ height: "100%", opacity: 1 }}
                 exit={{ height: "0px", opacity: 0 }}
