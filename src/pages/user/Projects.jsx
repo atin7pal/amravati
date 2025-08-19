@@ -4,6 +4,7 @@ import { Footer } from "../../components/user/Footer";
 import Carousel from "../../components/user/Carousel.jsx";
 import { AllProjects } from "../../assets/arrays/AllProjects.jsx";
 import { motion, AnimatePresence } from "framer-motion";
+import dreamscape from "../../assets/dreamscape3.jpg";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
@@ -18,12 +19,23 @@ const Projects = () => {
       <Navbar absolute="absolute" background="bg-transparent" />
 
       {/* Hero Section */}
-      <section className="section themebg h-[70vh] p-20 text-center bg-cover bg-no-repeat bg-center flex justify-center items-center flex-col">
-        <h1 className="text-5xl mb-4 w-[60%] mt-[70px] max-sm:w-full max-sm:text-3xl">
+      <section  style={{
+          backgroundImage: `linear-gradient(#00000000,#0000005d, #0000005d),url(${dreamscape})`,
+        }} className="section h-[80vh] p-20 text-center bg-cover bg-no-repeat bg-bottom flex justify-center items-center flex-col">
+        <h1 className="text-5xl mb-4 w-[60%] mt-[70px] max-sm:w-full max-sm:text-3xl themecolorfont text-shadow-xl">
           Where Heart and Mind Converge to Create Thoughtful{" "}
           <span className="">Real Estate.</span>
         </h1>
-        <p className="text-3xl max-w-2xl text-center accentfont"></p>
+           <p className="text-lg max-w-6xl max-sm:max-w-full max-sm:w-full text-center accentfont p-4 themecolorfont text-shadow-lg">
+              At Amravati Group, we believe that true craftsmanship in real
+              estate begins at the intersection Of passion and purpose. Our
+              commitment to thoughtful developments reflects not just a vision,
+              but a deep understanding of the communities we serve. Through
+              meticulous planning and innovative design, we strive to build
+              spaces that inspire and elevate the human experience. Each project
+              is a testament to our dedication, where every detail is infused
+              With care and consideration.
+            </p>
         <div className="w-full"></div>
       </section>
 

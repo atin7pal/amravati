@@ -23,7 +23,7 @@ const CarouselFloor = ({
   }, []);
 
   const totalItems = images.length;
-  const maxIndex = totalItems - itemsPerSlide;
+  const maxIndex = totalItems - itemsPerSlide; // ✅ stop when last full set is reached
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev >= maxIndex ? 0 : prev + 1));
@@ -38,7 +38,7 @@ const CarouselFloor = ({
     if (!autoplay) return;
     intervalRef.current = setInterval(nextSlide, interval);
     return () => clearInterval(intervalRef.current);
-  }, [itemsPerSlide, maxIndex, autoplay, interval]);
+  }, [autoplay, interval, maxIndex]);
 
   const slideWidthPercent = 100 / itemsPerSlide;
 
@@ -65,7 +65,7 @@ const CarouselFloor = ({
         <div
           className="flex transition-transform duration-700 ease-in-out"
           style={{
-            width: `${(totalItems * 100) / itemsPerSlide}%`,
+            width: `${totalItems * slideWidthPercent}%`,
             transform: `translateX(-${currentSlide * slideWidthPercent}%)`,
           }}
         >

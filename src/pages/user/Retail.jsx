@@ -47,7 +47,7 @@ const Retail = () => {
   return (
     <>
       <Navbar />
-<section className="section">
+      <section className="section">
         <div className="row themebg">
           <div className="flex flex-col justify-center items-center text-center gap-4 max-sm:pb-10">
             <h2 className=" text-4xl max-sm:text-3xl max-sm:w-full font-semibold">
@@ -60,7 +60,7 @@ const Retail = () => {
         </div>
       </section>
 
-      <section className="section bgcolorfont max-sm:pb-10">
+      <section className="section bgcolorfont pb-20 max-sm:pb-10">
         <div className="row">
           <div className="w-full">
             <img
@@ -119,7 +119,7 @@ const Retail = () => {
             </section>
 
             {/* Looking Ahead */}
-            <h2 className="text-5xl max-sm:text-3xl pt-10 pb-6 text-center max-sm:pt-2 max-sm:pb-0 w-full">
+            <h2 className="text-5xl max-sm:text-3xl  pb-6 text-center max-sm:pt-2 max-sm:pb-0 w-full">
               Looking Ahead
             </h2>
 
@@ -150,7 +150,7 @@ const Retail = () => {
                   <span className="font-bold accentfont">
                     To provide quality essentials for everyday life, with
                     unmatched service and honest pricing.
-                  </span>{" "} 
+                  </span>{" "}
                   With each new outlet, we’ve grown not just in size, but in
                   heart. Every shelf is thoughtfully curated, every product
                   carefully selected, and every customer valued like family.
@@ -168,10 +168,8 @@ const Retail = () => {
         </h2>
         <p className="accentfont text-lg leading-relaxed">
           Whether you’re in{" "}
-          <span className="font-bold accentfont">
-             Panchkula
-          </span>
-          , or driving through{" "}
+          <span className="font-bold accentfont">Panchkula</span>, or driving
+          through{" "}
           <span className="font-bold accentfont">Baddi’s bustling markets</span>
           , there’s an Everyday Supermarket nearby — waiting to serve you with a
           smile.

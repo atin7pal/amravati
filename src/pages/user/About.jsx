@@ -69,14 +69,14 @@ export function About(props) {
           >
             <div className="w-full h-full">
               <img
-                src={aboutbanner1}
+                src={memory1}
                 className="w-full h-[350px] max-sm:h-[300px] object-cover"
                 alt=""
               />
             </div>
             <div className="flex w-full gap-4">
               <img
-                src={aboutbanner}
+                src={memory2}
                 className="w-full max-sm:h-[15vh] h-[20vh] object-cover"
                 alt=""
               />
@@ -179,9 +179,9 @@ export function About(props) {
         </div>
       </section>
        
-      </div>
+     
 
-       <section className="section themebg max-sm:pb-10">
+       {/* <section className="section themebg max-sm:pb-10">
         <motion.h2
           className="text-5xl pt-10 max-sm:px-2.5 max-sm:text-3xl max-sm:mt-4 max-sm:text-center"
           {...fadeInProps}
@@ -194,10 +194,10 @@ export function About(props) {
             <img src={memory2} alt="" className="w-full h-[400px] object-cover" />
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
 
-      <section className="section themebg max-sm:pb-10">
+      <section className="section max-sm:pb-10">
         <motion.h2
           className="text-5xl pt-10 max-sm:px-2.5 max-sm:text-3xl max-sm:mt-4 max-sm:text-center"
           {...fadeInProps}
@@ -212,7 +212,7 @@ export function About(props) {
           >
             <img
               src={director}
-              className="w-[100px] rounded-full h-[100px] object-cover max-sm:h-full"
+              className="w-[130px] rounded-full h-[130px] object-cover max-sm:h-full"
               alt=""
             />
             <p className="w-[90%] accentfont relative max-sm:w-full">
@@ -243,8 +243,10 @@ export function About(props) {
           </motion.div>
         </div>
       </section>
-
+      
       <SendQuery video={video2} /> */}
+
+       </div>
       <div className="animate-radial-bg-move">
       <Footer />
       </div>

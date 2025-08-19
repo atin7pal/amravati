@@ -18,7 +18,7 @@ const teamMembers = [
   },
   {
     name: "Ainesh Goyal",
-    position: "President",
+    position: "Director",
     facebook: "https://facebook.com/arjunmehta",
     instagram: "https://instagram.com/arjun.mehta",
     linkedin: "https://linkedin.com/in/arjunmehta",
@@ -26,8 +26,8 @@ const teamMembers = [
     image: aniesh,
   },
   {
-    name: "Viren Goya",
-    position: "Vice President",
+    name: "Viren Goyal",
+    position: "Director",
     facebook: "https://facebook.com/snehakapoor",
     instagram: "https://instagram.com/sneha.designs",
     linkedin: "https://linkedin.com/in/snehakapoor",
