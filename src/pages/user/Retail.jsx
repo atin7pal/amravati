@@ -50,7 +50,7 @@ const Retail = () => {
       <section className="section">
         <div className="row themebg">
           <div className="flex flex-col justify-center items-center text-center gap-4 max-sm:pb-10">
-            <h2 className=" text-4xl max-sm:text-3xl max-sm:w-full font-semibold">
+            <h2 className=" text-4xl max-sm:text-3xl max-sm:w-full">
               WELCOME TO EVERYDAY SUPERMARKET
             </h2>
             <p className="text-xl font-semibold accentfont max-sm:text-lg">

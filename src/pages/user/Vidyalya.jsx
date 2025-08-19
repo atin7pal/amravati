@@ -72,7 +72,7 @@ const Vidyalya = () => {
 <section className="section">
         <div className="row themebg">
           <div className="flex flex-col justify-center items-center text-center gap-4 max-sm:pb-10">
-             <h2 className=" text-4xl max-sm:text-3xl w-[80%] text-center max-sm:w-full font-semibold">
+             <h2 className=" text-4xl max-sm:text-3xl w-[80%] text-center max-sm:w-full">
               WELCOME TO AMRAVATI VIDYALYA, BADDI
             </h2>
             <p className="text-xl  accentfont text-center max-sm:text-lg w-[80%] max-sm:w-full">
