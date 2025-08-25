@@ -5,7 +5,7 @@ import Carousel from "../../components/user/Carousel.jsx";
 import { AllProjects } from "../../assets/arrays/AllProjects.jsx";
 import { motion, AnimatePresence } from "framer-motion";
 import dreamscape from "../../assets/dreamscape3.jpg";
-import { Link } from "react-router-dom";
+import { Link, Links } from "react-router-dom";
 
 const Projects = () => {
   const [expanded, setExpanded] = useState(null);
@@ -54,10 +54,12 @@ const Projects = () => {
               <h2 className="text-2xl max-sm:text-3xl bgcolorfont">
                 {element.title}
               </h2>
-              <p className="accentfont">{element.description}</p>
-              <button className="btn ">
-                {expanded === index ? "Hide Projects" : "View Projects"}
-              </button>
+              <p className="accentfont">{element.description.slice(0,400)} {"..."}</p>
+              <Link
+               to={`/projects/${element.link}`}
+              className="btn ">
+              Know More
+              </Link>
             </div>
           </div>
 

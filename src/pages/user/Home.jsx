@@ -94,7 +94,9 @@ export function Home() {
               BUILDING DREAMS, <br /> ONE HOME AT A TIME
             </h2>
 
-            <h2 className="hidden max-sm:block text-6xl bg-[#ece4d9]/80 max-sm:text-3xl bgcolorfont p-4 capitalize max-sm:text-center leading-[70px] max-sm:leadinmg-[0px]">BUILDING DREAMS, <br /> ONE HOME AT A TIME</h2>
+            <h2 className="hidden max-sm:block text-6xl bg-[#ece4d9]/80 max-sm:text-3xl bgcolorfont p-4 capitalize max-sm:text-center leading-[70px] max-sm:leadinmg-[0px]">
+              BUILDING DREAMS, <br /> ONE HOME AT A TIME
+            </h2>
           </motion.div>
         </div>
       </section>
@@ -133,11 +135,10 @@ export function Home() {
               With years of experience and a strong legacy in the industry,
               we’ve built a reputation for trust and quality. Whether it’s
               contemporary spaces in the lush landscapes of Himachal or smart
-              spaces in the heart of Chandigarh, our developments are built for
-              the future — stylish, sustainable, and thoughtfully planned.
-              Beyond real estate, we’re also creating impact through our
-              everyday retail stores and our forward-thinking educational
-              venture.
+              spaces in the heart of Tricity, our developments are built for the
+              future — stylish, sustainable, and thoughtfully planned. Beyond
+              real estate, we’re also creating impact through our everyday
+              retail stores and our forward-thinking educational venture.
             </p>
             <br />
             <p className="w-[80%] max-sm:w-full"></p>

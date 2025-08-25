@@ -124,14 +124,7 @@ const Retail = () => {
             </h2>
 
             <div className="flex gap-4 w-full max-sm:flex-col">
-              <div className="themebg p-6 text-start w-full">
-                <p className="accentfont text-lg leading-relaxed">
-                  We’re not just building a chain of supermarkets — we’re
-                  building a{" "}
-                  <span className="font-bold accentfont">community brand</span>.
-                  A name that families can trust for consistency, quality, and
-                  care.
-                </p>
+              <div className="themebg p-6 text-start w-full flex justify-center items-center">
                 <p className="accentfont text-lg mt-4">
                   With plans to expand into{" "}
                   <span className="font-bold accentfont">
@@ -144,16 +137,13 @@ const Retail = () => {
                 </p>
               </div>
 
-              <div className="w-full brownbg p-6">
-                <p className="accentfont text-lg">
-                  From the very beginning, our mission has been clear:{" "}
-                  <span className="font-bold accentfont">
-                    To provide quality essentials for everyday life, with
-                    unmatched service and honest pricing.
-                  </span>{" "}
-                  With each new outlet, we’ve grown not just in size, but in
-                  heart. Every shelf is thoughtfully curated, every product
-                  carefully selected, and every customer valued like family.
+              <div className="w-full brownbg p-6 flex justify-center items-center">
+                <p className="accentfont text-lg leading-relaxed">
+                  We’re not just building a chain of supermarkets — we’re
+                  building a{" "}
+                  <span className="font-bold accentfont">community brand</span>.
+                  A name that families can trust for consistency, quality, and
+                  care.
                 </p>
               </div>
             </div>

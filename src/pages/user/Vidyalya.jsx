@@ -69,10 +69,10 @@ const Vidyalya = () => {
   return (
     <>
       <Navbar />
-<section className="section">
+      <section className="section">
         <div className="row themebg">
           <div className="flex flex-col justify-center items-center text-center gap-4 max-sm:pb-10">
-             <h2 className=" text-4xl max-sm:text-3xl w-[80%] text-center max-sm:w-full">
+            <h2 className=" text-4xl max-sm:text-3xl w-[80%] text-center max-sm:w-full">
               WELCOME TO AMRAVATI VIDYALYA, BADDI
             </h2>
             <p className="text-xl  accentfont text-center max-sm:text-lg w-[80%] max-sm:w-full">
@@ -97,84 +97,98 @@ const Vidyalya = () => {
                   Hargobind Goyal, it is affiliated to the CBSE, offering
                   classes from Nursery to Class 10. With a commitment to NEP
                   2020 goals, the school fosters critical thinking, life skills,
-                  and values-driven education. 
+                  and values-driven education.
                 </p>
-                <p className="accentfont text-lg text-pretty mt-4">Our students consistently deliver
-                  outstanding results, including our first IIT admission. These
-                  are milestones of excellence supported by strong academics and
-                  moral grounding. At Amravati Vidyalaya, Baddi, we don’t just
-                  impart education — we shape dreams, ignite young minds, and
-                  prepare future leaders for a brighter tomorrow .</p>
+                <p className="accentfont text-lg text-pretty mt-4">
+                  Our students consistently deliver outstanding results,
+                  including our first IIT admission. These are milestones of
+                  excellence supported by strong academics and moral grounding.
+                  At Amravati Vidyalaya, Baddi, we don’t just impart education —
+                  we shape dreams, ignite young minds, and prepare future
+                  leaders for a brighter tomorrow .
+                </p>
               </div>
               <div className="w-full">
                 <img
                   src={schoolactual}
-                  className="w-full h-[350px] object-cover"
+                  className="w-full h-[450px] object-cover"
                   alt=""
                 />
               </div>
             </div>
 
-            <div className="flex justify-start items-center gap-4 max-sm:flex-col max-sm:items-start themebg p-6">
+            <div className="themebg p-6 flex flex-col items-center text-center group transition-all h-[300px] w-[400px] max-sm:w-full">
               <img
                 src={principal}
-                className="h-[200px] w-[250px] object-cover rounded-full"
-                alt=""
+                className="group-hover:w-24 group-hover:h-24 rounded-full h-[150px] w-[150px] object-cover mb-4 transition-all duration-700"
               />
-              <p className="accentfont">
-                Under the dynamic and visionary leadership of our Principal,{" "}
-                Mrs. Suman Sharma, our students are nurtured in an environment
-                that fosters academic excellence, personal growth, and social
-                responsibility. With a strong emphasis on holistic development,
-                she inspires both faculty and students to pursue innovation,
-                embrace diversity, and uphold the highest standards of
-                integrity. Her guidance ensures that every learner is equipped
-                not only with knowledge and skills but also with the values and
-                mindset needed to thrive as compassionate, future-ready global
-                citizens.
+              <h3 className="text-xl ">Mrs. Suman Sharma</h3>
+              <p className="text-sm">Principal</p>
+              <p className="italic mt-3 mb-4 px-2 accentfont hidden group-hover:block">
+                “My vision is to nurture every student into a compassionate,
+                innovative, and future-ready global citizen.”
               </p>
             </div>
+            <div>
+              <h2 className="text-3xl max-sm:text-2xl">
+                Amravati Vidyalaya, Baddi — Nurturing Young Minds, Shaping
+                Bright Futures
+              </h2>
 
-            <h2 className="text-3xl max-sm:text-2xl">
-              Amravati Vidyalaya, Baddi — Nurturing Young Minds, Shaping Bright
-              Futures
-            </h2>
-
-            <p className="text-lg accentfont">
+              {/* <p className="text-lg accentfont">
               Our teachers adopt active-learning methods: visual aids, music,
               discussions, and sessions in dance, yoga, aerobics, and more.
               Students engage in rallies, skits, and hands-on activities,
               learning beyond textbooks.
-            </p>
+            </p> */}
 
-            <p className="text-lg accentfont">
-              Leadership is cultivated through democratic elections for{" "}
-              Head Boy/Girl and Captains,
-              encouraging confidence and civic awareness.
-            </p>
+              <p className="text-lg accentfont">
+                Leadership is cultivated through democratic elections for Head
+                Boy/Girl and Captains, encouraging confidence and civic
+                awareness.
+              </p>
 
-            <div className="space-y-2">
-              <h2 className="text-lg font-bold">
-                Where Dreams Take Flight and Futures Are Shaped Right!
-              </h2>
-              <ul className="accentfont list-disc pl-5">
-                <li className="text-lg accentfont">
-                  Since 2007, we’ve nurtured curiosity and prepared students to
-                  excel across all spheres.
-                </li>
-                <li className="text-lg accentfont">
-                  We embrace innovative teaching, a warm atmosphere, and
-                  enriching activities.
-                </li>
-                <li className="text-lg accentfont">
-                  From IIT to global careers, our alumni reflect our academic
-                  and moral strength.
-                </li>
-              </ul>
+              <div className="space-y-2">
+                <h2 className="text-lg font-bold">
+                  Where Dreams Take Flight and Futures Are Shaped Right!
+                </h2>
+                <ul className="accentfont list-disc pl-5">
+                  <li className="text-lg accentfont">
+                    Since 2007, we’ve nurtured curiosity and prepared students
+                    to excel across all spheres.
+                  </li>
+                  <li className="text-lg accentfont">
+                    We embrace innovative teaching, a warm atmosphere, and
+                    enriching activities.
+                  </li>
+                  <li className="text-lg accentfont">
+                    From IIT to global careers, our alumni reflect our academic
+                    and moral strength.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h2 className="text-5xl max-sm:text-3xl  max-sm:mt-4 max-sm:w-full text-center mt-4">
+              At A Glimpse
+            </h2>
+            <div className="row themebg">
+              <img
+                src={school5}
+                className="h-[50vh] w-full object-cover"
+                alt=""
+              />
+
+              <img
+                src={school3}
+                className="h-[50vh] w-full object-cover"
+                alt=""
+              />
             </div>
 
             {/* Timeline Section */}
-            <h2 className="text-5xl max-sm:text-3xl  mt-10 max-sm:mt-4 max-sm:w-full max-sm:text-center">Our Journey</h2>
+            <h2 className="text-5xl max-sm:text-3xl  mt-4 max-sm:mt-4 max-sm:w-full max-sm:text-center">
+              Our Journey
+            </h2>
             <div className="relative border-l-1 border-primary ml-4 mt-6 space-y-4 max-sm:mt-2">
               {milestones.map((event, index) => (
                 <div key={index} className="ml-6 relative themebg p-4">
@@ -186,7 +200,9 @@ const Vidyalya = () => {
               ))}
             </div>
 
-            <h3 className="text-5xl max-sm:text-3xl py-10 max-sm:py-4 max-sm:text-center max-sm:w-full">Vision Forward</h3>
+            <h3 className="text-5xl max-sm:text-3xl py-10 max-sm:py-4 max-sm:text-center max-sm:w-full">
+              Vision Forward
+            </h3>
             <div className="flex gap-6 max-sm:flex-col max-sm:gap-8">
               <ul className="grid w-full grid-cols-2 accentfont text-lg gap-4">
                 {highlights.map((item, index) => (

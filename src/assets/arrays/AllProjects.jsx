@@ -41,9 +41,11 @@ import baddifloor9 from "../projectbaddi/floorplan-amravatiapartmants/Zynia-5-Am
 export const AllProjects = [
   {
     title: "AMRAVATI HILLS",
+    basicDescription: "",
+    coverImage: hillcover,
     description:
-      "Introducing the prestigious Amravati Hills project, nestled in the serene Subhatu Road, Solan, at an exquisite hilltop location. Established in 2011 , this township has rapidly gained recognition as one of the most sought-after addresses in the Solan region, where residents are treated to a breath-taking panoramic view, enhanced by the clean, fresh air and top-notch air quality that this stunning environment offers.",
-    link: "/projects/hills",
+      "Introducing the prestigious Amravati Hills project, nestled in the serene Subhatu Road, Solan, at an exquisite hilltop location. Established in 2011 , this township has rapidly gained recognition as one of the most sought-after addresses in the Solan region, where residents are treated to a breath-taking panoramic view, enhanced by the clean, fresh air and top-notch air quality that this stunning environment offers. Spanning across 108750 sqm of beautifully landscaped land, Amravati Hills embodies the perfect blend of natural beauty and modern convenience. Ideally located just 63 kilometres from Panchkula and 70 kilometres from Chandigarh, this township provides easy accessibility while maintaining an alluring sense of seclusion.",
+    link: "amravati-hills",
     gallery: [
       {
         src: image1,
@@ -84,8 +86,9 @@ export const AllProjects = [
     ],
     projects: [
       {
-        name: "THE DEN - AMRAVATI HILLS",
+        name: "THE DEN",
         slug: "the-den-amravati-hills",
+        coverImage: hillcover,
         location: "Solan, Himachal Pradesh",
         tagline: "Luxury Hilltop Living at 5,000 ft",
         coverImage: hillcover,
@@ -159,7 +162,7 @@ export const AllProjects = [
         ],
       },
       {
-        name: "ALPINE APARTMENTS - AMRAVATI HILLS",
+        name: "ALPINE APARTMENTS",
         slug: "alpine-apartments-amravati-hills",
         location: "Solan, Himachal Pradesh",
         tagline: "Luxury Hilltop Living at 5,000 ft",
@@ -203,7 +206,8 @@ export const AllProjects = [
     title: "AMRAVATI APARTMENTS",
     description:
       "Amravati Apartments is situated adjoining to Housing Board, Phase III, Baddi at a beautiful location in the surroundings of hills. Amravati Apartmernts is a one of a kind integrated township, which now houses over 10000 happy customers. It was set up in the year 2005 and since then has become one of the most preferred zip codes in the Baddi Nalagarh Inudstrial region.",
-    link: "/projects/apartments",
+     link: "amravati-apartments",
+      coverImage: baddi5,
     maplink:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3421.9715541467517!2d76.81120007558863!3d30.94335897448331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ff559f83bda21%3A0x2ed548b93835143d!2sAmravati%20Apartments%20-%20Baddi%2C%20Baddi%2C%20Himachal%20Pradesh%20173205!5e0!3m2!1sen!2sin!4v1755476634666!5m2!1sen!2sin",
     floorPlans: [
@@ -404,16 +408,9 @@ export const AllProjects = [
             src: baddi7,
             alt: "image 1",
           },
-          {
-            src: baddi8,
-            alt: "image 1",
-          },
+          
           {
             src: baddi9,
-            alt: "image 1",
-          },
-          {
-            src: image5,
             alt: "image 1",
           },
         ],

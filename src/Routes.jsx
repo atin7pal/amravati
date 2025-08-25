@@ -14,11 +14,12 @@ import Realty from "./pages/user/Realty";
 import Retail from "./pages/user/Retail";
 import Vidyalya from "./pages/user/Vidyalya";
 import Dashboard from "./pages/admin/Dashboard";
-import Enquiries from './pages/admin/Enquiries.jsx'
+import Enquiries from "./pages/admin/Enquiries.jsx";
 import { CompletedProjectsAdmin } from "./pages/admin/CompletedProjectsAdmin.jsx";
 import CompletedList from "./pages/admin/CompletedList.jsx";
 import { ProjectDescription } from "./pages/user/ProjectDescription.jsx";
 import { SubProject } from "./pages/user/SubProject.jsx";
+import ProjectDetails from "./pages/user/ProjectDetails.jsx";
 
 const routes = [
   { path: "/", element: <Home /> },
@@ -32,36 +33,44 @@ const routes = [
   { path: "/upcoming", element: <NewProjects /> },
   { path: "/ventures", element: <Ventures /> },
   {
-    path: "/amravatirealty", element : <Realty/>
+    path: "/amravatirealty",
+    element: <Realty />,
   },
   {
-    path: "/amravatiretail", element : <Retail/>
+    path: "/amravatiretail",
+    element: <Retail />,
   },
   {
-    path: "/amravatividyalya", element : <Vidyalya/>
+    path: "/amravatividyalya",
+    element: <Vidyalya />,
+  },
+  {
+    path: "/projects/:project",
+    element: <ProjectDetails />,
+  },
+  {
+    path: "/projects/:project/:subproject",
+    element: <SubProject />,
   },
 
   {
-   path : "/projects/:subproject", element : <SubProject/>
+    path: "/admin",
+    element: <Dashboard />,
+    children: [
+      {
+        path: "enquiries",
+        element: <Enquiries />,
+      },
+      {
+        path: "completedprojects",
+        element: <CompletedProjectsAdmin />,
+      },
+      {
+        path: "completedlist",
+        element: <CompletedList />,
+      },
+    ],
   },
- {
-  path: "/admin",
-  element: <Dashboard />,
-  children: [
-    {
-      path: "enquiries",
-      element: <Enquiries/>
-    },
-    {
-      path : "completedprojects",
-      element : <CompletedProjectsAdmin/>
-    },
-     {
-      path : "completedlist",
-      element : <CompletedList/>
-    }
-  ]
-}
 ];
 
 export default routes;
