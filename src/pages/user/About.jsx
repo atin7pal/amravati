@@ -82,7 +82,7 @@ export function About(props) {
               </div>
               <div className="flex w-full gap-4">
                 <img
-                  src={memory2}
+                  src={aboutbanner1}
                   className="w-full max-sm:h-[15vh] h-[20vh] object-cover"
                   alt=""
                 />
