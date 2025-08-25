@@ -256,7 +256,7 @@ export const AllProjects = [
     ],
     projects: [
       {
-        name: "AMRAVATI APARTMENTS",
+        name: "AMRAVATI ZYNIA 5",
         location: "Baddi, Himachal Pradesh",
         slug: "amravati-apartments",
         tagline: "Premium Apartments With All The Amenities",
@@ -365,7 +365,7 @@ export const AllProjects = [
       },
 
       {
-        name: "AMRAVATI APARTMENTS",
+        name: "AMRAVATI ECO HOMES",
         location: "Baddi, Himachal Pradesh",
         slug: "amravati-apartments-baddi",
         tagline: "Premium Apartments With All The Amenities",

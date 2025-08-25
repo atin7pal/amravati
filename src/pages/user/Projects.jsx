@@ -19,23 +19,25 @@ const Projects = () => {
       <Navbar absolute="absolute" background="bg-transparent" />
 
       {/* Hero Section */}
-      <section  style={{
+      <section
+        style={{
           backgroundImage: `linear-gradient(#00000000,#0000005d, #0000005d),url(${dreamscape})`,
-        }} className="section h-[80vh] p-20 text-center bg-cover bg-no-repeat bg-bottom flex justify-center items-center flex-col max-sm:p-4">
+        }}
+        className="section h-[80vh] p-20 text-center bg-cover bg-no-repeat bg-bottom flex justify-center items-center flex-col max-sm:p-4"
+      >
         <h1 className="text-5xl mb-4 w-[60%] mt-[70px] max-sm:w-full max-sm:text-3xl themecolorfont text-shadow-xl">
           Where Heart and Mind Converge to Create Thoughtful{" "}
           <span className="">Real Estate.</span>
         </h1>
-           <p className="max-w-6xl max-sm:max-w-full max-sm:w-full text-center accentfont p-4 themecolorfont text-shadow-lg max-sm:text-sm">
-              At Amravati Group, we believe that true craftsmanship in real
-              estate begins at the intersection Of passion and purpose. Our
-              commitment to thoughtful developments reflects not just a vision,
-              but a deep understanding of the communities we serve. Through
-              meticulous planning and innovative design, we strive to build
-              spaces that inspire and elevate the human experience. Each project
-              is a testament to our dedication, where every detail is infused
-              With care and consideration.
-            </p>
+        <p className="max-w-6xl max-sm:max-w-full max-sm:w-full text-center accentfont p-4 themecolorfont text-shadow-lg max-sm:text-sm">
+          At Amravati Group, we believe that true craftsmanship in real estate
+          begins at the intersection Of passion and purpose. Our commitment to
+          thoughtful developments reflects not just a vision, but a deep
+          understanding of the communities we serve. Through meticulous planning
+          and innovative design, we strive to build spaces that inspire and
+          elevate the human experience. Each project is a testament to our
+          dedication, where every detail is infused With care and consideration.
+        </p>
         <div className="w-full"></div>
       </section>
 
@@ -47,18 +49,22 @@ const Projects = () => {
             onClick={() => toggleExpand(index)}
           >
             <div className="h-full w-full flex justify-center items-start p-10 flex-col gap-4 max-sm:p-4">
-             <img className="h-[400px] w-full object-cover" src={element.projects[1].coverImage} alt="" />
+              <img
+                className="h-[400px] w-full object-cover"
+                src={element.projects[1].coverImage}
+                alt=""
+              />
             </div>
 
             <div className="flex w-full flex-col justify-center items-start p-6 gap-2">
               <h2 className="text-2xl max-sm:text-3xl bgcolorfont">
                 {element.title}
               </h2>
-              <p className="accentfont">{element.description.slice(0,400)} {"..."}</p>
-              <Link
-               to={`/projects/${element.link}`}
-              className="btn ">
-              Know More
+              <p className="accentfont">
+                {element.description.slice(0, 400)} {"..."}
+              </p>
+              <Link to={`/projects/${element.link}`} className="btn ">
+                Know More
               </Link>
             </div>
           </div>
@@ -66,38 +72,40 @@ const Projects = () => {
           {/* Expandable Content */}
           <AnimatePresence>
             <div className="w-full themebg overflow-hidden flex justify-center items-center max-sm:flex-col">
-            {expanded === index && (
-              <motion.div
-                className="p-6 pb-10 pt-0 px-10 themebg w-full overflow-hidden max-sm:p-4"
-                initial={{ height: "0px", opacity: 0 }}
-                animate={{ height: "100%", opacity: 1 }}
-                exit={{ height: "0px", opacity: 0 }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
-              >
-               
-
-                {element.projects && element.projects.length > 0 && (
-                  <div className="mt-0">
-                    <ul className="list-none list-inside space-y-2">
-                      {element.projects.map((sub, subIndex) => (
-                        <li key={subIndex} className="text-gray-700 w-full p-4 bg-white flex justify-between items-center gap-4">
-                          {sub.name} <Link to={`/projects/${sub.slug}`} className="btn">Know More</Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-                
-              </motion.div>
-              
-            )}
-            <div className="w-full"></div>
+              {expanded === index && (
+                <motion.div
+                  className="p-6 pb-10 pt-0 px-10 themebg w-full overflow-hidden max-sm:p-4"
+                  initial={{ height: "0px", opacity: 0 }}
+                  animate={{ height: "100%", opacity: 1 }}
+                  exit={{ height: "0px", opacity: 0 }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                >
+                  {element.projects && element.projects.length > 0 && (
+                    <div className="mt-0">
+                      <ul className="list-none list-inside space-y-2">
+                        {element.projects.map((sub, subIndex) => (
+                          <li
+                            key={subIndex}
+                            className="text-gray-700 w-full p-4 bg-white flex justify-between items-center gap-4"
+                          >
+                            {sub.name}{" "}
+                            <Link to={`/projects/${sub.slug}`} className="btn">
+                              Know More
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </motion.div>
+              )}
+              <div className="w-full"></div>
             </div>
           </AnimatePresence>
         </section>
       ))}
-     <div className="pt-20">
-      <Footer />
+      <div className="pt-20">
+        <Footer />
       </div>
     </>
   );
