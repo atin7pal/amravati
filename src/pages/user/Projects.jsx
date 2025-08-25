@@ -21,12 +21,12 @@ const Projects = () => {
       {/* Hero Section */}
       <section  style={{
           backgroundImage: `linear-gradient(#00000000,#0000005d, #0000005d),url(${dreamscape})`,
-        }} className="section h-[80vh] p-20 text-center bg-cover bg-no-repeat bg-bottom flex justify-center items-center flex-col">
+        }} className="section h-[80vh] p-20 text-center bg-cover bg-no-repeat bg-bottom flex justify-center items-center flex-col max-sm:p-4">
         <h1 className="text-5xl mb-4 w-[60%] mt-[70px] max-sm:w-full max-sm:text-3xl themecolorfont text-shadow-xl">
           Where Heart and Mind Converge to Create Thoughtful{" "}
           <span className="">Real Estate.</span>
         </h1>
-           <p className="text-lg max-w-6xl max-sm:max-w-full max-sm:w-full text-center accentfont p-4 themecolorfont text-shadow-lg">
+           <p className="max-w-6xl max-sm:max-w-full max-sm:w-full text-center accentfont p-4 themecolorfont text-shadow-lg max-sm:text-sm">
               At Amravati Group, we believe that true craftsmanship in real
               estate begins at the intersection Of passion and purpose. Our
               commitment to thoughtful developments reflects not just a vision,
