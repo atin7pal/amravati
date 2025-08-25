@@ -146,7 +146,6 @@ export const AllProjects = [
           "Located just 45 km from Chandigarh",
           "Clubhouse with café, restaurant & wellness facilities",
           "Villas & apartments with modern architecture and luxury interiors",
-          "Fully managed leasing with StayVista",
         ],
         offerings: [
           {
@@ -206,8 +205,8 @@ export const AllProjects = [
     title: "AMRAVATI APARTMENTS",
     description:
       "Amravati Apartments is situated adjoining to Housing Board, Phase III, Baddi at a beautiful location in the surroundings of hills. Amravati Apartmernts is a one of a kind integrated township, which now houses over 10000 happy customers. It was set up in the year 2005 and since then has become one of the most preferred zip codes in the Baddi Nalagarh Inudstrial region.",
-     link: "amravati-apartments",
-      coverImage: baddi5,
+    link: "amravati-apartments",
+    coverImage: baddi5,
     maplink:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3421.9715541467517!2d76.81120007558863!3d30.94335897448331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ff559f83bda21%3A0x2ed548b93835143d!2sAmravati%20Apartments%20-%20Baddi%2C%20Baddi%2C%20Himachal%20Pradesh%20173205!5e0!3m2!1sen!2sin!4v1755476634666!5m2!1sen!2sin",
     floorPlans: [
@@ -408,7 +407,7 @@ export const AllProjects = [
             src: baddi7,
             alt: "image 1",
           },
-          
+
           {
             src: baddi9,
             alt: "image 1",

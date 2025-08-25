@@ -156,6 +156,9 @@ const Retail = () => {
         <h2 className="text-5xl max-sm:text-3xl text-center py-10 max-sm:py-6">
           Visit Us Today
         </h2>
+
+         
+
         <p className="accentfont text-lg leading-relaxed">
           Whether you’re in{" "}
           <span className="font-bold accentfont">Panchkula</span>, or driving
@@ -164,10 +167,38 @@ const Retail = () => {
           , there’s an Everyday Supermarket nearby — waiting to serve you with a
           smile.
         </p>
+
         <p className="accentfont text-lg mt-4 italic">
           Stop by and discover why we’re more than just a store — we’re a part
           of your everyday.
         </p>
+
+               <div className="p-6 bg-white mt-8 w-[90%] mx-auto max-sm:w-full">
+                <h2 className="text-3xl max-sm:text-3xl text-center">We Are Located At</h2>
+                         <ul className="space-y-2 mt-4">
+  <li>
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=SCO+60,+Sector+-+11,+Sector+11,+Panchkula,+Haryana+134112"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bgcolorfont accentfont hover:underline"
+    >
+      SCO 60, Sector - 11, Sector 11, Panchkula, Haryana 134112
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=Inox+Nh+22+Mall,+NH+22+Mall+Ground+floor,+Amravati+Enclave,+Amravati,+Haryana+134107"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bgcolorfont accentfont hover:underline"
+    >
+      Inox Nh 22 Mall, NH 22 Mall Ground floor, Amravati Enclave, Amravati, Haryana 134107
+    </a>
+  </li>
+</ul>
+               </div>
+          
       </div>
       <Footer />
     </>

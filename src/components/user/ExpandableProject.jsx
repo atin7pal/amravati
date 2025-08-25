@@ -45,7 +45,7 @@ export default function ProjectExpandableCard({ projects, project }) {
           <p className="mt-2 accentfont w-[90%] max-sm:text-sm">{project.description}</p>
 
           <motion.button className="btn mt-4 flex items-center gap-1">
-            {expanded ? (
+            {/* {expanded ? (
               <>
                 See Less <MdOutlineKeyboardArrowUp />
               </>
@@ -53,7 +53,8 @@ export default function ProjectExpandableCard({ projects, project }) {
               <>
                 See More <MdOutlineKeyboardArrowDown />
               </>
-            )}
+            )} */}
+            Project Overview
           </motion.button>
         </motion.div>
       </motion.div>
