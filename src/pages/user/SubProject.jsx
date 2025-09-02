@@ -113,7 +113,7 @@ export function SubProject() {
       {/* Highlights */}
       {project?.highlights?.length > 0 && (
         <section className="section w-full bgcolorfont accentfont themebg">
-          <div className="row">
+          <div className="rownopad">
             <div className="w-full">
               <img
                 src={project?.coverImage}
@@ -141,38 +141,66 @@ export function SubProject() {
 
 {project?.properties?.length > 0 ? (
   project.properties.map((prop, i) => (
-    <div className="rownopad themebg">
-    <section key={i} className="section">
-      <div className="">
+      <div className="rownopad themebg">
+        <div>
         <h2 className="text-3xl w-full text-start bgcolorfont mb-6">
           {prop.type.toUpperCase()}
         </h2>
 
-        {prop?.images?.length > 0 && (
-          <div className="w-full">
-            <h3 className="text-2xl mb-6">At A Glimpse</h3>
-            <BentoImageGrid images={prop.images} />
-          </div>
-        )}
-      </div>
-
-           {prop?.floorplans?.length > 0 && (
+        {prop?.floorplans?.length > 0 && (
           <div className="mb-8 w-full">
-            <h3 className="text-2xl mb-6 mt-10">Floor Plans</h3>
+            <h3 className="text-2xl mb-3">Floor Plans</h3>
             <CarouselFloor
               images={prop.floorplans}
               heights="h-full max-sm:h-full"
             />
           </div>
         )}
-    </section>
-    </div>
+
+        {prop?.images?.length > 0 && (
+          <div className="w-full">
+            <h3 className="text-2xl mb-3">Gallery</h3>
+            <BentoImageGrid images={prop.images} />
+          </div>
+        )}
+      </div>
+      </div>
+ 
   ))
 ) : (
   <></>
 )}
 
-   
+      {/* Floor Plans */}
+      {project?.floorPlans?.length > 0 && (
+        <section className="section themebg">
+          <div className="row">
+            <div className="w-full flex flex-col justify-center items-start gap-4">
+              <h2 className="text-3xl text-start w-full bgcolorfont">
+                Floor Plans
+              </h2>
+              <CarouselFloor
+                images={project?.floorPlans}
+                heights="h-full max-sm:h-full"
+              />
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Gallery */}
+      {project?.galleryImages?.length > 0 && (
+        <section className="section w-full mx-auto">
+          <div className="rowPadding">
+            <div className="flex flex-col justify-center items-center gap-4">
+              <h2 className="text-4xl mb-6 text-start w-full bgcolorfont">
+                At A Glimpse
+              </h2>
+              <BentoImageGrid images={project?.galleryImages} />
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* CTA */}
       <div className="justify-between flex items-center w-full pt-20 pb-0 px-20">

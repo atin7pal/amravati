@@ -308,27 +308,27 @@ export const AllProjects = [
     maplink:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3421.9715541467517!2d76.81120007558863!3d30.94335897448331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ff559f83bda21%3A0x2ed548b93835143d!2sAmravati%20Apartments%20-%20Baddi%2C%20Baddi%2C%20Himachal%20Pradesh%20173205!5e0!3m2!1sen!2sin!4v1755476634666!5m2!1sen!2sin",
     floorPlans: [
-      {
-        src: baddifloor1,
-        alt: "First Floor - Amravati Apartments Baddi Type 2",
-      },
-      {
-        src: baddifloor2,
-        alt: "First Floor - Amravati Eco Homes Apartments Baddi Type 4",
-      },
-      {
-        src: baddifloor3,
-        alt: "Ground Floor - Amravati Apartments Baddi Type 2",
-      },
-      {
-        src: baddifloor4,
-        alt: "Ground Floor - Amravati Eco Homes Apartments Baddi Type 4",
-      },
-      { src: baddifloor5, alt: "Lily 7 - Single Apartment Floor Plan" },
-      { src: baddifloor6, alt: "Lily 7 - Typical Plan" },
-      { src: baddifloor7, alt: "Lily 7 - Typical Floor Plan" },
-      { src: baddifloor8, alt: "Zynia 5 - Amravati Apartments Baddi" },
-      { src: baddifloor9, alt: "Zynia 5 - Single Apartment Plan" },
+      // {
+      //   src: baddifloor1,
+      //   alt: "First Floor - Amravati Apartments Baddi Type 2",
+      // },
+      // {
+      //   src: baddifloor2,
+      //   alt: "First Floor - Amravati Eco Homes Apartments Baddi Type 4",
+      // },
+      // {
+      //   src: baddifloor3,
+      //   alt: "Ground Floor - Amravati Apartments Baddi Type 2",
+      // },
+      // {
+      //   src: baddifloor4,
+      //   alt: "Ground Floor - Amravati Eco Homes Apartments Baddi Type 4",
+      // },
+      // { src: baddifloor5, alt: "Lily 7 - Single Apartment Floor Plan" },
+      // { src: baddifloor6, alt: "Lily 7 - Typical Plan" },
+      // { src: baddifloor7, alt: "Lily 7 - Typical Floor Plan" },
+      // { src: baddifloor8, alt: "Zynia 5 - Amravati Apartments Baddi" },
+      // { src: baddifloor9, alt: "Zynia 5 - Single Apartment Plan" },
     ],
     galleryImages: [
       {
@@ -371,7 +371,7 @@ export const AllProjects = [
         floorPlans: [
           { src: baddifloor8, alt: "Zynia 5 - Amravati Apartments Baddi" },
           { src: baddifloor9, alt: "Zynia 5 - Single Apartment Plan" },
-          { src: "", alt: "" },
+          { src: transparent, alt: "" },
         ],
         coverImage: zynia,
         brochureLink: "/pdfs/solan_brochure_singlepg.pdf",
@@ -488,7 +488,7 @@ export const AllProjects = [
         alt: "Ground Floor - Amravati Apartments Baddi Type 2",
       },
        {
-        src: "",
+        src: transparent,
         alt: "",
       },
     ],
@@ -519,7 +519,7 @@ export const AllProjects = [
         alt: "Ground Floor - Amravati Eco Homes Apartments Baddi Type 4",
       },
          {
-        src: "",
+        src: transparent,
         alt: "",
       },
     ],
@@ -531,45 +531,45 @@ export const AllProjects = [
         maplink:
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3421.9715541467517!2d76.81120007558863!3d30.94335897448331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ff559f83bda21%3A0x2ed548b93835143d!2sAmravati%20Apartments%20-%20Baddi%2C%20Baddi%2C%20Himachal%20Pradesh%20173205!5e0!3m2!1sen!2sin!4v1755473340976!5m2!1sen!2sin",
         floorPlans: [
-          {
-            src: baddifloor1,
-            alt: "First Floor - Amravati Apartments Baddi Type 2",
-          },
-          {
-            src: baddifloor2,
-            alt: "First Floor - Amravati Eco Homes Apartments Baddi Type 4",
-          },
-          {
-            src: baddifloor3,
-            alt: "Ground Floor - Amravati Apartments Baddi Type 2",
-          },
-          {
-            src: baddifloor4,
-            alt: "Ground Floor - Amravati Eco Homes Apartments Baddi Type 4",
-          },
-          { src: baddifloor5, alt: "Lily 7 - Single Apartment Floor Plan" },
-          { src: baddifloor6, alt: "Lily 7 - Typical Plan" },
-          { src: baddifloor7, alt: "Lily 7 - Typical Floor Plan" },
-          { src: baddifloor8, alt: "Zynia 5 - Amravati Apartments Baddi" },
-          { src: baddifloor9, alt: "Zynia 5 - Single Apartment Plan" },
+          // {
+          //   src: baddifloor1,
+          //   alt: "First Floor - Amravati Apartments Baddi Type 2",
+          // },
+          // {
+          //   src: baddifloor2,
+          //   alt: "First Floor - Amravati Eco Homes Apartments Baddi Type 4",
+          // },
+          // {
+          //   src: baddifloor3,
+          //   alt: "Ground Floor - Amravati Apartments Baddi Type 2",
+          // },
+          // {
+          //   src: baddifloor4,
+          //   alt: "Ground Floor - Amravati Eco Homes Apartments Baddi Type 4",
+          // },
+          // { src: baddifloor5, alt: "Lily 7 - Single Apartment Floor Plan" },
+          // { src: baddifloor6, alt: "Lily 7 - Typical Plan" },
+          // { src: baddifloor7, alt: "Lily 7 - Typical Floor Plan" },
+          // { src: baddifloor8, alt: "Zynia 5 - Amravati Apartments Baddi" },
+          // { src: baddifloor9, alt: "Zynia 5 - Single Apartment Plan" },
         ],
         brochureLink: "/pdfs/solan_brochure_singlepg.pdf",
         description:
           "Amravati Group presents a brand new redesigned ECO Homes, environmentally responsible 2 & 3 BHK independent homes for the 21st century intelligent buyer. They have 24x7 hot water supply in all bathrooms and kitchen. Eco-Homes are sustainably designed amplifying the use of natural resources while minimizing carbon footprint. They are designed in such a way to maximize the use of the northern light thus increasing natural lighting and energy savings. A number of green areas including the entryway and roofs have been designed to promote urban biodiversity and conservation. The usage of upvc windows not only leads to increased insulation but also reduces energy costs while increasing the aesthetic beauty and natural lighting. The Eco Homes design is influenced by contemporary eco-architecture, which is both aesthetically pleasing and environmentally friendly. ECO Homes are designed by a dynamic design firm Arch. Lab which is based out of Chandigarh.",
         galleryImages: [
-          {
-            src: baddi6,
-            alt: "image 1",
-          },
-          {
-            src: baddi7,
-            alt: "image 1",
-          },
+          // {
+          //   src: baddi6,
+          //   alt: "image 1",
+          // },
+          // {
+          //   src: baddi7,
+          //   alt: "image 1",
+          // },
 
-          {
-            src: baddi9,
-            alt: "image 1",
-          },
+          // {
+          //   src: baddi9,
+          //   alt: "image 1",
+          // },
         ],
         moreDetails: [
           {
