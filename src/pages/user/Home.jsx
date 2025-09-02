@@ -38,7 +38,7 @@ export function Home() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoading(false);
-    }, 3000); // 3 seconds
+    }, 2000); // 3 seconds
 
     return () => clearTimeout(timeout); // Cleanup
   }, []);

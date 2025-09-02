@@ -2,21 +2,18 @@ import React from "react";
 import { motion } from "framer-motion";
 import Navbar from "../../components/user/Navbar";
 import { Footer } from "../../components/user/Footer";
-import aboutbanner from "../../assets/project1/hills/hills9.webp";
-import aboutbanner1 from "../../assets/project1/hills/image5.webp";
-import aboutbanner2 from "../../assets/project1/hills/hills12.webp";
-import floral from "../../assets/floral.jpg";
+import aboutbanner from "../../assets/about-banner-new1.webp";
+import aboutbanner1 from "../../assets/about-banner-new.webp";
+import aboutbanner2 from "../../assets/architecture-about.webp";
 import { BiSolidQuoteLeft, BiSolidQuoteRight } from "react-icons/bi";
-import map from "../../assets/tropo.jpg";
 import TeamSection from "../../components/user/TeamSection";
-import FAQSection from "../../components/user/FAQSection";
-import { SendQuery } from "../../components/user/SendQuery";
-import video2 from "../../assets/video2.mp4";
-import BentoImageGrid from "../../components/user/BentoGrid";
+import amravatimagazines from "../../assets/amravatimagazines.webp";
+import aboutbanner3 from "../../assets/about-banner-new.webp";
+import aboutbanner4 from "../../assets/about-banner-new2.webp";
 import { Helmet } from "react-helmet-async";
 import director from "../../assets/team/director.png";
 import memory1 from "../../assets/memory1.jpeg";
-import memory2 from "../../assets/memory2.jpeg";
+import memory2 from "../../assets/memory2.webp";
 import aboutshade from "../../assets/aboutshade.jpg";
 
 export function About(props) {
@@ -75,23 +72,27 @@ export function About(props) {
             >
               <div className="w-full h-full">
                 <img
-                  src={memory1}
-                  className="w-full h-[350px] max-sm:h-[300px] object-cover"
+                  src={memory2}
+                  className="w-full h-[350px] max-sm:h-[300px] object-cover "
                   alt=""
                 />
               </div>
               <div className="flex w-full gap-4">
                 <img
-                  src={aboutbanner1}
+                  src={aboutbanner4}
                   className="w-full max-sm:h-[15vh] h-[20vh] object-cover"
                   alt=""
                 />
                 <img
-                  src={aboutbanner2}
+                  src={amravatimagazines}
                   className="w-full max-sm:h-[15vh] h-[20vh] object-cover"
                   alt=""
                 />
-                <div className="w-full h-[20vh] brownbg max-sm:hidden"></div>
+                <img
+                  src={aboutbanner3}
+                  className="w-full max-sm:h-[15vh] h-[20vh] object-cover max-sm:hidden"
+                  alt=""
+                />
               </div>
             </motion.div>
             <motion.div
@@ -102,7 +103,7 @@ export function About(props) {
                 OUR STORY
               </h2>
               <p className="accentfont">
-                Founded in the year 1997 under the visionary leadership of Late
+                Founded in the 1970s under the visionary leadership of Late
                 Shri Amarnath Aggarwal, Amravati Group began its journey with a
                 simple yet ambitious goal: to redefine the real estate landscape
                 through timeless design and trustworthy execution. Guided today

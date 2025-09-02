@@ -13,6 +13,10 @@ import school5 from "../../assets/school/school5.jpeg";
 import school6 from "../../assets/school/school6.jpeg";
 import school7 from "../../assets/school/school7.jpeg";
 import school8 from "../../assets/school/school8.jpeg";
+import path from '../../assets/school/icons/path.png'
+import first  from '../../assets/school/icons/first.png'
+import achieve from '../../assets/school/icons/achieve.png'
+import creative from '../../assets/school/icons/creative.png'
 
 const milestones = [
   {
@@ -48,10 +52,22 @@ const milestones = [
 ];
 
 const highlights = [
-  "Sustaining paths to premier institutions like IIT and other top universities.",
-  "Ensuring over-the-top board exam results, year after year.",
-  "Broadening student potential—academic, creative, physical, and ethical.",
-  "Inspiring every young mind to dream, achieve, and lead",
+  {
+    text: "Sustaining paths to premier institutions like IIT and other top universities.",
+    icon: path,
+  },
+  {
+    text: "Ensuring over-the-top board exam results, year after year.",
+    icon: first,
+  },
+  {
+    text: "Broadening student potential—academic, creative, physical, and ethical.",
+    icon: creative,
+  },
+  {
+    text: "Inspiring every young mind to dream, achieve, and lead",
+    icon: achieve,
+  },
 ];
 
 const Vidyalya = () => {
@@ -72,12 +88,12 @@ const Vidyalya = () => {
       <section className="section">
         <div className="row themebg">
           <div className="flex flex-col justify-center items-center text-center gap-4 max-sm:pb-10">
-            <h2 className=" text-4xl max-sm:text-3xl w-[80%] text-center max-sm:w-full">
+            <h2 className=" text-4xl max-sm:text-3xl w-full text-center max-sm:w-full">
               WELCOME TO AMRAVATI VIDYALYA, BADDI
             </h2>
-            <p className="text-xl  accentfont text-center max-sm:text-lg w-[80%] max-sm:w-full">
-              WHERE EVERY STUDENT STEPS THROUGH OUR GATES WITH CURIOSITY AND
-              STEPS OUT WITH CONFIDENCE.
+            <p className="text-xl  accentfont text-center max-sm:text-lg w-[90%] max-sm:w-full italic">
+              'Where every student steps through our gates with curiosity and
+              steps out with condidence.'
             </p>
           </div>
         </div>
@@ -87,14 +103,18 @@ const Vidyalya = () => {
         <div className="row">
           <div className="flex flex-col justify-center items-start text-start gap-8">
             <div className="flex gap-6 max-sm:flex-col">
-              <div className="w-full min-h-[350px] flex justify-center items-center max-sm:h-full flex-col">
+              
+              <div className="w-full min-h-[350px] flex justify-center items-center max-sm:h-full flex-col themebg px-10">
+                <h2 className="text-5xl max-sm:text-3xl text-start mb-4 w-full">
+              About The School
+            </h2>
                 <p className="accentfont text-lg text-pretty">
                   Amravati Vidyalaya, Baddi, established in 2007, is located in
                   the peaceful surroundings of Baddi, Himachal Pradesh. The
                   school offers a safe, encouraging space with ventilated
                   classrooms and a well-maintained playground. Managed by the
-                  Amravati Welfare Society, under the leadership of Mr.
-                  Hargobind Goyal, it is affiliated to the CBSE, offering
+                  Amravati Welfare Society, under the leadership of <span className="font-semibold">Mr.
+                  Hargobind Goyal</span>, it is affiliated to the CBSE, offering
                   classes from Nursery to Class 10. With a commitment to NEP
                   2020 goals, the school fosters critical thinking, life skills,
                   and values-driven education.
@@ -108,67 +128,16 @@ const Vidyalya = () => {
                   leaders for a brighter tomorrow .
                 </p>
               </div>
-              <div className="w-full">
+              <div className="w-[70%] flex justify-end items-end">
                 <img
-                  src={schoolactual}
-                  className="w-full h-[450px] object-cover"
+                  src={vidyalya}
+                  className="w-full h-[450px] object-contain"
                   alt=""
                 />
               </div>
             </div>
 
-            <div className="themebg p-6 flex flex-col items-center text-center group transition-all h-[300px] w-[400px] max-sm:w-full">
-              <img
-                src={principal}
-                className="group-hover:w-24 group-hover:h-24 rounded-full h-[150px] w-[150px] object-cover mb-4 transition-all duration-700"
-              />
-              <h3 className="text-xl ">Mrs. Suman Sharma</h3>
-              <p className="text-sm">Principal</p>
-              <p className="italic mt-3 mb-4 px-2 accentfont hidden group-hover:block">
-                “My vision is to nurture every student into a compassionate,
-                innovative, and future-ready global citizen.”
-              </p>
-            </div>
-            <div>
-              <h2 className="text-3xl max-sm:text-2xl">
-                Amravati Vidyalaya, Baddi — Nurturing Young Minds, Shaping
-                Bright Futures
-              </h2>
-
-              {/* <p className="text-lg accentfont">
-              Our teachers adopt active-learning methods: visual aids, music,
-              discussions, and sessions in dance, yoga, aerobics, and more.
-              Students engage in rallies, skits, and hands-on activities,
-              learning beyond textbooks.
-            </p> */}
-
-              <p className="text-lg accentfont">
-                Leadership is cultivated through democratic elections for Head
-                Boy/Girl and Captains, encouraging confidence and civic
-                awareness.
-              </p>
-
-              <div className="space-y-2">
-                <h2 className="text-lg font-bold">
-                  Where Dreams Take Flight and Futures Are Shaped Right!
-                </h2>
-                <ul className="accentfont list-disc pl-5">
-                  <li className="text-lg accentfont">
-                    Since 2007, we’ve nurtured curiosity and prepared students
-                    to excel across all spheres.
-                  </li>
-                  <li className="text-lg accentfont">
-                    We embrace innovative teaching, a warm atmosphere, and
-                    enriching activities.
-                  </li>
-                  <li className="text-lg accentfont">
-                    From IIT to global careers, our alumni reflect our academic
-                    and moral strength.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <h2 className="text-5xl max-sm:text-3xl  max-sm:mt-4 max-sm:w-full text-center mt-4">
+               <h2 className="text-5xl max-sm:text-3xl  max-sm:mt-4 max-sm:w-full text-center mt-4">
               At A Glimpse
             </h2>
             <div className="row themebg">
@@ -184,7 +153,26 @@ const Vidyalya = () => {
                 alt=""
               />
             </div>
-
+            <div className="flex w-full justify-center items-center gap-4 p-6 border max-sm:flex-col">
+            <div className="p-6 themebg flex flex-col items-center text-center group transition-all h-[300px] max-sm:w-full w-full">
+              <img
+                src={principal}
+                className="group-hover:w-24 group-hover:h-24 rounded-full h-[150px] w-[150px] object-cover mb-4 transition-all duration-700"
+              />
+              <p className="italic mt-3 mb-4 px-2 accentfont">
+                “My vision is to nurture every student into a compassionate,
+                innovative, and future-ready global citizen.”
+              </p>
+            </div>
+            <div className="flex flex-col justify-center items-start gap-3">
+              <div  className="accentfont">
+                <h3 className="text-3xl ">Mrs. Suman Sharma</h3>
+              <p className="text-lg accentfont">Principal</p>
+              </div>
+             <p className="w-full">At the helm of this journey is our dynamic Principal, *Mrs. Suman Sharma*, whose inspiring leadership and progressive vision are guiding the school towards new heights of success. Her dedication ensures that students are nurtured to excel not just in academics but also grow into responsible, confident citizens ready to contribute positively to society.</p>
+         </div>
+            </div>
+            
             {/* Timeline Section */}
             <h2 className="text-5xl max-sm:text-3xl  mt-4 max-sm:mt-4 max-sm:w-full max-sm:text-center">
               Our Journey
@@ -204,16 +192,21 @@ const Vidyalya = () => {
               Vision Forward
             </h3>
             <div className="flex gap-6 max-sm:flex-col max-sm:gap-8">
-              <ul className="grid w-full grid-cols-2 accentfont text-lg gap-4">
-                {highlights.map((item, index) => (
-                  <li
-                    className="themebg p-4 flex flex-col justify-center items-start"
-                    key={index}
-                  >
-                    {item}
-                  </li>
-                ))}
-              </ul>
+            <ul className="grid w-full grid-cols-2 accentfont text-lg gap-4">
+  {highlights.map((item, index) => (
+    <li
+      className="themebg p-4 flex items-start gap-3 rounded-lg relative"
+      key={index}
+    >
+      <img
+        src={item.icon}
+        alt="icon"
+        className="w-20 h-20 object-contain shrink-0 absolute right-1 bottom-1"
+      />
+      <span>{item.text}</span>
+    </li>
+  ))}
+</ul>
 
               <div className="w-full flex justify-center items-center min-h-[300px]">
                 <p className="accentfont text-lg ">

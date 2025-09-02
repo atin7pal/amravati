@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa6";
+import { IoMdClose } from "react-icons/io";
+import { motion, AnimatePresence } from "framer-motion";
 
 const CarouselFloor = ({
   images,
@@ -10,6 +12,7 @@ const CarouselFloor = ({
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [itemsPerSlide, setItemsPerSlide] = useState(3);
+  const [selectedImage, setSelectedImage] = useState(null);
   const intervalRef = useRef(null);
 
   // Update items per slide on resize
@@ -23,7 +26,7 @@ const CarouselFloor = ({
   }, []);
 
   const totalItems = images.length;
-  const maxIndex = totalItems - itemsPerSlide; // ✅ stop when last full set is reached
+  const maxIndex = totalItems - itemsPerSlide;
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev >= maxIndex ? 0 : prev + 1));
@@ -72,8 +75,9 @@ const CarouselFloor = ({
           {images.map(({ src, alt }, index) => (
             <div
               key={index}
-              className="px-2 flex flex-col items-center w-full"
+              className="px-2 flex flex-col items-center w-full cursor-pointer"
               style={{ width: `${slideWidthPercent}%` }}
+              onClick={() => setSelectedImage({ src, alt })}
             >
               <img
                 src={src}
@@ -81,14 +85,62 @@ const CarouselFloor = ({
                 className={`w-full object-cover ${heights}`}
               />
               {alt && (
-                <p className="text-sm text-center text-gray-700 mt-2 accentfont">
-                  {alt}
-                </p>
+                <p className="text-sm text-center text-gray-700 mt-2 accentfont"></p>
               )}
             </div>
           ))}
         </div>
       </div>
+
+      {/* Popup Modal with Framer Motion */}
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            className="fixed inset-0 bg-black/50 backdrop-blur-xs bg-opacity-80 flex items-center justify-center z-50 p-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            {/* Close Button */}
+            <motion.button
+              className="absolute top-4 right-4 text-white text-3xl"
+              onClick={() => setSelectedImage(null)}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+            >
+              <IoMdClose />
+            </motion.button>
+
+            {/* Image Container */}
+            <motion.div
+              className="max-w-4xl w-full"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              <img
+                src={selectedImage.src}
+                alt={selectedImage.alt}
+                className="w-full h-auto rounded-none shadow-lg"
+              />
+              {selectedImage.alt && (
+                <motion.p
+                  className="text-center text-white mt-4 text-lg"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 10 }}
+                  transition={{ delay: 0.2 }}
+                >
+                  {selectedImage.alt}
+                </motion.p>
+              )}
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

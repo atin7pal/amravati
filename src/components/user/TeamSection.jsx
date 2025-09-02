@@ -5,6 +5,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import aniesh from "../../assets/team/aniesh.png";
 import vivek from "../../assets/team/vivek.png";
 import director from "../../assets/team/director.png";
+import hargobindgoyal from '../../assets/team/mr-hargobind-goyal.webp'
 
 const teamMembers = [
     {
@@ -14,7 +15,7 @@ const teamMembers = [
     instagram: "https://instagram.com/ravi.codes",
     linkedin: "https://linkedin.com/in/ravisingh",
     quote: "Managing real estate is not about selling property, it’s about building dreams that last generations.",
-    image: director,
+    image: hargobindgoyal,
   },
   {
     name: "Ainesh Goyal",

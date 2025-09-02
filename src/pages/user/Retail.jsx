@@ -7,6 +7,7 @@ import store1 from "../../assets/store/store1.webp";
 import store2 from "../../assets/store/store2.webp";
 import store3 from "../../assets/store/store3.webp";
 import store4 from "../../assets/store/store4.webp";
+import { FaLocationDot } from "react-icons/fa6";
 
 const Retail = () => {
   const images = [store1, store2, store3, store4];
@@ -157,8 +158,6 @@ const Retail = () => {
           Visit Us Today
         </h2>
 
-         
-
         <p className="accentfont text-lg leading-relaxed">
           Whether you’re in{" "}
           <span className="font-bold accentfont">Panchkula</span>, or driving
@@ -173,32 +172,48 @@ const Retail = () => {
           of your everyday.
         </p>
 
-               <div className="p-6 bg-white mt-8 w-[90%] mx-auto max-sm:w-full">
-                <h2 className="text-3xl max-sm:text-3xl text-center">We Are Located At</h2>
-                         <ul className="space-y-2 mt-4">
-  <li>
-    <a
-      href="https://www.google.com/maps/search/?api=1&query=SCO+60,+Sector+-+11,+Sector+11,+Panchkula,+Haryana+134112"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bgcolorfont accentfont hover:underline"
-    >
-      SCO 60, Sector - 11, Sector 11, Panchkula, Haryana 134112
-    </a>
-  </li>
-  <li>
-    <a
-      href="https://www.google.com/maps/search/?api=1&query=Inox+Nh+22+Mall,+NH+22+Mall+Ground+floor,+Amravati+Enclave,+Amravati,+Haryana+134107"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bgcolorfont accentfont hover:underline"
-    >
-      Inox Nh 22 Mall, NH 22 Mall Ground floor, Amravati Enclave, Amravati, Haryana 134107
-    </a>
-  </li>
-</ul>
-               </div>
-          
+        <div className="p-6 bg-white mt-8 w-[90%] mx-auto max-sm:w-full">
+          <h2 className="text-3xl max-sm:text-3xl text-center">
+            We Are Located At
+          </h2>
+          <ul className="space-y-2 mt-4">
+            <li className="flex justify-center items-center gap-2">
+              <FaLocationDot/>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=SCO+60,+Sector+-+11,+Sector+11,+Panchkula,+Haryana+134112"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bgcolorfont accentfont hover:underline"
+              >
+                SCO 60, Sector - 11, Sector 11, Panchkula, Haryana 134112
+              </a>
+            </li>
+            <li className="flex justify-center items-center gap-2">
+              <FaLocationDot/>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Inox+Nh+22+Mall,+NH+22+Mall+Ground+floor,+Amravati+Enclave,+Amravati,+Haryana+134107"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bgcolorfont accentfont hover:underline"
+              >
+                Inox Nh 22 Mall, NH 22 Mall Ground floor, Amravati Enclave,
+                Amravati, Haryana 134107
+              </a>
+            </li>
+
+              <li className="flex justify-center items-center gap-2">
+              <FaLocationDot/>
+              <a
+                href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3421.9921065222607!2d76.80901007504592!3d30.942784975451808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ff5000b9fa7ed%3A0xd62ee042b2ca7ab5!2sEveryday%20supermarket!5e0!3m2!1sen!2sin!4v1756557877331!5m2!1sen!2sin"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bgcolorfont accentfont hover:underline"
+              >
+                Housing Board Rd, Baddi, Himachal Pradesh 173205
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <Footer />
     </>

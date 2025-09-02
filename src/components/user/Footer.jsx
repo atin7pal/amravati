@@ -90,8 +90,8 @@ const Footer = () => {
             </div>
             <div className="flex items-center gap-3 text-sm mb-3 max-sm:justify-center justify-center">
               <FaPhoneAlt className="text-base" />
-              <a href="tel:+917526857303" className="accentfont">
-                +91 75268 57303
+              <a href="tel:+917429299696" className="accentfont">
+               +91-7429299696
               </a>
             </div>
             <div className="flex items-center gap-3 text-sm max-sm:justify-center justify-center">

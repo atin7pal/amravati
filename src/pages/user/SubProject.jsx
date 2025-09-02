@@ -10,24 +10,22 @@ import CarouselFloor from "../../components/user/CarouselFloor";
 export function SubProject() {
   const { project: projectSlug, subproject: subSlug } = useParams(); // ✅ get both slugs
   console.log(projectSlug, subSlug);
-  
+
   const [isOpen, setIsOpen] = useState(false);
   const [form, setForm] = useState({ name: "", phone: "", email: "" });
 
   // ✅ First find main project
-  const mainProject = AllProjects.find((p) => p.link === projectSlug);
+  const mainProject = AllProjects.find((p) => p?.link === projectSlug);
 
   console.log(mainProject);
-  
 
   // ✅ Then find the subproject inside it
   const project =
-    mainProject?.projects?.find((sub) => sub.slug === subSlug) || null;
+    mainProject?.projects?.find((sub) => sub?.slug === subSlug) || null;
 
-    console.log(project);
-    
+  console.log(project);
 
-  if (!subSlug) {
+  if (!subSlug || !project) {
     return (
       <div className="flex justify-center items-center h-screen text-2xl">
         Project Not Found
@@ -41,13 +39,15 @@ export function SubProject() {
 
     setIsOpen(false);
 
-    // ✅ Trigger brochure download
-    const link = document.createElement("a");
-    link.href = project.brochureLink;
-    link.setAttribute("download", "brochure.pdf");
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
+    // ✅ Trigger brochure download if available
+    if (project?.brochureLink) {
+      const link = document.createElement("a");
+      link.href = project.brochureLink;
+      link.setAttribute("download", "brochure.pdf");
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+    }
   };
 
   return (
@@ -58,9 +58,9 @@ export function SubProject() {
       <section className="section relative flex items-center justify-center text-center themebg">
         <div className="row">
           <div className="relative z-10 max-w-3xl px-6">
-            <h1 className="text-4xl md:text-5xl mb-4">{project.name}</h1>
-            <p className="text-lg accentfont">{project.tagline}</p>
-            <p className="mt-2 accentfont">{project.location}</p>
+            <h1 className="text-4xl md:text-5xl mb-4">{project?.name}</h1>
+            <p className="text-lg accentfont">{project?.tagline}</p>
+            <p className="mt-2 accentfont">{project?.location}</p>
           </div>
         </div>
       </section>
@@ -77,16 +77,33 @@ export function SubProject() {
                 transition={{ duration: 0.6 }}
                 className="leading-relaxed accentfont"
               >
-                {project.description}
+                {project?.description}
               </motion.p>
 
-              {project.brochureLink && (
-                <button
-                  onClick={() => setIsOpen(true)}
-                  className="btn max-sm:mb-10"
-                >
-                  Download Brochure
-                </button>
+              {project?.offerings?.length > 0 && (
+                <div className="w-full flex justify-center items-center flex-col">
+                  <h2 className="text-3xl mb-2 bgcolorfont">UNITS</h2>
+
+                  {project?.offerings?.map((offering, i) => (
+                    <div key={i} className="mt-2 w-full mx-auto themebg py-4">
+                      <h2 className="text-lg">{offering?.name}</h2>
+                      <h4 className="accentfont">{offering?.type}</h4>
+                      <p className="text-sm text-gray-500 mb-1 accentfont">
+                        Size: {offering?.size}
+                      </p>
+                      <ul className="text-gray-700 text-center mx-auto w-fit px-4 flex justify-center items-center flex-col">
+                        {offering?.features?.map((feat, idx) => (
+                          <li
+                            key={idx}
+                            className="mb-1 w-fit py-1 accentfont text-center"
+                          >
+                            {feat}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
               )}
             </div>
           </div>
@@ -94,88 +111,90 @@ export function SubProject() {
       </div>
 
       {/* Highlights */}
-      {project.highlights?.length > 0 && (
+      {project?.highlights?.length > 0 && (
         <section className="section w-full bgcolorfont accentfont themebg">
           <div className="row">
             <div className="w-full">
               <img
-                src={project.coverImage}
-                alt=""
-                className="h-[400px] w-full object-cover"
+                src={project?.coverImage}
+                alt={project?.name || "Project Image"}
+                className="h-[520px] w-full object-cover"
               />
             </div>
             <div className="w-full flex flex-col justify-center items-start gap-4 p-6">
-              <h2 className="text-3xl">Highlights</h2>
-              <ul className="list-disc pl-6 space-y-2">
-                {project.highlights.map((point, i) => (
-                  <li className="accentfont" key={i}>
-                    {point}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* Gallery */}
-      {project.galleryImages?.length > 0 && (
-        <section className="section w-full mx-auto">
-          <div className="rowPadding">
-            <div className="flex flex-col justify-center items-center gap-4">
-              <h2 className="text-4xl mb-6 text-start w-full bgcolorfont">
-                At A Glimpse
-              </h2>
-              <BentoImageGrid images={project.galleryImages} />
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* Offerings */}
-      {project.offerings?.length > 0 && (
-        <section className="section">
-          <div className="row">
-            <div className="w-full">
-              <h2 className="text-3xl mb-4 bgcolorfont">Units</h2>
-
-              {project.offerings.map((offering, i) => (
-                <div key={i} className="mt-2 w-full">
-                  <h2 className="text-lg">{offering.name}</h2>
-                  <h4 className="accentfont">{offering.type}</h4>
-                  <p className="text-sm text-gray-500 mb-1 accentfont">
-                    Size: {offering.size}
+              <h2 className="text-3xl">WHY {project?.name}</h2>
+              <div className="space-y-3">
+                {project?.moreDetails?.map((item, i) => (
+                  <p key={i} className="text-gray-700 accentfont">
+                    <span className="font-semibold bgcolorfont">
+                      {item?.label}
+                    </span>{" "}
+                    {item?.text}
                   </p>
-                  <ul className="text-gray-700">
-                    {offering.features?.map((feat, idx) => (
-                      <li key={idx} className="mb-1 w-fit py-1 accentfont">
-                        {feat}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </section>
       )}
 
-      {/* Floor Plans */}
-      {project.floorPlans?.length > 0 && (
-        <section className="section themebg">
-          <div className="row">
-            <div className="w-full flex flex-col justify-center items-start gap-4">
-              <h2 className="text-3xl text-start w-full bgcolorfont">
-                Floor Plans
-              </h2>
-              <CarouselFloor images={project.floorPlans} heights="h-full max-sm:h-full" />
-            </div>
+
+{project?.properties?.length > 0 ? (
+  project.properties.map((prop, i) => (
+    <div className="rownopad themebg">
+    <section key={i} className="section">
+      <div className="">
+        <h2 className="text-3xl w-full text-start bgcolorfont mb-6">
+          {prop.type.toUpperCase()}
+        </h2>
+
+        {prop?.images?.length > 0 && (
+          <div className="w-full">
+            <h3 className="text-2xl mb-6">At A Glimpse</h3>
+            <BentoImageGrid images={prop.images} />
           </div>
-        </section>
-      )}
+        )}
+      </div>
+
+           {prop?.floorplans?.length > 0 && (
+          <div className="mb-8 w-full">
+            <h3 className="text-2xl mb-6 mt-10">Floor Plans</h3>
+            <CarouselFloor
+              images={prop.floorplans}
+              heights="h-full max-sm:h-full"
+            />
+          </div>
+        )}
+    </section>
+    </div>
+  ))
+) : (
+  <></>
+)}
+
+   
+
+      {/* CTA */}
+      <div className="justify-between flex items-center w-full pt-20 pb-0 px-20">
+        <div className="flex justify-start items-center w-full gap-3">
+          <div className="accentfont text-xl">Want to Know More</div>
+          <div>
+            {project?.brochureLink && (
+              <button
+                onClick={() => setIsOpen(true)}
+                className="btn max-sm:mb-10"
+              >
+                Download Brochure
+              </button>
+            )}
+          </div>
+        </div>
+      </div>
+
+      
 
       {/* Location */}
-      {project.maplink && (
+      {project?.maplink && (
         <section className="section">
           <div className="row">
             <div className="w-full flex flex-col justify-center items-start gap-4 max-sm:mb-4">
@@ -183,7 +202,7 @@ export function SubProject() {
                 Location
               </h2>
               <iframe
-                src={project.maplink}
+                src={project?.maplink}
                 width="100%"
                 height="450"
                 allowFullScreen
@@ -194,14 +213,13 @@ export function SubProject() {
           </div>
         </section>
       )}
-
       <Footer />
 
       {/* Modal */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed inset-0 flex items-center justify-center bg-black/50 z-50"
+            className="fixed inset-0 flex items-center justify-center bg-black/50 backdrop-blur-xs z-50"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -219,7 +237,7 @@ export function SubProject() {
                 <input
                   type="text"
                   placeholder="Your Name"
-                  value={form.name}
+                  value={form?.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
                   className="border border-gray-300 p-2 accentfont"
                   required
@@ -227,7 +245,7 @@ export function SubProject() {
                 <input
                   type="tel"
                   placeholder="Phone Number"
-                  value={form.phone}
+                  value={form?.phone}
                   onChange={(e) => setForm({ ...form, phone: e.target.value })}
                   className="border p-2 border-gray-300 accentfont"
                   required
@@ -235,7 +253,7 @@ export function SubProject() {
                 <input
                   type="email"
                   placeholder="Email"
-                  value={form.email}
+                  value={form?.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
                   className="border p-2 border-gray-300 accentfont"
                   required

@@ -38,7 +38,7 @@ export function Contact(props) {
             <h2 className="text-5xl mb-2 max-sm:text-3xl max-sm:mb-1">
               CONTACT US
             </h2>
-            <div className="py-2 w-[90%]">
+            <div className="py-2 w-[90%] accentfont">
               For questions about property listings, investments, or quotations,
               please contact us. Our knowledgeable team will respond promptly to
               assist with your real estate needs, whether for residential,

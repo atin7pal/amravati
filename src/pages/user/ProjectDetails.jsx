@@ -25,12 +25,29 @@ export default function ProjectDetails(props) {
               className="h-[50vh] object-cover w-full"
               alt=""
             />
-            <p className="text-center accentfont text-lg">
-              {Project.description}
-            </p>
-          </div>
-        </div>
+            {Project.description.map((para, i) => (
+              <h2
+                key={i}
+                className="mb-0 bgcolorfont text-start accentfont text-lg"
+              >
+                {para}
+              </h2>
+            ))}
 
+              <div className="w-full">
+                <h2 className="text-3xl bgcolorfont mb-4">Highlights</h2>
+            <ul className="list-disc space-y-1 ml-6">
+            {
+              Project.highlights.map((element) => (
+                <li className="accentfont bgcolorfont text-lg">{element}</li>
+              ))
+            }
+            </ul>
+          </div>
+
+          </div>
+
+        </div>
         <div className="row">
           <div className="flex flex-col justify-center items-start w-full">
             <h2 className="text-4xl max-sm:text-3xl w-[80%] max-sm:w-full mb-6 bgcolorfont">
@@ -45,12 +62,8 @@ export default function ProjectDetails(props) {
                 >
                   <h3 className="text-2xl">{sub.name}</h3>
                   <p className="accentfont text-xl">{sub.tagline}</p>
-                  <ul>
-                    {sub.highlights.slice(0, 4).map((element, index) => (
-                      <li key={index} className="accentfont">
-                        {element}
-                      </li>
-                    ))}
+                  <ul className="list-disc pace-y-1 accentfont">
+                    {sub.description.slice(0, 300)}..
                   </ul>
 
                   <button className="btn w-fit mt-2">Project Overview</button>
