@@ -103,8 +103,8 @@ export function About(props) {
                 OUR STORY
               </h2>
               <p className="accentfont">
-                Founded in the 1970s under the visionary leadership of Late
-                Shri Amarnath Aggarwal, Amravati Group began its journey with a
+                Founded in the 1970s under the visionary leadership of Late Shri
+                Amarnath Aggarwal, Amravati Group began its journey with a
                 simple yet ambitious goal: to redefine the real estate landscape
                 through timeless design and trustworthy execution. Guided today
                 by his son Mr. Hargobind Goyal and grandsons Ainesh Goyal and

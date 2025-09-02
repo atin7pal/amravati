@@ -206,7 +206,7 @@ const Retail = () => {
               <a
                 href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3421.9921065222607!2d76.80901007504592!3d30.942784975451808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ff5000b9fa7ed%3A0xd62ee042b2ca7ab5!2sEveryday%20supermarket!5e0!3m2!1sen!2sin!4v1756557877331!5m2!1sen!2sin"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer"  
                 className="bgcolorfont accentfont hover:underline"
               >
                 Housing Board Rd, Baddi, Himachal Pradesh 173205
