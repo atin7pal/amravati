@@ -77,7 +77,7 @@ const Projects = () => {
           >
             <div className="h-full w-full flex justify-center items-start p-10 flex-col gap-4 max-sm:p-4">
               <motion.img
-                className="h-[450px] w-full object-cover"
+                className="h-[450px] w-full object-cover max-sm:h-[300px]"
                 src={element.coverImage}
                 alt=""
                 whileHover={{ scale: 1.03 }}

@@ -81,7 +81,7 @@ export function SubProject() {
               </motion.p>
 
               {project?.offerings?.length > 0 && (
-                <div className="w-full flex justify-center items-center flex-col">
+                <div className="w-full flex justify-center items-center flex-col max-sm:mb-4">
                   <h2 className="text-3xl mb-2 bgcolorfont">UNITS</h2>
 
                   {project?.offerings?.map((offering, i) => (
@@ -121,7 +121,7 @@ export function SubProject() {
                 className="h-[520px] w-full object-cover"
               />
             </div>
-            <div className="w-full flex flex-col justify-center items-start gap-4 p-6">
+            <div className="w-full flex flex-col justify-center items-start gap-4 p-6 max-sm:p-2">
               <h2 className="text-3xl">WHY {project?.name}</h2>
               <div className="space-y-3">
                 {project?.moreDetails?.map((item, i) => (
@@ -142,7 +142,7 @@ export function SubProject() {
 {project?.properties?.length > 0 ? (
   project.properties.map((prop, i) => (
       <div className="rownopad themebg">
-        <div>
+        <div className="max-sm:pb-4">
         <h2 className="text-3xl w-full text-start bgcolorfont mb-6">
           {prop.type.toUpperCase()}
         </h2>
@@ -159,7 +159,7 @@ export function SubProject() {
 
         {prop?.images?.length > 0 && (
           <div className="w-full">
-            <h3 className="text-2xl mb-3">Gallery</h3>
+            <h3 className="text-2xl mb-3">At A Glimpse</h3>
             <BentoImageGrid images={prop.images} />
           </div>
         )}
@@ -193,7 +193,7 @@ export function SubProject() {
         <section className="section w-full mx-auto">
           <div className="rowPadding">
             <div className="flex flex-col justify-center items-center gap-4">
-              <h2 className="text-4xl mb-6 text-start w-full bgcolorfont">
+              <h2 className="text-4xl mb-4 mt-4 text-start w-full bgcolorfont">
                 At A Glimpse
               </h2>
               <BentoImageGrid images={project?.galleryImages} />
@@ -203,14 +203,14 @@ export function SubProject() {
       )}
 
       {/* CTA */}
-      <div className="justify-between flex items-center w-full pt-20 pb-0 px-20">
-        <div className="flex justify-start items-center w-full gap-3">
+      <div className="justify-between flex items-center w-full pt-20 pb-0 px-20 max-sm:px-4 max-sm:pt-4 themebg">
+        <div className="flex justify-start items-center w-full gap-3 max-sm:justify-between">
           <div className="accentfont text-xl">Want to Know More</div>
           <div>
             {project?.brochureLink && (
               <button
                 onClick={() => setIsOpen(true)}
-                className="btn max-sm:mb-10"
+                className="btn"
               >
                 Download Brochure
               </button>
@@ -223,7 +223,7 @@ export function SubProject() {
 
       {/* Location */}
       {project?.maplink && (
-        <section className="section">
+        <section className="section themebg">
           <div className="row">
             <div className="w-full flex flex-col justify-center items-start gap-4 max-sm:mb-4">
               <h2 className="text-3xl text-start w-full bgcolorfont">

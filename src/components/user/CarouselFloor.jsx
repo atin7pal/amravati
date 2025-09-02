@@ -68,8 +68,8 @@ const CarouselFloor = ({
         <div
           className="flex transition-transform duration-700 ease-in-out"
           style={{
-            width: `${totalItems * slideWidthPercent}%`,
-            transform: `translateX(-${currentSlide * slideWidthPercent}%)`,
+            width: `${(images.length * 100) / itemsPerSlide}%`,
+            transform: `translateX(-${currentSlide * (100 / images.length)}%)`,
           }}
         >
           {images.map(({ src, alt }, index) => (
@@ -85,7 +85,9 @@ const CarouselFloor = ({
                 className={`w-full object-cover ${heights}`}
               />
               {alt && (
-                <p className="text-sm text-center text-gray-700 mt-2 accentfont"></p>
+                <p className="text-sm text-center text-gray-700 mt-2 accentfont mb-2">
+                  {alt}
+                </p>
               )}
             </div>
           ))}

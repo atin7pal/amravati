@@ -43,6 +43,14 @@ import baddifloor7 from "../projectbaddi/floorplan-amravatiapartmants/Lily-7-Amr
 import baddifloor8 from "../projectbaddi/floorplan-amravatiapartmants/Zynia-5-Amravati-apartments-baddi.png";
 import baddifloor9 from "../projectbaddi/floorplan-amravatiapartmants/Zynia-5-Amravati-apartments-baddi-single-apartment.png";
 
+import type2ecohomes from '../../assets/projectbaddi/type2ecohomes.jpeg'
+import type2ecohomes2 from '../../assets/projectbaddi/type2ecohomes2.jpeg'
+import type2ecohomes3 from '../../assets/projectbaddi/type2ecohomes3.jpeg'
+import type2ecohomes4 from '../../assets/projectbaddi/type2ecohomes4.jpeg'
+import type2ecohomes5 from '../../assets/projectbaddi/type2ecohomes5.jpeg'
+
+import type4ecohomes from '../../assets/projectbaddi/type4ecohomes.jpeg'
+
 export const AllProjects = [
   {
     title: "AMRAVATI HILLS",
@@ -461,70 +469,64 @@ export const AllProjects = [
         location: "Baddi, Himachal Pradesh",
         slug: "amravati-apartments-baddi",
         tagline: "Premium Apartments With All The Amenities",
-      properties: [
-  {
-    type: "Amravati ECO Homes Type 2",
-    images: [
-      {
-        src: baddi6,
-        alt: "Amravati Apartments - Scenic View",
-      },
-      {
-        src: baddi7,
-        alt: "Amravati Apartments - Township View",
-      },
-      {
-        src: baddi9,
-        alt: "Amravati Apartments - Lifestyle View",
-      },
-    ],
-    floorplans: [
-      {
-        src: baddifloor1,
-        alt: "First Floor - Amravati Apartments Baddi Type 2",
-      },
-      {
-        src: baddifloor3,
-        alt: "Ground Floor - Amravati Apartments Baddi Type 2",
-      },
-       {
-        src: transparent,
-        alt: "",
-      },
-    ],
-  },
-  {
-    type: "Amravati Eco Homes Type 4",
-    images: [
-      {
-        src: baddi6, // replace with actual Eco Homes images if you have
-        alt: "Eco Homes - Modern Exterior View",
-      },
-      {
-        src: baddi7,
-        alt: "Eco Homes - Township Lifestyle View",
-      },
-      {
-        src: baddi9,
-        alt: "Eco Homes - Community Living",
-      },
-    ],
-    floorplans: [
-      {
-        src: baddifloor2,
-        alt: "First Floor - Amravati Eco Homes Apartments Baddi Type 4",
-      },
-      {
-        src: baddifloor4,
-        alt: "Ground Floor - Amravati Eco Homes Apartments Baddi Type 4",
-      },
-         {
-        src: transparent,
-        alt: "",
-      },
-    ],
-  },
-],
+        properties: [
+          {
+            type: "Amravati ECO Homes Type 2",
+            images: [
+              {
+                src: type2ecohomes,
+                alt: "Amravati Apartments - Scenic View",
+              },
+              {
+                src: type2ecohomes2,
+                alt: "Amravati Apartments - Township View",
+              },
+              {
+                src: type2ecohomes3,
+                alt: "Amravati Apartments - Lifestyle View",
+              },
+              
+            ],
+            floorplans: [
+              {
+                src: baddifloor1,
+                alt: "First Floor - Amravati Apartments Baddi Type 2",
+              },
+              {
+                src: baddifloor3,
+                alt: "Ground Floor - Amravati Apartments Baddi Type 2",
+              },
+              {
+                src: transparent,
+                alt: "",
+              },
+            ],
+          },
+          {
+            type: "Amravati Eco Homes Type 4",
+            images: [
+              {
+                src: type4ecohomes, // replace with actual Eco Homes images if you have
+                alt: "Eco Homes - Modern Exterior View",
+              },
+              
+            ],
+            floorplans: [
+              {
+                src: baddifloor2,
+                alt: "First Floor - Amravati Eco Homes Apartments Baddi Type 4",
+              },
+              {
+                src: baddifloor4,
+                alt: "Ground Floor - Amravati Eco Homes Apartments Baddi Type 4",
+              },
+              {
+                src: transparent,
+                alt: "",
+              },
+            ],
+          },
+        ],
 
         coverImage: amravatiapartments,
 
@@ -565,7 +567,6 @@ export const AllProjects = [
           //   src: baddi7,
           //   alt: "image 1",
           // },
-
           // {
           //   src: baddi9,
           //   alt: "image 1",
