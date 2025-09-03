@@ -138,43 +138,41 @@ export function SubProject() {
         </section>
       )}
 
+      {project?.properties?.length > 0 ? (
+        project.properties.map((prop, i) => (
+          <div className="rownopad themebg">
+            <div className="max-sm:pb-4">
+              <h2 className="text-3xl w-full text-start bgcolorfont mb-6">
+                {prop.type.toUpperCase()}
+              </h2>
 
-{project?.properties?.length > 0 ? (
-  project.properties.map((prop, i) => (
-      <div className="rownopad themebg">
-        <div className="max-sm:pb-4">
-        <h2 className="text-3xl w-full text-start bgcolorfont mb-6">
-          {prop.type.toUpperCase()}
-        </h2>
+              {prop?.floorplans?.length > 0 && (
+                <div className="mb-8 w-full">
+                  <h3 className="text-2xl mb-3">Floor Plans</h3>
+                  <CarouselFloor
+                    images={prop.floorplans}
+                    heights="h-full max-sm:h-full"
+                  />
+                </div>
+              )}
 
-        {prop?.floorplans?.length > 0 && (
-          <div className="mb-8 w-full">
-            <h3 className="text-2xl mb-3">Floor Plans</h3>
-            <CarouselFloor
-              images={prop.floorplans}
-              heights="h-full max-sm:h-full"
-            />
+              {prop?.images?.length > 0 && (
+                <div className="w-full">
+                  <h3 className="text-2xl mb-3">At A Glimpse</h3>
+                  <BentoImageGrid images={prop.images} />
+                </div>
+              )}
+            </div>
           </div>
-        )}
-
-        {prop?.images?.length > 0 && (
-          <div className="w-full">
-            <h3 className="text-2xl mb-3">At A Glimpse</h3>
-            <BentoImageGrid images={prop.images} />
-          </div>
-        )}
-      </div>
-      </div>
- 
-  ))
-) : (
-  <></>
-)}
+        ))
+      ) : (
+        <></>
+      )}
 
       {/* Floor Plans */}
       {project?.floorPlans?.length > 0 && (
         <section className="section themebg">
-          <div className="row">
+          <div className="rownopad">
             <div className="w-full flex flex-col justify-center items-start gap-4">
               <h2 className="text-3xl text-start w-full bgcolorfont">
                 Floor Plans
@@ -208,18 +206,13 @@ export function SubProject() {
           <div className="accentfont text-xl">Want to Know More</div>
           <div>
             {project?.brochureLink && (
-              <button
-                onClick={() => setIsOpen(true)}
-                className="btn"
-              >
+              <button onClick={() => setIsOpen(true)} className="btn">
                 Download Brochure
               </button>
             )}
           </div>
         </div>
       </div>
-
-      
 
       {/* Location */}
       {project?.maplink && (

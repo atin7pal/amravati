@@ -28,7 +28,7 @@ const Projects = () => {
         style={{
           backgroundImage: `linear-gradient(#00000000,#0000005d, #0000005d),url(${dreamscape})`,
         }}
-        className="section h-[80vh] p-20 text-center bg-cover bg-no-repeat bg-bottom flex justify-center items-center flex-col max-sm:p-4"
+        className="section h-[80vh] p-20 text-center bg-cover bg-no-repeat bg-bottom flex justify-center items-center flex-col max-sm:p-4 max-sm:h-[70vh]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -119,7 +119,7 @@ const Projects = () => {
 
           {/* Expandable Content */}
           <AnimatePresence>
-            {expanded === index && (
+            {!expanded === index && (
               <motion.div
                 className="p-6 pb-10 pt-0 px-10 themebg w-full overflow-hidden max-sm:p-4"
                 initial={{ height: 0, opacity: 0 }}
@@ -154,7 +154,7 @@ const Projects = () => {
       ))}
 
       <motion.div
-        className="pt-20"
+        className="pt-20 max-sm:pt-4"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}

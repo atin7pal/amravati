@@ -19,7 +19,7 @@ export default function ProjectDetails(props) {
       <section className="section bg-gradient-to-b from-[#ece4d9] via-white to-[#ece4d9] ">
         <div className="rowPadding w-full">
           <div className="flex flex-col justify-center items-center gap-6 w-full">
-            <h1 className="text-5xl bgcolorfont">{Project.title}</h1>
+            <h1 className="text-5xl bgcolorfont max-sm:text-4xl">{Project.title}</h1>
             <img
               src={Project.coverImage}
               className="h-[50vh] object-cover w-full"
@@ -48,7 +48,7 @@ export default function ProjectDetails(props) {
           </div>
 
         </div>
-        <div className="row">
+        <div className="row max-sm:mb-6">
           <div className="flex flex-col justify-center items-start w-full">
             <h2 className="text-4xl max-sm:text-3xl w-[80%] max-sm:w-full mb-6 bgcolorfont">
               Projects

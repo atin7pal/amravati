@@ -61,7 +61,7 @@ export function Contact(props) {
             <div className="text-sm flex flex-col justify-center items-center gap-4 w-full mt-2"></div>
           </motion.div>
 
-          <motion.div className="w-full" {...fadeInProps}>
+          <motion.div className="w-full max-sm:pb-6" {...fadeInProps}>
             <ContactForm />
           </motion.div>
         </div>
