@@ -43,13 +43,13 @@ import baddifloor7 from "../projectbaddi/floorplan-amravatiapartmants/Lily-7-Amr
 import baddifloor8 from "../projectbaddi/floorplan-amravatiapartmants/Zynia-5-Amravati-apartments-baddi.png";
 import baddifloor9 from "../projectbaddi/floorplan-amravatiapartmants/Zynia-5-Amravati-apartments-baddi-single-apartment.png";
 
-import type2ecohomes from '../../assets/projectbaddi/type2ecohomes.jpeg'
-import type2ecohomes2 from '../../assets/projectbaddi/type2ecohomes2.jpeg'
-import type2ecohomes3 from '../../assets/projectbaddi/type2ecohomes3.jpeg'
-import type2ecohomes4 from '../../assets/projectbaddi/type2ecohomes4.jpeg'
-import type2ecohomes5 from '../../assets/projectbaddi/type2ecohomes5.jpeg'
+import type2ecohomes from "../../assets/projectbaddi/type2ecohomes.jpeg";
+import type2ecohomes2 from "../../assets/projectbaddi/type2ecohomes2.jpeg";
+import type2ecohomes3 from "../../assets/projectbaddi/type2ecohomes3.jpeg";
+import type2ecohomes4 from "../../assets/projectbaddi/type2ecohomes4.jpeg";
+import type2ecohomes5 from "../../assets/projectbaddi/type2ecohomes5.jpeg";
 
-import type4ecohomes from '../../assets/projectbaddi/type4ecohomes.jpeg'
+import type4ecohomes from "../../assets/projectbaddi/type4ecohomes.jpeg";
 
 export const AllProjects = [
   {
@@ -483,7 +483,6 @@ export const AllProjects = [
                 src: type2ecohomes3,
                 alt: "Amravati Apartments - Lifestyle View",
               },
-              
             ],
             floorplans: [
               {
@@ -507,7 +506,6 @@ export const AllProjects = [
                 src: type4ecohomes, // replace with actual Eco Homes images if you have
                 alt: "Eco Homes - Modern Exterior View",
               },
-              
             ],
             floorplans: [
               {
