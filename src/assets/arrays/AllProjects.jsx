@@ -294,8 +294,6 @@ export const AllProjects = [
       "Amravati Apartments is situated adjoining to Housing Board, Phase III, Baddi, at a beautiful location in the surroundings of hills. Established in 2005, it is one of the first integrated townships in the Baddi–Nalagarh industrial region and today is home to over 10,000 happy residents. Its cohesive setting offers a picturesque hilly backdrop while being just 30 km from Panchkula and 22 km from New Chandigarh, making it both scenic and conveniently connected.",
 
       "Spread across 132 bighas of land, Amravati Apartments has all the facilities of a fully functioning city. The township includes reliable water supply through an overhead tank, stormwater drainage, electricity, paved roads, street lighting, a sewerage treatment plant, schools, a club, a temple, landscaped parks, and power backup for lifts—ensuring modern comfort and community living for all residents.",
-
-      "Backed by the strong and accomplished leadership of the Amravati Group, the project reflects a legacy of credibility, integrity, and timely delivery. Founded by the Late Shri Amarnath Aggarwal and now managed by his son Mr. Hargobind Goyal along with his grandsons Ainesh Goyal and Viren Goyal, the group continues to collaborate with renowned architects, engineers, and urban planners. Each residence at Amravati Apartments is a result of careful planning, quality execution, and a vision to create not just homes, but thriving communities.",
     ],
     link: "amravati-apartments",
     coverImage: baddi5,
