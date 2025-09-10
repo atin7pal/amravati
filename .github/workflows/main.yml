@@ -1,0 +1,42 @@
+name: React CI/CD to Hostinger for AMRAVATI
+
+on:
+  push:
+    branches: [ "main" ]  
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout repository code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18.x
+          cache: "npm"  # Caches npm dependencies for faster builds
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm ci  # Installs dependencies using a clean install
+
+
+      - name: Build React app
+        run: npm run build 
+
+     
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.AMRAVATI_SERVER }}
+          username: ${{ secrets.AMRAVATI_USER }}
+          password: ${{ secrets.AMRAVATI_FTP_PASS }}
+          local-dir: dist/
+          server-dir: /public_html/
+          protocol: ftps
+          port: ${{ secrets.PORT }} # todo replace with your web hosts ftps port
+         
