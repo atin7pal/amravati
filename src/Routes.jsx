@@ -20,6 +20,9 @@ import CompletedList from "./pages/admin/CompletedList.jsx";
 import { ProjectDescription } from "./pages/user/ProjectDescription.jsx";
 import { SubProject } from "./pages/user/SubProject.jsx";
 import ProjectDetails from "./pages/user/ProjectDetails.jsx";
+import ProjectsPage from "./pages/admin/ProjectsPage.jsx";
+import ProtectedRoute from "./components/ProtectedRoute.jsx";
+import Login from "./components/admin/LoginPage.jsx";
 
 const routes = [
   { path: "/", element: <Home /> },
@@ -52,10 +55,22 @@ const routes = [
     path: "/projects/:project/:subproject",
     element: <SubProject />,
   },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+   path: "*",
+   element:<NotFound/>
+  },
 
   {
     path: "/admin",
-    element: <Dashboard />,
+    element: (
+      <ProtectedRoute>
+        <Dashboard />
+      </ProtectedRoute>
+    ),
     children: [
       {
         path: "enquiries",
@@ -67,7 +82,7 @@ const routes = [
       },
       {
         path: "completedlist",
-        element: <CompletedList />,
+        element: <ProjectsPage />,
       },
     ],
   },

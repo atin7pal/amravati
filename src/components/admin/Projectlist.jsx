@@ -2,8 +2,6 @@ import { useState } from "react";
 import { FiChevronDown, FiChevronUp, FiEdit, FiTrash2 } from "react-icons/fi";
 import parse from "html-react-parser"; // to render HTML from ReactQuill
 
-
-
 export default function ProjectList({ projects, onEdit, onDelete }) {
   const [expandedIndex, setExpandedIndex] = useState(null);
 
@@ -13,7 +11,7 @@ export default function ProjectList({ projects, onEdit, onDelete }) {
 
   return (
     <div className="space-y-4 w-full">
-      <h2 className="text-2xl font-bold accentfont mb-4 bgcolorfont">
+      <h2 className="text-3xl font-bold accentfont mb-4 bgcolorfont">
         Completed Projects
       </h2>
 
@@ -22,10 +20,7 @@ export default function ProjectList({ projects, onEdit, onDelete }) {
       )}
 
       {projects?.map((project, index) => (
-        <div
-          key={index}
-          className="overflow-hidden"
-        >
+        <div key={index} className="overflow-hidden">
           {/* Header */}
           <div
             className="flex justify-between items-center px-4 py-3 cursor-pointer themebg"
@@ -48,7 +43,9 @@ export default function ProjectList({ projects, onEdit, onDelete }) {
           {expandedIndex === index && (
             <div className="px-6 py-4 space-y-3">
               <div>
-                <span className="font-semibold accentfont text-lg">Tagline: </span>
+                <span className="font-semibold accentfont text-lg">
+                  Tagline:{" "}
+                </span>
                 <span className="accentfont">{project.tagline}</span>
               </div>
               <div>
@@ -65,7 +62,9 @@ export default function ProjectList({ projects, onEdit, onDelete }) {
                 </a>
               </div>
               <div>
-                <span className="font-semibold accentfont text-lg">Description:</span>
+                <span className="font-semibold accentfont text-lg">
+                  Description:
+                </span>
                 <div className="prose max-w-none accentfont">
                   {parse(project.description)}
                 </div>
@@ -73,7 +72,9 @@ export default function ProjectList({ projects, onEdit, onDelete }) {
 
               {/* Gallery */}
               <div>
-                <span className="font-semibold accentfont text-lg">Gallery:</span>
+                <span className="font-semibold accentfont text-lg">
+                  Gallery:
+                </span>
                 <div className="flex flex-wrap gap-3 mt-2">
                   {project.galleryImages?.map((img, idx) => (
                     <img
@@ -88,23 +89,26 @@ export default function ProjectList({ projects, onEdit, onDelete }) {
 
               {/* Highlights */}
               <div>
-                <span className="font-semibold accentfont mb-4 text-lg">Highlights:</span>
+                <span className="font-semibold accentfont mb-4 text-lg">
+                  Highlights:
+                </span>
                 <ul className="list-disc ml-5 accentfont mt-2">
                   {project.highlights?.map((item, idx) => (
-                    <li className="accentfont" key={idx}>{item}</li>
+                    <li className="accentfont" key={idx}>
+                      {item}
+                    </li>
                   ))}
                 </ul>
               </div>
 
               {/* Offerings */}
               <div>
-                <span className="font-semibold accentfont text-lg">Offerings:</span>
+                <span className="font-semibold accentfont text-lg">
+                  Offerings:
+                </span>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mt-2 accentfont">
                   {project.offerings?.map((o, idx) => (
-                    <div
-                      key={idx}
-                      className="p-2 themebg accentfont"
-                    >
+                    <div key={idx} className="p-2 themebg accentfont">
                       <div className="accentfont">
                         <strong>Type:</strong> {o.type}
                       </div>

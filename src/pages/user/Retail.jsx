@@ -54,8 +54,8 @@ const Retail = () => {
             <h2 className=" text-4xl max-sm:text-3xl max-sm:w-full">
               WELCOME TO EVERYDAY SUPERMARKET
             </h2>
-            <p className="text-xl font-semibold accentfont max-sm:text-lg">
-              YOUR FRIENDLY NEIGHBOURHOOD GROCERY DESTINATION
+            <p className="text-xl font-semibold accentfont max-sm:text-lg italic">
+              'Your Friendly Neighbourhood Grocery Destination'
             </p>
           </div>
         </div>

@@ -2,14 +2,12 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Navbar from "../../components/user/Navbar.jsx";
 import { Footer } from "../../components/user/Footer.jsx";
-import homevideo from "../../assets/homevideo.mp4";
 import map from "../../assets/map.jpg";
 import home5 from "../../assets/chair.jpeg";
 import floral from "../../assets/floral.jpg";
 import home3 from "../../assets/project1/livingdining.jpg";
 import home4 from "../../assets/project1/outdoor.jpg";
 import logobuilding from "../../assets/logobuilding.svg";
-import video2 from "../../assets/video2.mp4";
 import {
   FaHandshake,
   FaMapMarkedAlt,

@@ -193,7 +193,7 @@ export const AllProjects = [
         floorPlans: [
           {
             src: lowergroundfloor,
-            alt: "lower ground floor",
+            alt: "Lower Ground Floor",
           },
           { src: groundfloorden, alt: "Ground Floor" },
           { src: firstfloorden, alt: "First Floor" },

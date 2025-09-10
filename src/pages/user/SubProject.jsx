@@ -11,6 +11,9 @@ export function SubProject() {
   const { project: projectSlug, subproject: subSlug } = useParams(); // ✅ get both slugs
   console.log(projectSlug, subSlug);
 
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState("");
+
   const [isOpen, setIsOpen] = useState(false);
   const [form, setForm] = useState({ name: "", phone: "", email: "" });
 
@@ -33,9 +36,36 @@ export function SubProject() {
     );
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("User Info:", form);
+    e.preventDefault();
+    setLoading(true);
+    setSuccess("");
+
+    try {
+      const formData = new FormData();
+      formData.append("name", form.name);
+      formData.append("phone", form.phone);
+      formData.append("email", form.email);
+      formData.append("city", "NA");
+      formData.append("state", "NA");
+      formData.append("category", "NA");
+      formData.append("query", "NA");
+
+      const res = await fetch("https://www.amravatigroup.in/contact_form.php", {
+        method: "POST",
+        body: formData,
+      });
+
+      const result = await res.text(); // assuming PHP returns a simple success message
+      setSuccess(result || "Form submitted successfully!");
+      setForm({ name: "", phone: "", email: "" });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setSuccess("There was an error submitting the form.");
+    } finally {
+      setLoading(false);
+    }
 
     setIsOpen(false);
 

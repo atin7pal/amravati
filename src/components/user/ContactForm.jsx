@@ -9,10 +9,30 @@ export default function ContactForm() {
     reset,
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log("Form Submitted:", data);
-    reset();
-  };
+  const onSubmit = async (data) => {
+  try {
+    const formData = new FormData();
+    Object.keys(data).forEach((key) => {
+      formData.append(key, data[key]);
+    });
+
+    const res = await fetch("https://www.amravatigroup.in/contact_form.php", {
+      method: "POST",
+      body: formData,
+    });
+
+    const result = await res.json();
+    if (result.success) {
+      alert("✅ " + result.message);
+      reset();
+    } else {
+      alert("❌ " + result.message);
+    }
+  } catch (error) {
+    alert("⚠️ Something went wrong!");
+    console.error(error);
+  }
+};
 
   return (
     <div className="w-[90%] max-sm:w-full max-sm:px-4 max-sm:p-4 mx-auto py-6 px-10 bg-white">
