@@ -95,7 +95,7 @@ const Footer = () => {
             <div className="flex items-center gap-3 text-sm max-sm:justify-center justify-center">
               <MdEmail className="text-base" />
               <a href="mailto:info@amravati-group.com" className="accentfont">
-                info@amravati-group.com
+                Info@amravatigroup.in
               </a>
             </div>
           </div>
