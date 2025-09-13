@@ -46,7 +46,7 @@ export function Contact(props) {
             </div>
             <div className="flex justify-center items-start flex-col gap-2">
               <div className="flex justify-center items-center gap-2">
-                <BiMailSend /> <p className="accentfont">info@amaravati.in</p>
+                <BiMailSend /> <p className="accentfont">Info@amravatigroup.in</p>
               </div>
               <div className="flex justify-center items-center gap-2 accentfont">
                 <BiPhone /> +91-7429299696
