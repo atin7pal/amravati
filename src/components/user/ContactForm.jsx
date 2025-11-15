@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 
 export default function ContactForm() {
   const {
@@ -9,30 +10,40 @@ export default function ContactForm() {
     reset,
   } = useForm();
 
+  const navigate = useNavigate();
+
   const onSubmit = async (data) => {
-  try {
-    const formData = new FormData();
-    Object.keys(data).forEach((key) => {
-      formData.append(key, data[key]);
-    });
+    try {
+      const formData = new FormData();
+      Object.keys(data).forEach((key) => {
+        formData.append(key, data[key]);
+      });
 
-    const res = await fetch("https://www.amravatigroup.in/contact_form.php", {
-      method: "POST",
-      body: formData,
-    });
+      const res = await fetch("https://www.amravatigroup.in/contact_form.php", {
+        method: "POST",
+        body: formData,
+      });
 
-    const result = await res.json();
-    if (result.success) {
-      alert("✅ " + result.message);
-      reset();
-    } else {
-      alert("❌ " + result.message);
+      const result = await res.json();
+      if (result.success) {
+        reset();
+
+        // Redirect to thankyou page
+        navigate("/thankyou");
+
+        // Redirect back after 3 seconds
+        setTimeout(() => {
+          navigate(-1); // Go back to previous page
+        }, 3000);
+      } else {
+        alert("❌ " + result.message);
+      }
+    } catch (error) {
+      alert("⚠️ Something went wrong!");
+      console.error(error);
     }
-  } catch (error) {
-    alert("⚠️ Something went wrong!");
-    console.error(error);
-  }
-};
+  };
+
 
   return (
     <div className="w-[90%] max-sm:w-full max-sm:px-4 max-sm:p-4 mx-auto py-6 px-10 bg-white">
@@ -73,9 +84,9 @@ export default function ContactForm() {
             )}
           </div>
         </div>
-        <div className="flex gap-4 mt-2">
+        <div className="flex gap-4 mt-2 w-full">
           {/* Phone */}
-          <div>
+          <div className="w-full">
             <label className="text-xs accentfont">Phone</label>
             <input
               {...register("phone", {
@@ -95,7 +106,7 @@ export default function ContactForm() {
           </div>
 
           {/* City */}
-          <div>
+          <div className="w-full">
             <label className="text-xs accentfont">City</label>
             <input
               {...register("city", { required: "City is required" })}
@@ -109,7 +120,7 @@ export default function ContactForm() {
           </div>
 
           {/* State */}
-          <div>
+          <div className="w-full">
             <label className="text-xs accentfont">State</label>
             <input
               {...register("state", { required: "State is required" })}

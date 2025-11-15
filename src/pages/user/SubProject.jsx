@@ -6,6 +6,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { AllProjects } from "../../assets/arrays/AllProjects";
 import BentoImageGrid from "../../components/user/BentoGrid";
 import CarouselFloor from "../../components/user/CarouselFloor";
+import ContactForm from "../../components/user/ContactForm";
+import { MessageCircle } from "lucide-react";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { IoCall } from "react-icons/io5";
 
 export function SubProject() {
   const { project: projectSlug, subproject: subSlug } = useParams(); // ✅ get both slugs
@@ -264,6 +268,11 @@ export function SubProject() {
           </div>
         </section>
       )}
+      <div className="p-4 pt-0 themebg">
+        <CallButton/>
+        <WhatsAppButton/>
+        <ContactForm />
+      </div>
       <Footer />
 
       {/* Modal */}
@@ -329,3 +338,31 @@ export function SubProject() {
     </>
   );
 }
+
+
+function WhatsAppButton() {
+  return (
+    <a
+      href="https://wa.me/918054088888"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="fixed bottom-6 left-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-xl hover:bg-green-600 transition"
+    >
+      <IoLogoWhatsapp size={28} className="vibrate" />
+    </a>
+  );
+}
+
+
+
+function CallButton() {
+  return (
+    <a
+      href="tel:+918054088888"
+      className="fixed bottom-24 left-6 z-50 bg-blue-500 text-white p-4 rounded-full shadow-xl hover:bg-blue-600 transition"
+    >
+      <IoCall size={28} className="vibrate" />
+    </a>
+  );
+}
+

@@ -23,6 +23,7 @@ import ProjectDetails from "./pages/user/ProjectDetails.jsx";
 import ProjectsPage from "./pages/admin/ProjectsPage.jsx";
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
 import Login from "./components/admin/LoginPage.jsx";
+import Thankyou from "./components/Thankyou.jsx";
 
 const routes = [
   { path: "/", element: <Home /> },
@@ -60,10 +61,14 @@ const routes = [
     element: <Login />,
   },
   {
-   path: "*",
-   element:<NotFound/>
+    path: "*",
+    element: <NotFound />,
   },
 
+  {
+    path: "/thankyou",
+    element: <Thankyou />,
+  },
   {
     path: "/admin",
     element: (
