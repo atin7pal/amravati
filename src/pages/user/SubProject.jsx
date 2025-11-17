@@ -343,8 +343,9 @@ export function SubProject() {
 function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/918054088888"
+      href="https://wa.me/7429299696"
       target="_blank"
+      id="whatsapp-amravati"
       rel="noopener noreferrer"
       className="fixed bottom-6 left-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-xl hover:bg-green-600 transition"
     >
@@ -358,7 +359,7 @@ function WhatsAppButton() {
 function CallButton() {
   return (
     <a
-      href="tel:+918054088888"
+      href="tel:+917429299696"
       className="fixed bottom-24 left-6 z-50 bg-blue-500 text-white p-4 rounded-full shadow-xl hover:bg-blue-600 transition"
     >
       <IoCall size={28} className="vibrate" />
