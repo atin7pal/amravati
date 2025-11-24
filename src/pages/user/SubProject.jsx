@@ -343,7 +343,7 @@ export function SubProject() {
 function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/7429299696"
+      href="https://wa.me/7429299696?text=Hi%20Amravati%20Group%2C%20Share%20more%20details."
       target="_blank"
       id="whatsapp-amravati"
       rel="noopener noreferrer"
@@ -359,6 +359,7 @@ function WhatsAppButton() {
 function CallButton() {
   return (
     <a
+      id="call-amravati"
       href="tel:+917429299696"
       className="fixed bottom-24 left-6 z-50 bg-blue-500 text-white p-4 rounded-full shadow-xl hover:bg-blue-600 transition"
     >
